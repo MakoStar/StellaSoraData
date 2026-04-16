@@ -164,9 +164,9 @@ return {
 	{
 		id = 138,
 		icon = "Icon/Head/head_13801_S",
-		name = "",
-		landmark = "",
-		signature = ""
+		name = "ニュクス",
+		landmark = "フィーリエ-メイスト通り10号",
+		signature = "休養中、復職時期は未定"
 	},
 	{
 		id = 141,
@@ -187,7 +187,8 @@ return {
 		icon = "Icon/Head/head_14301_S",
 		name = "レイス",
 		landmark = "秘密",
-		signature = "暑いのは嫌い"
+		signature = "暑いのは嫌い",
+		ver = "1.7.0"
 	},
 	{
 		id = 144,
@@ -195,6 +196,14 @@ return {
 		name = "チトセ",
 		landmark = "旧協会の宿『あまぎく』",
 		signature = "修行に終わりはありません"
+	},
+	{
+		id = 145,
+		icon = "Icon/Head/head_14501_S",
+		name = "オトハ",
+		landmark = "どこにも存在せず==RT==いたる所に存在する",
+		signature = "ルールに違反しているアカウントを凍結しています",
+		ver = "1.9.0"
 	},
 	{
 		id = 147,
@@ -246,6 +255,13 @@ return {
 		signature = "休暇中につき休診"
 	},
 	{
+		id = 3136,
+		icon = "Icon/Head/head_npc13601_S",
+		name = "ルビィ",
+		landmark = "アグリ・ユニオン-フィーリエ支部",
+		signature = "ルビィのグングン伸びルビィ体操"
+	},
+	{
 		id = 999,
 		icon = "Icon/Head/head_group_S",
 		name = "贅沢は敵！！",
@@ -276,7 +292,7 @@ return {
 	{
 		id = 995,
 		icon = "Icon/Head/head_anonymity_S",
-		name = "",
+		name = "匿名",
 		landmark = "",
 		signature = ""
 	},

@@ -9,8 +9,9 @@
     "Type": 1,
     "Color": 0,
     "PreNodes": [],
-    "EffectClient": 0,
+    "EffectClient": 27,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 1,
     "Icon": "",
     "Position": [
@@ -35,8 +36,9 @@
     "Type": 1,
     "Color": 0,
     "PreNodes": [],
-    "EffectClient": 0,
+    "EffectClient": 28,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 2,
     "Icon": "",
     "Position": [
@@ -61,8 +63,9 @@
     "Type": 1,
     "Color": 0,
     "PreNodes": [],
-    "EffectClient": 0,
+    "EffectClient": 11,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 3,
     "Icon": "",
     "Position": [
@@ -91,6 +94,7 @@
     ],
     "EffectClient": 21,
     "ClientParams": "[500]",
+    "Clientlvl": 1,
     "Priority": 4,
     "Icon": "",
     "Position": [
@@ -117,8 +121,9 @@
     "PreNodes": [
       10102
     ],
-    "EffectClient": 0,
+    "EffectClient": 15,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 5,
     "Icon": "",
     "Position": [
@@ -145,8 +150,9 @@
     "PreNodes": [
       10103
     ],
-    "EffectClient": 0,
+    "EffectClient": 12,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 6,
     "Icon": "",
     "Position": [
@@ -177,6 +183,7 @@
     ],
     "EffectClient": 4,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 7,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -203,8 +210,9 @@
     "PreNodes": [
       10301
     ],
-    "EffectClient": 0,
+    "EffectClient": 27,
     "ClientParams": "",
+    "Clientlvl": 2,
     "Priority": 8,
     "Icon": "",
     "Position": [
@@ -231,8 +239,9 @@
     "PreNodes": [
       10301
     ],
-    "EffectClient": 0,
+    "EffectClient": 13,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 9,
     "Icon": "",
     "Position": [
@@ -259,8 +268,9 @@
     "PreNodes": [
       10301
     ],
-    "EffectClient": 0,
+    "EffectClient": 11,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 10,
     "Icon": "",
     "Position": [
@@ -287,8 +297,9 @@
     "PreNodes": [
       10401
     ],
-    "EffectClient": 0,
+    "EffectClient": 20,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 11,
     "Icon": "",
     "Position": [
@@ -317,6 +328,7 @@
     ],
     "EffectClient": 21,
     "ClientParams": "[1000]",
+    "Clientlvl": 1,
     "Priority": 12,
     "Icon": "",
     "Position": [
@@ -343,8 +355,9 @@
     "PreNodes": [
       10403
     ],
-    "EffectClient": 0,
+    "EffectClient": 12,
     "ClientParams": "",
+    "Clientlvl": 2,
     "Priority": 13,
     "Icon": "",
     "Position": [
@@ -372,8 +385,9 @@
       10501,
       10502
     ],
-    "EffectClient": 0,
+    "EffectClient": 7,
     "ClientParams": "",
+    "Clientlvl": 2,
     "Priority": 14,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_2",
     "Position": [
@@ -403,6 +417,7 @@
     ],
     "EffectClient": 26,
     "ClientParams": "[1]",
+    "Clientlvl": 1,
     "Priority": 15,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -430,8 +445,9 @@
       10601,
       10602
     ],
-    "EffectClient": 0,
+    "EffectClient": 25,
     "ClientParams": "",
+    "Clientlvl": 3,
     "Priority": 16,
     "Icon": "",
     "Position": [
@@ -459,8 +475,9 @@
       10601,
       10602
     ],
-    "EffectClient": 0,
+    "EffectClient": 11,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 17,
     "Icon": "",
     "Position": [
@@ -487,8 +504,9 @@
     "PreNodes": [
       10701
     ],
-    "EffectClient": 0,
+    "EffectClient": 9,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 18,
     "Icon": "",
     "Position": [
@@ -515,8 +533,9 @@
     "PreNodes": [
       10702
     ],
-    "EffectClient": 0,
+    "EffectClient": 12,
     "ClientParams": "",
+    "Clientlvl": 3,
     "Priority": 19,
     "Icon": "",
     "Position": [
@@ -544,8 +563,9 @@
       10801,
       10802
     ],
-    "EffectClient": 0,
+    "EffectClient": 31,
     "ClientParams": "",
+    "Clientlvl": 3,
     "Priority": 20,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -570,8 +590,9 @@
     "Type": 1,
     "Color": 0,
     "PreNodes": [],
-    "EffectClient": 0,
+    "EffectClient": 27,
     "ClientParams": "",
+    "Clientlvl": 3,
     "Priority": 21,
     "Icon": "",
     "Position": [
@@ -596,8 +617,9 @@
     "Type": 1,
     "Color": 0,
     "PreNodes": [],
-    "EffectClient": 0,
+    "EffectClient": 20,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 22,
     "Icon": "",
     "Position": [
@@ -624,8 +646,9 @@
     "PreNodes": [
       20101
     ],
-    "EffectClient": 0,
+    "EffectClient": 29,
     "ClientParams": "",
+    "Clientlvl": 3,
     "Priority": 23,
     "Icon": "",
     "Position": [
@@ -652,8 +675,9 @@
     "PreNodes": [
       20102
     ],
-    "EffectClient": 0,
+    "EffectClient": 14,
     "ClientParams": "",
+    "Clientlvl": 3,
     "Priority": 24,
     "Icon": "",
     "Position": [
@@ -681,8 +705,9 @@
       20201,
       20202
     ],
-    "EffectClient": 0,
+    "EffectClient": 7,
     "ClientParams": "",
+    "Clientlvl": 4,
     "Priority": 25,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -712,6 +737,7 @@
     ],
     "EffectClient": 26,
     "ClientParams": "[2]",
+    "Clientlvl": 1,
     "Priority": 26,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -738,8 +764,9 @@
     "PreNodes": [
       20301
     ],
-    "EffectClient": 0,
+    "EffectClient": 27,
     "ClientParams": "",
+    "Clientlvl": 4,
     "Priority": 27,
     "Icon": "",
     "Position": [
@@ -767,8 +794,9 @@
       20301,
       20302
     ],
-    "EffectClient": 0,
+    "EffectClient": 13,
     "ClientParams": "",
+    "Clientlvl": 4,
     "Priority": 28,
     "Icon": "",
     "Position": [
@@ -795,8 +823,9 @@
     "PreNodes": [
       20302
     ],
-    "EffectClient": 0,
+    "EffectClient": 20,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 29,
     "Icon": "",
     "Position": [
@@ -823,8 +852,9 @@
     "PreNodes": [
       20401
     ],
-    "EffectClient": 0,
+    "EffectClient": 29,
     "ClientParams": "",
+    "Clientlvl": 4,
     "Priority": 30,
     "Icon": "",
     "Position": [
@@ -851,8 +881,9 @@
     "PreNodes": [
       20402
     ],
-    "EffectClient": 0,
+    "EffectClient": 14,
     "ClientParams": "",
+    "Clientlvl": 4,
     "Priority": 31,
     "Icon": "",
     "Position": [
@@ -879,8 +910,9 @@
     "PreNodes": [
       20403
     ],
-    "EffectClient": 0,
+    "EffectClient": 31,
     "ClientParams": "",
+    "Clientlvl": 4,
     "Priority": 32,
     "Icon": "",
     "Position": [
@@ -911,6 +943,7 @@
     ],
     "EffectClient": 30,
     "ClientParams": "[1]",
+    "Clientlvl": 1,
     "Priority": 33,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -937,8 +970,9 @@
     "PreNodes": [
       20601
     ],
-    "EffectClient": 0,
+    "EffectClient": 25,
     "ClientParams": "",
+    "Clientlvl": 5,
     "Priority": 34,
     "Icon": "",
     "Position": [
@@ -965,8 +999,9 @@
     "PreNodes": [
       20601
     ],
-    "EffectClient": 0,
+    "EffectClient": 13,
     "ClientParams": "",
+    "Clientlvl": 5,
     "Priority": 35,
     "Icon": "",
     "Position": [
@@ -993,8 +1028,9 @@
     "PreNodes": [
       20701
     ],
-    "EffectClient": 0,
+    "EffectClient": 6,
     "ClientParams": "",
+    "Clientlvl": 5,
     "Priority": 36,
     "Icon": "",
     "Position": [
@@ -1021,8 +1057,9 @@
     "PreNodes": [
       20702
     ],
-    "EffectClient": 0,
+    "EffectClient": 14,
     "ClientParams": "",
+    "Clientlvl": 5,
     "Priority": 37,
     "Icon": "",
     "Position": [
@@ -1050,8 +1087,9 @@
       20801,
       20802
     ],
-    "EffectClient": 0,
+    "EffectClient": 1,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 38,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -1079,8 +1117,9 @@
       20801,
       20802
     ],
-    "EffectClient": 0,
+    "EffectClient": 5,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 39,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_2",
     "Position": [
@@ -1105,8 +1144,9 @@
     "Type": 1,
     "Color": 0,
     "PreNodes": [],
-    "EffectClient": 0,
+    "EffectClient": 1,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 40,
     "Icon": "",
     "Position": [
@@ -1131,8 +1171,9 @@
     "Type": 1,
     "Color": 0,
     "PreNodes": [],
-    "EffectClient": 0,
+    "EffectClient": 10,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 41,
     "Icon": "",
     "Position": [
@@ -1159,8 +1200,9 @@
     "PreNodes": [
       30101
     ],
-    "EffectClient": 0,
+    "EffectClient": 6,
     "ClientParams": "",
+    "Clientlvl": 6,
     "Priority": 42,
     "Icon": "",
     "Position": [
@@ -1187,8 +1229,9 @@
     "PreNodes": [
       30102
     ],
-    "EffectClient": 0,
+    "EffectClient": 8,
     "ClientParams": "",
+    "Clientlvl": 6,
     "Priority": 43,
     "Icon": "",
     "Position": [
@@ -1218,6 +1261,7 @@
     ],
     "EffectClient": 30,
     "ClientParams": "[3]",
+    "Clientlvl": 1,
     "Priority": 44,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -1244,8 +1288,9 @@
     "PreNodes": [
       30301
     ],
-    "EffectClient": 0,
+    "EffectClient": 1,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 45,
     "Icon": "",
     "Position": [
@@ -1272,8 +1317,9 @@
     "PreNodes": [
       30301
     ],
-    "EffectClient": 0,
+    "EffectClient": 10,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 46,
     "Icon": "",
     "Position": [
@@ -1300,8 +1346,9 @@
     "PreNodes": [
       30401
     ],
-    "EffectClient": 0,
+    "EffectClient": 29,
     "ClientParams": "",
+    "Clientlvl": 6,
     "Priority": 47,
     "Icon": "",
     "Position": [
@@ -1328,8 +1375,9 @@
     "PreNodes": [
       30402
     ],
-    "EffectClient": 0,
+    "EffectClient": 8,
     "ClientParams": "",
+    "Clientlvl": 6,
     "Priority": 48,
     "Icon": "",
     "Position": [
@@ -1357,8 +1405,9 @@
       30501,
       30502
     ],
-    "EffectClient": 0,
+    "EffectClient": 5,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 49,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_2",
     "Position": [
@@ -1385,8 +1434,9 @@
     "PreNodes": [
       30601
     ],
-    "EffectClient": 0,
+    "EffectClient": 25,
     "ClientParams": "",
+    "Clientlvl": 7,
     "Priority": 50,
     "Icon": "",
     "Position": [
@@ -1413,8 +1463,9 @@
     "PreNodes": [
       30601
     ],
-    "EffectClient": 0,
+    "EffectClient": 1,
     "ClientParams": "",
+    "Clientlvl": 1,
     "Priority": 51,
     "Icon": "",
     "Position": [
@@ -1441,8 +1492,9 @@
     "PreNodes": [
       30701
     ],
-    "EffectClient": 0,
+    "EffectClient": 6,
     "ClientParams": "",
+    "Clientlvl": 7,
     "Priority": 52,
     "Icon": "",
     "Position": [
@@ -1469,8 +1521,9 @@
     "PreNodes": [
       30702
     ],
-    "EffectClient": 0,
+    "EffectClient": 8,
     "ClientParams": "",
+    "Clientlvl": 7,
     "Priority": 53,
     "Icon": "",
     "Position": [
@@ -1498,8 +1551,9 @@
       30801,
       30802
     ],
-    "EffectClient": 0,
+    "EffectClient": 33,
     "ClientParams": "",
+    "Clientlvl": 7,
     "Priority": 54,
     "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
     "Position": [
@@ -1509,6 +1563,120 @@
     "Desc": "StarTowerGrowthNode.30901.2",
     "ItemId1": 51,
     "ItemQty1": 310,
+    "ItemId2": 0,
+    "ItemQty2": 0,
+    "ItemId3": 0,
+    "ItemQty3": 0
+  },
+  "40101": {
+    "Id": 40101,
+    "NodeId": 1,
+    "Group": 4,
+    "Name": "StarTowerGrowthNode.40101.1",
+    "IsServer": true,
+    "IsClient": false,
+    "Type": 2,
+    "Color": 1,
+    "PreNodes": [],
+    "EffectClient": 32,
+    "ClientParams": "",
+    "Clientlvl": 8,
+    "Priority": 55,
+    "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
+    "Position": [
+      1,
+      1
+    ],
+    "Desc": "StarTowerGrowthNode.40101.2",
+    "ItemId1": 51,
+    "ItemQty1": 300,
+    "ItemId2": 0,
+    "ItemQty2": 0,
+    "ItemId3": 0,
+    "ItemQty3": 0
+  },
+  "40201": {
+    "Id": 40201,
+    "NodeId": 2,
+    "Group": 4,
+    "Name": "StarTowerGrowthNode.40201.1",
+    "IsServer": true,
+    "IsClient": false,
+    "Type": 2,
+    "Color": 2,
+    "PreNodes": [
+      40101
+    ],
+    "EffectClient": 20,
+    "ClientParams": "",
+    "Clientlvl": 1,
+    "Priority": 56,
+    "Icon": "Icon/ZZZOther/startowergrowth_keypoint_2",
+    "Position": [
+      2,
+      1
+    ],
+    "Desc": "StarTowerGrowthNode.40201.2",
+    "ItemId1": 51,
+    "ItemQty1": 300,
+    "ItemId2": 0,
+    "ItemQty2": 0,
+    "ItemId3": 0,
+    "ItemQty3": 0
+  },
+  "40301": {
+    "Id": 40301,
+    "NodeId": 3,
+    "Group": 4,
+    "Name": "StarTowerGrowthNode.40301.1",
+    "IsServer": true,
+    "IsClient": false,
+    "Type": 2,
+    "Color": 1,
+    "PreNodes": [
+      40201
+    ],
+    "EffectClient": 35,
+    "ClientParams": "",
+    "Clientlvl": 8,
+    "Priority": 57,
+    "Icon": "Icon/ZZZOther/startowergrowth_keypoint_2",
+    "Position": [
+      3,
+      1
+    ],
+    "Desc": "StarTowerGrowthNode.40301.2",
+    "ItemId1": 51,
+    "ItemQty1": 300,
+    "ItemId2": 0,
+    "ItemQty2": 0,
+    "ItemId3": 0,
+    "ItemQty3": 0
+  },
+  "40401": {
+    "Id": 40401,
+    "NodeId": 4,
+    "Group": 4,
+    "Name": "StarTowerGrowthNode.40401.1",
+    "IsServer": true,
+    "IsClient": false,
+    "Type": 2,
+    "Color": 3,
+    "PreNodes": [
+      40301
+    ],
+    "EffectClient": 34,
+    "ClientParams": "",
+    "Clientlvl": 8,
+    "Priority": 58,
+    "Icon": "Icon/ZZZOther/startowergrowth_keypoint_1",
+    "Position": [
+      4,
+      1
+    ],
+    "Desc": "StarTowerGrowthNode.40401.2",
+    "ItemId1": 51,
+    "ItemQty1": 300,
     "ItemId2": 0,
     "ItemQty2": 0,
     "ItemId3": 0,

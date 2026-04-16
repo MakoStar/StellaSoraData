@@ -17,7 +17,8 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000112": {
     "Id": 1000112,
@@ -37,7 +38,8 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000121": {
     "Id": 1000121,
@@ -57,7 +59,8 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000122": {
     "Id": 1000122,
@@ -77,7 +80,8 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000131": {
     "Id": 1000131,
@@ -97,7 +101,8 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000132": {
     "Id": 1000132,
@@ -117,7 +122,8 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000141": {
     "Id": 1000141,
@@ -137,7 +143,8 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000142": {
     "Id": 1000142,
@@ -157,11 +164,54 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
+  },
+  "1000151": {
+    "Id": 1000151,
+    "FloorId": 5,
+    "BattleLvs": 1,
+    "FloorType": 2,
+    "BattleLvsToggle": 1,
+    "BattleLvsToggleParam1": "0.6",
+    "MaxEnergyValue": 60,
+    "SaveEnergyValue": false,
+    "TeamSaveEnergyValue": false,
+    "SaveResilience": false,
+    "TeamSaveResilience": true,
+    "SceneName": "Levels/JointDrill/JointDrill_01/JointDrill_01_JuYuanMeiYing",
+    "ConfigPrefabName": "JuYuanMeiYing_Stage1_Lv5",
+    "Theme": 251,
+    "BGM": "roguelike_combatMedusa_setState",
+    "LeaveTriggerEvent": "amb_city_all_stop",
+    "DungeonDelay": 45000,
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
+  },
+  "1000152": {
+    "Id": 1000152,
+    "FloorId": 5,
+    "BattleLvs": 2,
+    "FloorType": 2,
+    "BattleLvsToggle": 0,
+    "BattleLvsToggleParam1": "",
+    "MaxEnergyValue": 60,
+    "SaveEnergyValue": false,
+    "TeamSaveEnergyValue": false,
+    "SaveResilience": false,
+    "TeamSaveResilience": true,
+    "SceneName": "Levels/JointDrill/JointDrill_01/JointDrill_01_JuYuanMeiYing01",
+    "ConfigPrefabName": "JuYuanMeiYing_Stage2_Lv5",
+    "Theme": 251,
+    "BGM": "roguelike_combatMedusa2_setState",
+    "LeaveTriggerEvent": "",
+    "DungeonDelay": 45000,
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000211": {
     "Id": 1000211,
-    "FloorId": 5,
+    "FloorId": 6,
     "BattleLvs": 1,
     "FloorType": 2,
     "BattleLvsToggle": 1,
@@ -177,11 +227,12 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000212": {
     "Id": 1000212,
-    "FloorId": 5,
+    "FloorId": 6,
     "BattleLvs": 2,
     "FloorType": 2,
     "BattleLvsToggle": 0,
@@ -197,11 +248,12 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000221": {
     "Id": 1000221,
-    "FloorId": 6,
+    "FloorId": 7,
     "BattleLvs": 1,
     "FloorType": 2,
     "BattleLvsToggle": 1,
@@ -217,11 +269,12 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000222": {
     "Id": 1000222,
-    "FloorId": 6,
+    "FloorId": 7,
     "BattleLvs": 2,
     "FloorType": 2,
     "BattleLvsToggle": 0,
@@ -237,11 +290,12 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000231": {
     "Id": 1000231,
-    "FloorId": 7,
+    "FloorId": 8,
     "BattleLvs": 1,
     "FloorType": 2,
     "BattleLvsToggle": 1,
@@ -257,11 +311,12 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000232": {
     "Id": 1000232,
-    "FloorId": 7,
+    "FloorId": 8,
     "BattleLvs": 2,
     "FloorType": 2,
     "BattleLvsToggle": 0,
@@ -277,11 +332,12 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000241": {
     "Id": 1000241,
-    "FloorId": 8,
+    "FloorId": 9,
     "BattleLvs": 1,
     "FloorType": 2,
     "BattleLvsToggle": 1,
@@ -297,11 +353,12 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000242": {
     "Id": 1000242,
-    "FloorId": 8,
+    "FloorId": 9,
     "BattleLvs": 2,
     "FloorType": 2,
     "BattleLvsToggle": 0,
@@ -317,11 +374,12 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1000251": {
     "Id": 1000251,
-    "FloorId": 9,
+    "FloorId": 10,
     "BattleLvs": 1,
     "FloorType": 2,
     "BattleLvsToggle": 1,
@@ -337,11 +395,12 @@
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1000252": {
     "Id": 1000252,
-    "FloorId": 9,
+    "FloorId": 10,
     "BattleLvs": 2,
     "FloorType": 2,
     "BattleLvsToggle": 0,
@@ -357,6 +416,7 @@
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "",
     "DungeonDelay": 45000,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   }
 }

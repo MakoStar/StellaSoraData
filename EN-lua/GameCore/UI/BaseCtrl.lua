@@ -608,11 +608,9 @@ function BaseCtrl:SetPngSprite(imgObj, sPath, sSurfix)
 		return false
 	else
 		local sFullPath = sRootPath .. sPath .. ".png"
-		local bSuc = NovaAPI.SetImageSprite(imgObj, sFullPath)
-		if not bSuc then
-			traceback(string.format("icon设置失败：%s，panel id：%s，ctrl name：%s", sFullPath, tostring(self._panel._nPanelId), tostring(self.__cname)))
-		end
-		return bSuc
+		local _sprite = GameResourceLoader.LoadAsset(ResType.Any, sFullPath, typeof(Sprite), "UI", self._panel._nPanelId)
+		NovaAPI.SetImageSpriteAsset(imgObj, _sprite)
+		return true
 	end
 end
 function BaseCtrl:SetSprite_FrameColor(imgObj, nRarity, sFrameType, bBigSprites)
@@ -803,6 +801,7 @@ function BaseCtrl:DespawnPrefabInstance(objCtrl, sPoolName)
 		objCtrl:_Exit()
 		objCtrl:_Destroy()
 		AdventureModuleHelper.DespawnPrefabInstance(objCtrl.gameObject, sPoolName)
+		objCtrl.gameObject = nil
 	end
 end
 function BaseCtrl:BindCtrlByNode(goNode, sCtrlName)

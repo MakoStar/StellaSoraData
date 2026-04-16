@@ -633,6 +633,50 @@
             "hash": 12467618074094321755
         },
         {
+            "name": "bin/goldenspybuffcard.bytes",
+            "hash": 6967240360095901641
+        },
+        {
+            "name": "bin/goldenspybuffcardpool.bytes",
+            "hash": 9339004802777962098
+        },
+        {
+            "name": "bin/goldenspyconfig.bytes",
+            "hash": 13106991348599109299
+        },
+        {
+            "name": "bin/goldenspycontrol.bytes",
+            "hash": 6172350852870456910
+        },
+        {
+            "name": "bin/goldenspyextrascore.bytes",
+            "hash": 5703407344750757182
+        },
+        {
+            "name": "bin/goldenspyfloor.bytes",
+            "hash": 2402831620052765258
+        },
+        {
+            "name": "bin/goldenspyitem.bytes",
+            "hash": 8804370118792927321
+        },
+        {
+            "name": "bin/goldenspylevel.bytes",
+            "hash": 2504517066429003186
+        },
+        {
+            "name": "bin/goldenspylevelgroup.bytes",
+            "hash": 14570343887483279469
+        },
+        {
+            "name": "bin/goldenspyobstacle.bytes",
+            "hash": 17856252013597735201
+        },
+        {
+            "name": "bin/goldenspyskill.bytes",
+            "hash": 5119035187204232375
+        },
+        {
             "name": "bin/guide.bytes",
             "hash": 4890556395421845505
         },
@@ -655,6 +699,10 @@
         {
             "name": "bin/honorcharacter.bytes",
             "hash": 5945107410144713048
+        },
+        {
+            "name": "bin/honorlevel.bytes",
+            "hash": 5048564634591956822
         },
         {
             "name": "bin/htmlconfig.bytes",
@@ -913,6 +961,10 @@
             "hash": 18096657367023955961
         },
         {
+            "name": "bin/notificationconfig.bytes",
+            "hash": 13875819223067358170
+        },
+        {
             "name": "bin/npcaffinitygroup.bytes",
             "hash": 10316122252992627106
         },
@@ -953,6 +1005,14 @@
             "hash": 15180412144631295121
         },
         {
+            "name": "bin/penguincardbuff.bytes",
+            "hash": 11880777814585048144
+        },
+        {
+            "name": "bin/penguincardbuffweight.bytes",
+            "hash": 12883423855323255967
+        },
+        {
             "name": "bin/penguincardcontrol.bytes",
             "hash": 17474127966275561332
         },
@@ -971,6 +1031,14 @@
         {
             "name": "bin/penguincardhandrank.bytes",
             "hash": 15923567976904784758
+        },
+        {
+            "name": "bin/penguincardquest.bytes",
+            "hash": 10038462106307097136
+        },
+        {
+            "name": "bin/penguincardquestweight.bytes",
+            "hash": 18050620042700855346
         },
         {
             "name": "bin/penguincardweight.bytes",
@@ -1497,8 +1565,28 @@
             "hash": 5289847574971677018
         },
         {
+            "name": "bin/travelerduelfanslevel.bytes",
+            "hash": 3447199142544223003
+        },
+        {
             "name": "bin/travelerduelfloor.bytes",
             "hash": 1105484499497357241
+        },
+        {
+            "name": "bin/travelerduelhotvalueitem.bytes",
+            "hash": 6889579216248838123
+        },
+        {
+            "name": "bin/travelerduelhotvaluerewards.bytes",
+            "hash": 831486061763182473
+        },
+        {
+            "name": "bin/travelerduelidlerewards.bytes",
+            "hash": 18411317767052087092
+        },
+        {
+            "name": "bin/travelerdueltarget.bytes",
+            "hash": 2072952001631675007
         },
         {
             "name": "bin/trialbuild.bytes",
@@ -1921,6 +2009,22 @@
             "hash": 2615344868264112396
         },
         {
+            "name": "language/zh_cn/goldenspybuffcard.json",
+            "hash": 12007324240657786564
+        },
+        {
+            "name": "language/zh_cn/goldenspyitem.json",
+            "hash": 8278905808534041247
+        },
+        {
+            "name": "language/zh_cn/goldenspylevel.json",
+            "hash": 3795749680278797198
+        },
+        {
+            "name": "language/zh_cn/goldenspylevelgroup.json",
+            "hash": 6891546871198048119
+        },
+        {
             "name": "language/zh_cn/honor.json",
             "hash": 18166091226809054642
         },
@@ -2053,6 +2157,10 @@
             "hash": 2452055573100440849
         },
         {
+            "name": "language/zh_cn/notificationconfig.json",
+            "hash": 2278236072824123860
+        },
+        {
             "name": "language/zh_cn/npcaffinitygroup.json",
             "hash": 12754756743442074782
         },
@@ -2077,6 +2185,10 @@
             "hash": 5088094383996114757
         },
         {
+            "name": "language/zh_cn/penguincardbuff.json",
+            "hash": 8372488219048244943
+        },
+        {
             "name": "language/zh_cn/penguincardcontrol.json",
             "hash": 4992538096488750104
         },
@@ -2087,6 +2199,10 @@
         {
             "name": "language/zh_cn/penguincardhandrank.json",
             "hash": 4358226401813509924
+        },
+        {
+            "name": "language/zh_cn/penguincardquest.json",
+            "hash": 3505433514730674861
         },
         {
             "name": "language/zh_cn/periodicquest.json",
@@ -2335,6 +2451,10 @@
         {
             "name": "language/zh_cn/travelerduelchallengequest.json",
             "hash": 7238251428410967593
+        },
+        {
+            "name": "language/zh_cn/travelerdueltarget.json",
+            "hash": 8984055916490794280
         },
         {
             "name": "language/zh_cn/trialbuild.json",
@@ -2661,6 +2781,22 @@
             "hash": 11978047307719891364
         },
         {
+            "name": "language/zh_tw/goldenspybuffcard.json",
+            "hash": 12451635338991844584
+        },
+        {
+            "name": "language/zh_tw/goldenspyitem.json",
+            "hash": 14686605709198669773
+        },
+        {
+            "name": "language/zh_tw/goldenspylevel.json",
+            "hash": 15119859462645577807
+        },
+        {
+            "name": "language/zh_tw/goldenspylevelgroup.json",
+            "hash": 7412767639104004750
+        },
+        {
             "name": "language/zh_tw/honor.json",
             "hash": 14587876255379699152
         },
@@ -2793,6 +2929,10 @@
             "hash": 4502754470811378673
         },
         {
+            "name": "language/zh_tw/notificationconfig.json",
+            "hash": 2374020766589760442
+        },
+        {
             "name": "language/zh_tw/npcaffinitygroup.json",
             "hash": 17885237749490642075
         },
@@ -2817,6 +2957,10 @@
             "hash": 6223059363920457328
         },
         {
+            "name": "language/zh_tw/penguincardbuff.json",
+            "hash": 11602524122695336841
+        },
+        {
             "name": "language/zh_tw/penguincardcontrol.json",
             "hash": 4991437775864076132
         },
@@ -2827,6 +2971,10 @@
         {
             "name": "language/zh_tw/penguincardhandrank.json",
             "hash": 1794322654128241061
+        },
+        {
+            "name": "language/zh_tw/penguincardquest.json",
+            "hash": 9908728435554309145
         },
         {
             "name": "language/zh_tw/periodicquest.json",
@@ -3075,6 +3223,10 @@
         {
             "name": "language/zh_tw/travelerduelchallengequest.json",
             "hash": 5961085366108425612
+        },
+        {
+            "name": "language/zh_tw/travelerdueltarget.json",
+            "hash": 3830078975858921401
         },
         {
             "name": "language/zh_tw/trialbuild.json",

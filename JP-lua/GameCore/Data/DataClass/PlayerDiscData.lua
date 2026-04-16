@@ -841,8 +841,9 @@ function PlayerDiscData:GetTrialDiscById(nId)
 	if not nId then
 		return
 	end
-	if self._mapTrialDisc[nId] == nil then
+	if self._mapTrialDisc == nil or self._mapTrialDisc[nId] == nil then
 		printLog(string.format("该星盘不存在或新获得, 唯一Id: %d", nId))
+		return
 	end
 	return self._mapTrialDisc[nId]
 end
@@ -905,6 +906,24 @@ function PlayerDiscData:CalcTrialInfoInBuild(nTrialId, tbSecondarySkill)
 	discInfo.skillInfos = tbSkillInfo
 	discInfo.discLevel = discData.nLevel
 	return discInfo
+end
+function PlayerDiscData:GetRankDetailDisc(nId)
+	if not nId then
+		return
+	end
+	if not nId then
+		printError("GenerateLocalDiscData Failed!")
+		return
+	end
+	local mapDisc = {}
+	mapDisc.Id = nId
+	mapDisc.Exp = 0
+	mapDisc.Level = 1
+	mapDisc.Phase = 0
+	mapDisc.Star = 0
+	mapDisc.Read = false
+	local discData = DiscData.new(mapDisc)
+	return discData
 end
 local tbSortNameTextCfg = {
 	"CharList_Sort_Toggle_Level",

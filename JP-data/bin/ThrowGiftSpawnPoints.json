@@ -795,5 +795,73 @@
       1080501,
       1080502
     ]
+  },
+  "2010102": {
+    "Id": 2010102,
+    "Type": 1,
+    "IsRandom": false,
+    "GoalType": [
+      12
+    ],
+    "SpawnRangeTypeX": 0,
+    "SpawnRangeTypeY": 0,
+    "InitShow": true,
+    "MoveX": 0,
+    "MoveY": 0,
+    "PoolType": false,
+    "ItemPool": 0,
+    "ActiveCond": 0,
+    "SpawnParam": []
+  },
+  "2010201": {
+    "Id": 2010201,
+    "Type": 1,
+    "IsRandom": false,
+    "GoalType": [
+      22
+    ],
+    "SpawnRangeTypeX": 0,
+    "SpawnRangeTypeY": 0,
+    "InitShow": true,
+    "MoveX": 0,
+    "MoveY": 0,
+    "PoolType": false,
+    "ItemPool": 0,
+    "ActiveCond": 0,
+    "SpawnParam": []
+  },
+  "2020102": {
+    "Id": 2020102,
+    "Type": 1,
+    "IsRandom": false,
+    "GoalType": [
+      23
+    ],
+    "SpawnRangeTypeX": 0,
+    "SpawnRangeTypeY": 0,
+    "InitShow": true,
+    "MoveX": 0,
+    "MoveY": 0,
+    "PoolType": true,
+    "ItemPool": 10201,
+    "ActiveCond": 0,
+    "SpawnParam": []
+  },
+  "2020201": {
+    "Id": 2020201,
+    "Type": 1,
+    "IsRandom": false,
+    "GoalType": [
+      13
+    ],
+    "SpawnRangeTypeX": 0,
+    "SpawnRangeTypeY": 0,
+    "InitShow": true,
+    "MoveX": 0,
+    "MoveY": 0,
+    "PoolType": false,
+    "ItemPool": 0,
+    "ActiveCond": 0,
+    "SpawnParam": []
   }
 }

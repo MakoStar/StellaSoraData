@@ -7,7 +7,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000201": {
     "Id": 1000201,
@@ -17,7 +18,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000301": {
     "Id": 1000301,
@@ -27,7 +29,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 3,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000401": {
     "Id": 1000401,
@@ -37,7 +40,8 @@
     "BGM": "forest_avg_stop_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop_avg_none",
     "MonsterLv": 4,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000501": {
     "Id": 1000501,
@@ -47,7 +51,8 @@
     "BGM": "forest_combatBoss_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000601": {
     "Id": 1000601,
@@ -57,7 +62,8 @@
     "BGM": "forestRuins_explore_setState",
     "LeaveTriggerEvent": "amb_forestRuins_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000701": {
     "Id": 1000701,
@@ -67,7 +73,8 @@
     "BGM": "forestRuins_explore_setState",
     "LeaveTriggerEvent": "amb_forestRuins_all_stop",
     "MonsterLv": 7,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000801": {
     "Id": 1000801,
@@ -77,7 +84,8 @@
     "BGM": "forestRuins_explore_setState",
     "LeaveTriggerEvent": "amb_forestRuins_all_stop",
     "MonsterLv": 8,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1000901": {
     "Id": 1000901,
@@ -87,7 +95,8 @@
     "BGM": "forestRuins_combatBoss_setState",
     "LeaveTriggerEvent": "amb_forestRuins_all_stop",
     "MonsterLv": 9,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100102": {
     "Id": 1100102,
@@ -97,7 +106,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 10,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100202": {
     "Id": 1100202,
@@ -107,7 +117,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 10,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100302": {
     "Id": 1100302,
@@ -117,7 +128,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 10,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100401": {
     "Id": 1100401,
@@ -127,7 +139,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_forestRuins_all_stop",
     "MonsterLv": 10,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1200102": {
     "Id": 1200102,
@@ -137,7 +150,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300102": {
     "Id": 1300102,
@@ -147,7 +161,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300202": {
     "Id": 1300202,
@@ -157,7 +172,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300301": {
     "Id": 1300301,
@@ -167,7 +183,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300405": {
     "Id": 1300405,
@@ -177,7 +194,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_waterBridge_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300511": {
     "Id": 1300511,
@@ -187,7 +205,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300512": {
     "Id": 1300512,
@@ -197,7 +216,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300513": {
     "Id": 1300513,
@@ -207,7 +227,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300514": {
     "Id": 1300514,
@@ -217,7 +238,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300515": {
     "Id": 1300515,
@@ -227,7 +249,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300516": {
     "Id": 1300516,
@@ -237,7 +260,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300517": {
     "Id": 1300517,
@@ -247,7 +271,8 @@
     "BGM": "monster_mon50521_setState",
     "LeaveTriggerEvent": "monster_mon50521_exitState",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300518": {
     "Id": 1300518,
@@ -257,7 +282,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 12,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300601": {
     "Id": 1300601,
@@ -267,7 +293,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_waterBridge_all_stop",
     "MonsterLv": 16,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300701": {
     "Id": 1300701,
@@ -277,7 +304,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_waterBridge_all_stop",
     "MonsterLv": 16,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400103": {
     "Id": 1400103,
@@ -287,7 +315,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 16,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400202": {
     "Id": 1400202,
@@ -297,7 +326,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 16,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400301": {
     "Id": 1400301,
@@ -307,7 +337,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 24,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400402": {
     "Id": 1400402,
@@ -317,7 +348,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 24,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400501": {
     "Id": 1400501,
@@ -327,7 +359,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 24,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400602": {
     "Id": 1400602,
@@ -337,7 +370,8 @@
     "BGM": "DarkForest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 30,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1010101": {
     "Id": 1010101,
@@ -347,7 +381,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1010201": {
     "Id": 1010201,
@@ -357,7 +392,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1020101": {
     "Id": 1020101,
@@ -367,7 +403,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1020201": {
     "Id": 1020201,
@@ -377,7 +414,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_waterBridge_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1020301": {
     "Id": 1020301,
@@ -387,7 +425,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1030101": {
     "Id": 1030101,
@@ -397,7 +436,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 3,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1030201": {
     "Id": 1030201,
@@ -407,7 +447,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 3,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1040101": {
     "Id": 1040101,
@@ -417,7 +458,8 @@
     "BGM": "DarkForest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 4,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1040201": {
     "Id": 1040201,
@@ -427,7 +469,8 @@
     "BGM": "DarkForest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 4,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1050101": {
     "Id": 1050101,
@@ -437,7 +480,8 @@
     "BGM": "roguelike_combatNomal_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1050102": {
     "Id": 1050102,
@@ -447,7 +491,8 @@
     "BGM": "roguelike_combatNomal_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1050103": {
     "Id": 1050103,
@@ -457,7 +502,8 @@
     "BGM": "roguelike_combatNomal_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1050201": {
     "Id": 1050201,
@@ -467,7 +513,8 @@
     "BGM": "company_explore_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1050301": {
     "Id": 1050301,
@@ -477,7 +524,8 @@
     "BGM": "fengNiao_explore_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1060101": {
     "Id": 1060101,
@@ -487,7 +535,8 @@
     "BGM": "garden_explore_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1060201": {
     "Id": 1060201,
@@ -497,7 +546,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1060301": {
     "Id": 1060301,
@@ -507,7 +557,52 @@
     "BGM": "fengCao_explore_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "1060401": {
+    "Id": 1060401,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_004_A_01",
+    "ConfigPrefabName": "StoryActivity_9_Mainline_1",
+    "Theme": 441,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 6,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "1060501": {
+    "Id": 1060501,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_Boss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_Mainline_2",
+    "Theme": 118,
+    "BGM": "amb_coast_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 6,
+    "IntroCutscene": "fx_m30931_base_born",
+    "LevelScript": ""
+  },
+  "1070101": {
+    "Id": 1070101,
+    "SceneName": "Levels/Main/City/City_Main_7_1",
+    "ConfigPrefabName": "City_Main_7_1",
+    "Theme": 20,
+    "BGM": "company_explore_setState",
+    "LeaveTriggerEvent": "amb_company_all_stop",
+    "MonsterLv": 6,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "1070201": {
+    "Id": 1070201,
+    "SceneName": "Levels/Main/Coast/Coast_Main_7_3",
+    "ConfigPrefabName": "Coast_Main_7_3",
+    "Theme": 21,
+    "BGM": "company_explore_setState",
+    "LeaveTriggerEvent": "amb_company_all_stop",
+    "MonsterLv": 6,
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1070301": {
     "Id": 1070301,
@@ -516,8 +611,9 @@
     "Theme": 251,
     "BGM": "roguelike_combatMedusa_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
-    "MonsterLv": 1,
-    "IntroCutscene": "fx_m70001_base_boss_bron_tl"
+    "MonsterLv": 6,
+    "IntroCutscene": "fx_m70001_base_boss_bron_tl",
+    "LevelScript": ""
   },
   "1070302": {
     "Id": 1070302,
@@ -526,68 +622,9 @@
     "Theme": 251,
     "BGM": "roguelike_combatMedusa2_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
-    "MonsterLv": 1,
-    "IntroCutscene": "fx_m70001_base_boss_change_tl"
-  },
-  "1060401": {
-    "Id": 1060401,
-    "SceneName": "Levels/StoryActivity/StoryActivity_4/StoryActivity_4_Boss_TaLou",
-    "ConfigPrefabName": "StoryActivity_TaLou_Lv1",
-    "Theme": 417,
-    "BGM": "mode_christmas_combatTalou_setState",
-    "LeaveTriggerEvent": "amb_christmas_all_stop",
-    "MonsterLv": 8,
-    "IntroCutscene": ""
-  },
-  "1060501": {
-    "Id": 1060501,
-    "SceneName": "Levels/StoryActivity/StoryActivity_6/StoryActivity_6_004_A_02",
-    "ConfigPrefabName": "StoryActivity_6_004_A_Story1",
-    "Theme": 427,
-    "BGM": "mode_springFestival2025_combatNormal_setstate",
-    "LeaveTriggerEvent": "amb_SF_all_stop",
-    "MonsterLv": 1,
-    "IntroCutscene": ""
-  },
-  "1060601": {
-    "Id": 1060601,
-    "SceneName": "Levels/StoryActivity/StoryActivity_6/StoryActivity_6_Boss_A",
-    "ConfigPrefabName": "StoryActivity_6_Boss_A_Story2",
-    "Theme": 428,
-    "BGM": "mode_springFestival2025_combatBoss_setstate",
-    "LeaveTriggerEvent": "amb_SF_all_stop",
-    "MonsterLv": 7,
-    "IntroCutscene": ""
-  },
-  "1060402": {
-    "Id": 1060402,
-    "SceneName": "Levels/StoryActivity/StoryActivity_7/StoryActivity_7_006_A_02",
-    "ConfigPrefabName": "StoryActivity_7_006_N6",
-    "Theme": 431,
-    "BGM": "amb_fengying_combatNormal_setState",
-    "LeaveTriggerEvent": "amb_fengying_all_stop",
-    "MonsterLv": 7,
-    "IntroCutscene": ""
-  },
-  "1060403": {
-    "Id": 1060403,
-    "SceneName": "Levels/StoryActivity/StoryActivity_7/StoryActivity_7_013_A_01",
-    "ConfigPrefabName": "StoryActivity_7_013_N1",
-    "Theme": 432,
-    "BGM": "rogueWind_combatNomal_setState",
-    "LeaveTriggerEvent": "amb_roguelike_wind_all_stop",
-    "MonsterLv": 7,
-    "IntroCutscene": ""
-  },
-  "1060404": {
-    "Id": 1060404,
-    "SceneName": "Levels/StoryActivity/StoryActivity_7/StoryActivity_7_Boss_A_01",
-    "ConfigPrefabName": "StoryActivity_7_Boss_C4",
-    "Theme": 432,
-    "BGM": "amb_fengying_combatBoss_setState",
-    "LeaveTriggerEvent": "amb_fengying_all_stop",
-    "MonsterLv": 7,
-    "IntroCutscene": ""
+    "MonsterLv": 6,
+    "IntroCutscene": "fx_m70001_base_boss_change_tl",
+    "LevelScript": ""
   },
   "1060505": {
     "Id": 1060505,
@@ -597,7 +634,8 @@
     "BGM": "amb_Duona_combatNormal_setState",
     "LeaveTriggerEvent": "amb_Duona_all_stop",
     "MonsterLv": 7,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1060506": {
     "Id": 1060506,
@@ -607,7 +645,8 @@
     "BGM": "amb_Duona_combatBoss_setState",
     "LeaveTriggerEvent": "amb_Duona_all_stop",
     "MonsterLv": 7,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100101": {
     "Id": 1100101,
@@ -617,7 +656,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100201": {
     "Id": 1100201,
@@ -627,7 +667,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100301": {
     "Id": 1100301,
@@ -637,7 +678,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100501": {
     "Id": 1100501,
@@ -647,7 +689,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1100601": {
     "Id": 1100601,
@@ -657,7 +700,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300101": {
     "Id": 1300101,
@@ -667,7 +711,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300103": {
     "Id": 1300103,
@@ -677,7 +722,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300104": {
     "Id": 1300104,
@@ -687,7 +733,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300201": {
     "Id": 1300201,
@@ -697,7 +744,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300203": {
     "Id": 1300203,
@@ -707,7 +755,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300204": {
     "Id": 1300204,
@@ -717,7 +766,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300302": {
     "Id": 1300302,
@@ -727,7 +777,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300401": {
     "Id": 1300401,
@@ -737,7 +788,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300402": {
     "Id": 1300402,
@@ -747,7 +799,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300403": {
     "Id": 1300403,
@@ -757,7 +810,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300404": {
     "Id": 1300404,
@@ -767,7 +821,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300406": {
     "Id": 1300406,
@@ -777,7 +832,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_waterBridge_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300501": {
     "Id": 1300501,
@@ -787,7 +843,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300502": {
     "Id": 1300502,
@@ -797,7 +854,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1300121": {
     "Id": 1300121,
@@ -807,7 +865,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 6,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400101": {
     "Id": 1400101,
@@ -817,7 +876,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400102": {
     "Id": 1400102,
@@ -827,7 +887,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400201": {
     "Id": 1400201,
@@ -837,7 +898,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400203": {
     "Id": 1400203,
@@ -847,7 +909,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400401": {
     "Id": 1400401,
@@ -857,7 +920,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400502": {
     "Id": 1400502,
@@ -867,7 +931,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1400601": {
     "Id": 1400601,
@@ -877,7 +942,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1060102": {
     "Id": 1060102,
@@ -887,7 +953,8 @@
     "BGM": "DarkForest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1070102": {
     "Id": 1070102,
@@ -897,7 +964,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "1070202": {
     "Id": 1070202,
@@ -907,27 +975,41 @@
     "BGM": "company_explore_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "1070103": {
+    "Id": 1070103,
+    "SceneName": "Levels/Main/City/City_Main_7_1_Prototype",
+    "ConfigPrefabName": "City_Main_7_1_Prototype",
+    "Theme": 4,
+    "BGM": "company_explore_setState",
+    "LeaveTriggerEvent": "amb_company_all_stop",
+    "MonsterLv": 2,
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6001101": {
     "Id": 6001101,
-    "SceneName": "Levels/Main/Forest/Forest01",
-    "ConfigPrefabName": "YeZhu_Test",
-    "Theme": 7,
-    "BGM": "forest_explore_setState",
-    "LeaveTriggerEvent": "amb_forest_all_stop",
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_Boss_HaSaNa",
+    "ConfigPrefabName": "Bossrush_HaSaNa",
+    "Theme": 1,
+    "BGM": "",
+    "LeaveTriggerEvent": "amb_countryside_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "fx_m30931_base_born",
+    "LevelScript": ""
   },
   "6001102": {
     "Id": 6001102,
-    "SceneName": "Levels/Main/Forest/Forest02",
-    "ConfigPrefabName": "BanShenShu_Hard",
+    "SceneName": "Levels/Roguelike/Roguelike_4/Roguelike_4_Boss_003",
+    "ConfigPrefabName": "Roguelike_4_Boss_JinDuanLiRong_BossRush",
     "Theme": 7,
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6001103": {
     "Id": 6001103,
@@ -937,7 +1019,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6001104": {
     "Id": 6001104,
@@ -947,7 +1030,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6002101": {
     "Id": 6002101,
@@ -957,7 +1041,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6003101": {
     "Id": 6003101,
@@ -967,7 +1052,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6004101": {
     "Id": 6004101,
@@ -977,7 +1063,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6005101": {
     "Id": 6005101,
@@ -987,7 +1074,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6006101": {
     "Id": 6006101,
@@ -997,7 +1085,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "6007101": {
     "Id": 6007101,
@@ -1007,7 +1096,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001001": {
     "Id": 7001001,
@@ -1017,7 +1107,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001002": {
     "Id": 7001002,
@@ -1027,7 +1118,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001003": {
     "Id": 7001003,
@@ -1037,7 +1129,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001004": {
     "Id": 7001004,
@@ -1047,7 +1140,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001011": {
     "Id": 7001011,
@@ -1057,7 +1151,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001012": {
     "Id": 7001012,
@@ -1067,7 +1162,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001021": {
     "Id": 7001021,
@@ -1077,7 +1173,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "7001051": {
     "Id": 7001051,
@@ -1087,7 +1184,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001001": {
     "Id": 8001001,
@@ -1097,7 +1195,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001002": {
     "Id": 8001002,
@@ -1107,7 +1206,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001003": {
     "Id": 8001003,
@@ -1117,7 +1217,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001004": {
     "Id": 8001004,
@@ -1127,7 +1228,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001005": {
     "Id": 8001005,
@@ -1137,7 +1239,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001006": {
     "Id": 8001006,
@@ -1147,7 +1250,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001007": {
     "Id": 8001007,
@@ -1157,7 +1261,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001008": {
     "Id": 8001008,
@@ -1167,7 +1272,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001009": {
     "Id": 8001009,
@@ -1177,7 +1283,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001010": {
     "Id": 8001010,
@@ -1187,7 +1294,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001011": {
     "Id": 8001011,
@@ -1197,7 +1305,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001012": {
     "Id": 8001012,
@@ -1207,7 +1316,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001013": {
     "Id": 8001013,
@@ -1217,7 +1327,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001014": {
     "Id": 8001014,
@@ -1227,7 +1338,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "8001015": {
     "Id": 8001015,
@@ -1237,7 +1349,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999777": {
     "Id": 9999777,
@@ -1247,7 +1360,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999711": {
     "Id": 9999711,
@@ -1257,7 +1371,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999712": {
     "Id": 9999712,
@@ -1267,7 +1382,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999721": {
     "Id": 9999721,
@@ -1277,7 +1393,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999731": {
     "Id": 9999731,
@@ -1287,7 +1404,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999732": {
     "Id": 9999732,
@@ -1297,7 +1415,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999741": {
     "Id": 9999741,
@@ -1307,7 +1426,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999799": {
     "Id": 9999799,
@@ -1317,7 +1437,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999798": {
     "Id": 9999798,
@@ -1327,7 +1448,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999797": {
     "Id": 9999797,
@@ -1337,7 +1459,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999781": {
     "Id": 9999781,
@@ -1347,7 +1470,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999782": {
     "Id": 9999782,
@@ -1357,7 +1481,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999783": {
     "Id": 9999783,
@@ -1367,7 +1492,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999784": {
     "Id": 9999784,
@@ -1377,7 +1503,8 @@
     "BGM": "company_explore_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
     "MonsterLv": 5,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999785": {
     "Id": 9999785,
@@ -1387,7 +1514,8 @@
     "BGM": "fengNiao_explore_setState",
     "LeaveTriggerEvent": "amb_company_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999101": {
     "Id": 9999101,
@@ -1397,7 +1525,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999894": {
     "Id": 9999894,
@@ -1407,7 +1536,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999010": {
     "Id": 9999010,
@@ -1417,7 +1547,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999011": {
     "Id": 9999011,
@@ -1427,7 +1558,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999020": {
     "Id": 9999020,
@@ -1437,7 +1569,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999021": {
     "Id": 9999021,
@@ -1447,7 +1580,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999030": {
     "Id": 9999030,
@@ -1457,7 +1591,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999031": {
     "Id": 9999031,
@@ -1467,7 +1602,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999040": {
     "Id": 9999040,
@@ -1477,7 +1613,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999041": {
     "Id": 9999041,
@@ -1487,7 +1624,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999042": {
     "Id": 9999042,
@@ -1497,7 +1635,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999043": {
     "Id": 9999043,
@@ -1507,7 +1646,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999044": {
     "Id": 9999044,
@@ -1517,7 +1657,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999045": {
     "Id": 9999045,
@@ -1527,7 +1668,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999900": {
     "Id": 9999900,
@@ -1537,7 +1679,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 0,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999901": {
     "Id": 9999901,
@@ -1547,7 +1690,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999902": {
     "Id": 9999902,
@@ -1557,7 +1701,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999903": {
     "Id": 9999903,
@@ -1567,7 +1712,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999904": {
     "Id": 9999904,
@@ -1577,7 +1723,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999905": {
     "Id": 9999905,
@@ -1587,7 +1734,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999906": {
     "Id": 9999906,
@@ -1597,7 +1745,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999907": {
     "Id": 9999907,
@@ -1607,7 +1756,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999908": {
     "Id": 9999908,
@@ -1617,7 +1767,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999909": {
     "Id": 9999909,
@@ -1627,7 +1778,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999910": {
     "Id": 9999910,
@@ -1637,7 +1789,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999911": {
     "Id": 9999911,
@@ -1647,7 +1800,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999912": {
     "Id": 9999912,
@@ -1657,7 +1811,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999913": {
     "Id": 9999913,
@@ -1667,7 +1822,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999914": {
     "Id": 9999914,
@@ -1677,7 +1833,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999915": {
     "Id": 9999915,
@@ -1687,7 +1844,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999916": {
     "Id": 9999916,
@@ -1697,7 +1855,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999917": {
     "Id": 9999917,
@@ -1707,7 +1866,8 @@
     "BGM": "waterBridge_explore_setState",
     "LeaveTriggerEvent": "amb_waterBridge_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999920": {
     "Id": 9999920,
@@ -1717,7 +1877,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999921": {
     "Id": 9999921,
@@ -1727,7 +1888,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999922": {
     "Id": 9999922,
@@ -1737,7 +1899,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999923": {
     "Id": 9999923,
@@ -1747,7 +1910,8 @@
     "BGM": "roguelike_shop_SetState",
     "LeaveTriggerEvent": "amb_roguelike_shop_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999924": {
     "Id": 9999924,
@@ -1757,7 +1921,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999925": {
     "Id": 9999925,
@@ -1767,7 +1932,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999926": {
     "Id": 9999926,
@@ -1777,7 +1943,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999927": {
     "Id": 9999927,
@@ -1787,7 +1954,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999928": {
     "Id": 9999928,
@@ -1797,7 +1965,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999929": {
     "Id": 9999929,
@@ -1807,7 +1976,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999930": {
     "Id": 9999930,
@@ -1817,7 +1987,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999931": {
     "Id": 9999931,
@@ -1827,7 +1998,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999932": {
     "Id": 9999932,
@@ -1837,7 +2009,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999933": {
     "Id": 9999933,
@@ -1847,7 +2020,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999934": {
     "Id": 9999934,
@@ -1857,7 +2031,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999935": {
     "Id": 9999935,
@@ -1867,7 +2042,8 @@
     "BGM": "roguelike_explore_setState",
     "LeaveTriggerEvent": "amb_roguelike_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999936": {
     "Id": 9999936,
@@ -1877,7 +2053,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999937": {
     "Id": 9999937,
@@ -1887,7 +2064,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999938": {
     "Id": 9999938,
@@ -1896,8 +2074,9 @@
     "Theme": 0,
     "BGM": "",
     "LeaveTriggerEvent": "",
-    "MonsterLv": 2,
-    "IntroCutscene": ""
+    "MonsterLv": 6,
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999939": {
     "Id": 9999939,
@@ -1907,7 +2086,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999940": {
     "Id": 9999940,
@@ -1917,7 +2097,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999941": {
     "Id": 9999941,
@@ -1927,7 +2108,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999942": {
     "Id": 9999942,
@@ -1937,7 +2119,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999943": {
     "Id": 9999943,
@@ -1947,7 +2130,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999944": {
     "Id": 9999944,
@@ -1957,7 +2141,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999945": {
     "Id": 9999945,
@@ -1967,7 +2152,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999946": {
     "Id": 9999946,
@@ -1977,7 +2163,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9999947": {
     "Id": 9999947,
@@ -1987,7 +2174,8 @@
     "BGM": "city_explore_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910011": {
     "Id": 9910011,
@@ -1997,7 +2185,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910012": {
     "Id": 9910012,
@@ -2007,7 +2196,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910013": {
     "Id": 9910013,
@@ -2017,7 +2207,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910014": {
     "Id": 9910014,
@@ -2027,7 +2218,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910015": {
     "Id": 9910015,
@@ -2037,7 +2229,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910016": {
     "Id": 9910016,
@@ -2047,7 +2240,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910017": {
     "Id": 9910017,
@@ -2057,7 +2251,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 2,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910018": {
     "Id": 9910018,
@@ -2067,7 +2262,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910019": {
     "Id": 9910019,
@@ -2077,7 +2273,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910020": {
     "Id": 9910020,
@@ -2087,7 +2284,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910021": {
     "Id": 9910021,
@@ -2097,7 +2295,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910022": {
     "Id": 9910022,
@@ -2107,7 +2306,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910023": {
     "Id": 9910023,
@@ -2117,7 +2317,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910024": {
     "Id": 9910024,
@@ -2127,7 +2328,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910025": {
     "Id": 9910025,
@@ -2137,7 +2339,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9910026": {
     "Id": 9910026,
@@ -2147,7 +2350,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920011": {
     "Id": 9920011,
@@ -2157,7 +2361,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920012": {
     "Id": 9920012,
@@ -2167,7 +2372,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920013": {
     "Id": 9920013,
@@ -2177,7 +2383,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920021": {
     "Id": 9920021,
@@ -2187,7 +2394,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920022": {
     "Id": 9920022,
@@ -2197,7 +2405,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920023": {
     "Id": 9920023,
@@ -2207,7 +2416,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920031": {
     "Id": 9920031,
@@ -2217,7 +2427,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920032": {
     "Id": 9920032,
@@ -2227,7 +2438,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920033": {
     "Id": 9920033,
@@ -2237,7 +2449,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920041": {
     "Id": 9920041,
@@ -2247,7 +2460,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920042": {
     "Id": 9920042,
@@ -2257,7 +2471,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920043": {
     "Id": 9920043,
@@ -2267,7 +2482,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920044": {
     "Id": 9920044,
@@ -2277,7 +2493,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920045": {
     "Id": 9920045,
@@ -2287,7 +2504,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920046": {
     "Id": 9920046,
@@ -2297,7 +2515,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920047": {
     "Id": 9920047,
@@ -2307,7 +2526,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920051": {
     "Id": 9920051,
@@ -2317,7 +2537,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920052": {
     "Id": 9920052,
@@ -2327,7 +2548,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920061": {
     "Id": 9920061,
@@ -2337,7 +2559,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920062": {
     "Id": 9920062,
@@ -2347,7 +2570,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920063": {
     "Id": 9920063,
@@ -2357,7 +2581,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920071": {
     "Id": 9920071,
@@ -2367,7 +2592,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920072": {
     "Id": 9920072,
@@ -2377,7 +2603,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920073": {
     "Id": 9920073,
@@ -2387,7 +2614,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920074": {
     "Id": 9920074,
@@ -2397,7 +2625,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920081": {
     "Id": 9920081,
@@ -2407,7 +2636,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920082": {
     "Id": 9920082,
@@ -2417,7 +2647,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920083": {
     "Id": 9920083,
@@ -2427,7 +2658,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920084": {
     "Id": 9920084,
@@ -2437,7 +2669,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920091": {
     "Id": 9920091,
@@ -2447,7 +2680,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920101": {
     "Id": 9920101,
@@ -2457,7 +2691,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920102": {
     "Id": 9920102,
@@ -2467,7 +2702,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920103": {
     "Id": 9920103,
@@ -2477,7 +2713,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920111": {
     "Id": 9920111,
@@ -2487,7 +2724,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920112": {
     "Id": 9920112,
@@ -2497,7 +2735,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920113": {
     "Id": 9920113,
@@ -2507,7 +2746,8 @@
     "BGM": "forest_explore_setState",
     "LeaveTriggerEvent": "amb_forest_all_stop",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920114": {
     "Id": 9920114,
@@ -2517,7 +2757,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920115": {
     "Id": 9920115,
@@ -2527,7 +2768,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920116": {
     "Id": 9920116,
@@ -2537,7 +2779,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920117": {
     "Id": 9920117,
@@ -2547,7 +2790,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920118": {
     "Id": 9920118,
@@ -2557,7 +2801,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920119": {
     "Id": 9920119,
@@ -2567,7 +2812,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920120": {
     "Id": 9920120,
@@ -2577,7 +2823,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920121": {
     "Id": 9920121,
@@ -2587,7 +2834,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920122": {
     "Id": 9920122,
@@ -2597,7 +2845,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920123": {
     "Id": 9920123,
@@ -2607,7 +2856,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920124": {
     "Id": 9920124,
@@ -2617,7 +2867,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920125": {
     "Id": 9920125,
@@ -2627,7 +2878,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920126": {
     "Id": 9920126,
@@ -2637,7 +2889,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920127": {
     "Id": 9920127,
@@ -2647,7 +2900,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920128": {
     "Id": 9920128,
@@ -2657,7 +2911,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920129": {
     "Id": 9920129,
@@ -2667,7 +2922,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920130": {
     "Id": 9920130,
@@ -2677,7 +2933,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920131": {
     "Id": 9920131,
@@ -2687,7 +2944,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920132": {
     "Id": 9920132,
@@ -2697,7 +2955,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920133": {
     "Id": 9920133,
@@ -2707,7 +2966,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920134": {
     "Id": 9920134,
@@ -2717,7 +2977,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920135": {
     "Id": 9920135,
@@ -2727,7 +2988,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920136": {
     "Id": 9920136,
@@ -2737,7 +2999,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920137": {
     "Id": 9920137,
@@ -2747,7 +3010,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920138": {
     "Id": 9920138,
@@ -2757,7 +3021,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920139": {
     "Id": 9920139,
@@ -2767,7 +3032,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920140": {
     "Id": 9920140,
@@ -2777,7 +3043,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920141": {
     "Id": 9920141,
@@ -2787,7 +3054,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920142": {
     "Id": 9920142,
@@ -2797,7 +3065,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920143": {
     "Id": 9920143,
@@ -2807,7 +3076,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920144": {
     "Id": 9920144,
@@ -2817,7 +3087,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920145": {
     "Id": 9920145,
@@ -2827,7 +3098,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920146": {
     "Id": 9920146,
@@ -2837,7 +3109,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920147": {
     "Id": 9920147,
@@ -2847,7 +3120,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920148": {
     "Id": 9920148,
@@ -2857,7 +3131,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920149": {
     "Id": 9920149,
@@ -2867,7 +3142,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920150": {
     "Id": 9920150,
@@ -2877,7 +3153,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920151": {
     "Id": 9920151,
@@ -2887,7 +3164,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920152": {
     "Id": 9920152,
@@ -2897,7 +3175,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920153": {
     "Id": 9920153,
@@ -2907,7 +3186,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920154": {
     "Id": 9920154,
@@ -2917,7 +3197,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920155": {
     "Id": 9920155,
@@ -2927,7 +3208,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920156": {
     "Id": 9920156,
@@ -2937,7 +3219,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920157": {
     "Id": 9920157,
@@ -2947,7 +3230,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920158": {
     "Id": 9920158,
@@ -2957,7 +3241,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920159": {
     "Id": 9920159,
@@ -2967,7 +3252,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920160": {
     "Id": 9920160,
@@ -2977,7 +3263,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920161": {
     "Id": 9920161,
@@ -2987,7 +3274,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920162": {
     "Id": 9920162,
@@ -2997,7 +3285,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920163": {
     "Id": 9920163,
@@ -3007,7 +3296,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920164": {
     "Id": 9920164,
@@ -3017,7 +3307,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920165": {
     "Id": 9920165,
@@ -3027,7 +3318,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920166": {
     "Id": 9920166,
@@ -3037,7 +3329,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920167": {
     "Id": 9920167,
@@ -3047,7 +3340,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920168": {
     "Id": 9920168,
@@ -3057,7 +3351,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920169": {
     "Id": 9920169,
@@ -3067,7 +3362,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920170": {
     "Id": 9920170,
@@ -3077,7 +3373,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920171": {
     "Id": 9920171,
@@ -3087,7 +3384,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920172": {
     "Id": 9920172,
@@ -3097,7 +3395,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920173": {
     "Id": 9920173,
@@ -3107,7 +3406,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920174": {
     "Id": 9920174,
@@ -3117,7 +3417,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920175": {
     "Id": 9920175,
@@ -3127,7 +3428,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920176": {
     "Id": 9920176,
@@ -3137,7 +3439,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920177": {
     "Id": 9920177,
@@ -3147,7 +3450,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920178": {
     "Id": 9920178,
@@ -3157,7 +3461,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920179": {
     "Id": 9920179,
@@ -3167,7 +3472,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920180": {
     "Id": 9920180,
@@ -3177,7 +3483,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920181": {
     "Id": 9920181,
@@ -3187,7 +3494,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920182": {
     "Id": 9920182,
@@ -3197,7 +3505,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920183": {
     "Id": 9920183,
@@ -3207,7 +3516,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920184": {
     "Id": 9920184,
@@ -3217,7 +3527,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920185": {
     "Id": 9920185,
@@ -3227,7 +3538,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920186": {
     "Id": 9920186,
@@ -3237,7 +3549,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920187": {
     "Id": 9920187,
@@ -3247,7 +3560,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920188": {
     "Id": 9920188,
@@ -3257,7 +3571,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920189": {
     "Id": 9920189,
@@ -3267,7 +3582,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920190": {
     "Id": 9920190,
@@ -3277,7 +3593,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920191": {
     "Id": 9920191,
@@ -3287,7 +3604,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920192": {
     "Id": 9920192,
@@ -3297,7 +3615,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920193": {
     "Id": 9920193,
@@ -3307,7 +3626,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920194": {
     "Id": 9920194,
@@ -3317,7 +3637,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920195": {
     "Id": 9920195,
@@ -3327,7 +3648,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920196": {
     "Id": 9920196,
@@ -3337,7 +3659,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920197": {
     "Id": 9920197,
@@ -3347,7 +3670,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920198": {
     "Id": 9920198,
@@ -3357,7 +3681,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920199": {
     "Id": 9920199,
@@ -3367,7 +3692,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920200": {
     "Id": 9920200,
@@ -3377,7 +3703,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920201": {
     "Id": 9920201,
@@ -3387,7 +3714,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920202": {
     "Id": 9920202,
@@ -3397,27 +3725,30 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920203": {
     "Id": 9920203,
-    "SceneName": "Levels/StoryActivity/StoryActivity_9/Prototype/StoryActivity_9_MiniBoss_HaSaNa_Prototype",
-    "ConfigPrefabName": "BattleTest_Hasana_Miniboss_Lv1",
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_MiniBoss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_MiniBoss_N5",
     "Theme": 0,
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920204": {
     "Id": 9920204,
-    "SceneName": "Levels/StoryActivity/StoryActivity_9/Prototype/StoryActivity_9_MiniBoss_HaSaNa_Prototype",
-    "ConfigPrefabName": "BattleTest_Hasana_Miniboss_Lv2",
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_MiniBoss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_MiniBoss_C2",
     "Theme": 0,
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920205": {
     "Id": 9920205,
@@ -3427,7 +3758,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920206": {
     "Id": 9920206,
@@ -3437,7 +3769,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920207": {
     "Id": 9920207,
@@ -3447,7 +3780,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920208": {
     "Id": 9920208,
@@ -3457,7 +3791,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920209": {
     "Id": 9920209,
@@ -3467,7 +3802,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920210": {
     "Id": 9920210,
@@ -3477,7 +3813,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920211": {
     "Id": 9920211,
@@ -3487,7 +3824,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920212": {
     "Id": 9920212,
@@ -3497,7 +3835,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920213": {
     "Id": 9920213,
@@ -3507,7 +3846,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920214": {
     "Id": 9920214,
@@ -3517,7 +3857,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920215": {
     "Id": 9920215,
@@ -3527,7 +3868,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920216": {
     "Id": 9920216,
@@ -3537,7 +3879,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920217": {
     "Id": 9920217,
@@ -3547,7 +3890,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920218": {
     "Id": 9920218,
@@ -3557,7 +3901,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920219": {
     "Id": 9920219,
@@ -3567,7 +3912,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920220": {
     "Id": 9920220,
@@ -3577,7 +3923,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920221": {
     "Id": 9920221,
@@ -3587,7 +3934,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920222": {
     "Id": 9920222,
@@ -3597,7 +3945,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920223": {
     "Id": 9920223,
@@ -3607,7 +3956,8 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
   },
   "9920224": {
     "Id": 9920224,
@@ -3617,6 +3967,282 @@
     "BGM": "",
     "LeaveTriggerEvent": "",
     "MonsterLv": 1,
-    "IntroCutscene": ""
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920225": {
+    "Id": 9920225,
+    "SceneName": "Levels/Roguelike/Roguelike_2/Roguelike_2_MiniBoss_005",
+    "ConfigPrefabName": "MiniBoss_XuKongXingZhe_fire_And_DaWuGui_Test",
+    "Theme": 0,
+    "BGM": "",
+    "LeaveTriggerEvent": "",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": "AIScript.LevelAndGroupController.Level.DaWuGuiLevelController_Lv1"
+  },
+  "9920226": {
+    "Id": 9920226,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_011_A_01",
+    "ConfigPrefabName": "StoryActivity_9_011_N1",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920227": {
+    "Id": 9920227,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_001_B_01",
+    "ConfigPrefabName": "StoryActivity_9_001_N2",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920228": {
+    "Id": 9920228,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_004_A_01",
+    "ConfigPrefabName": "StoryActivity_9_004_N3",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920229": {
+    "Id": 9920229,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_007_A_01",
+    "ConfigPrefabName": "StoryActivity_9_007_N4",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920230": {
+    "Id": 9920230,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_MiniBoss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_MiniBoss_N5",
+    "Theme": 436,
+    "BGM": "amb_coast_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920231": {
+    "Id": 9920231,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_015_A_01",
+    "ConfigPrefabName": "StoryActivity_9_015_N6",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920232": {
+    "Id": 9920232,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_011_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_011_N7",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920233": {
+    "Id": 9920233,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_Boss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_Boss_N8",
+    "Theme": 436,
+    "BGM": "amb_coast_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920234": {
+    "Id": 9920234,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_015_A_01",
+    "ConfigPrefabName": "StoryActivity_9_015_N9",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920235": {
+    "Id": 9920235,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_011_A_01",
+    "ConfigPrefabName": "StoryActivity_9_011_N10",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920236": {
+    "Id": 9920236,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_001_B_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_001_N11",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920237": {
+    "Id": 9920237,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_004_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_004_N12",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920238": {
+    "Id": 9920238,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_015_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_015_H1",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920239": {
+    "Id": 9920239,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_010_B_01",
+    "ConfigPrefabName": "StoryActivity_9_010_H2",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920240": {
+    "Id": 9920240,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_001_B_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_001_H3",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920241": {
+    "Id": 9920241,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_004_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_004_H4",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920242": {
+    "Id": 9920242,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_MiniBoss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_MiniBoss_H5",
+    "Theme": 436,
+    "BGM": "amb_coast_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920243": {
+    "Id": 9920243,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_010_B_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_010_H6",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920244": {
+    "Id": 9920244,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_007_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_007_H7",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920245": {
+    "Id": 9920245,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_Boss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_Boss_H8",
+    "Theme": 436,
+    "BGM": "amb_coast_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920246": {
+    "Id": 9920246,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_011_A_01_Mir",
+    "ConfigPrefabName": "StoryActivity_9_011_C1",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920247": {
+    "Id": 9920247,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_MiniBoss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_MiniBoss_C2",
+    "Theme": 436,
+    "BGM": "amb_coast_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920248": {
+    "Id": 9920248,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_001_B_01",
+    "ConfigPrefabName": "StoryActivity_9_001_C3",
+    "Theme": 436,
+    "BGM": "amb_coast_combatNormal_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
+  },
+  "9920249": {
+    "Id": 9920249,
+    "SceneName": "Levels/StoryActivity/StoryActivity_9/StoryActivity_9_Boss_HaSaNa",
+    "ConfigPrefabName": "StoryActivity_9_Boss_C4",
+    "Theme": 436,
+    "BGM": "amb_coast_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_coast_all_stop",
+    "MonsterLv": 1,
+    "IntroCutscene": "",
+    "LevelScript": ""
   }
 }

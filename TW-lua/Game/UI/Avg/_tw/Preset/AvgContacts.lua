@@ -186,8 +186,8 @@ return {
 		id = 143,
 		icon = "Icon/Head/head_14301_S",
 		name = "風影",
-		landmark = "遊樂場",
-		signature = "很酷，不聊天",
+		landmark = "不方便透漏",
+		signature = "好——熱——",
 		ver = "1.7.0"
 	},
 	{
@@ -196,6 +196,14 @@ return {
 		name = "千都世",
 		landmark = "「聽雨」驛站",
 		signature = "刀，是不會遲疑的"
+	},
+	{
+		id = 145,
+		icon = "Icon/Head/head_14501_S",
+		name = "乙葉",
+		landmark = "無處不在",
+		signature = "該用戶因違反相關社群規範，帳號已被永久停權",
+		ver = "1.9.0"
 	},
 	{
 		id = 147,
@@ -245,6 +253,13 @@ return {
 		name = "緋春柯洛妮絲",
 		landmark = "菲萊的「那個」診所",
 		signature = "休假外出中"
+	},
+	{
+		id = 3136,
+		icon = "Icon/Head/head_npc13601_S",
+		name = "紅寶石",
+		landmark = "聯合種業菲萊分公司",
+		signature = "胸懷大志氣昂昂～"
 	},
 	{
 		id = 999,

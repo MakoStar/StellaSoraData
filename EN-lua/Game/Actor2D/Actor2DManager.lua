@@ -12,6 +12,7 @@ local ResTypeAny = GameResourceLoader.ResType.Any
 local typeof = typeof
 local TN = AllEnum.Actor2DType.Normal
 local TF = AllEnum.Actor2DType.FullScreen
+local b_UseLive2D_EX = false
 local RapidJson = require("rapidjson")
 local Actor_Node_Path = string.format("%sUI/CommonEx/Template/----Actor2D_Node----.prefab", Settings.AB_ROOT_PATH)
 local L2DType = {
@@ -507,7 +508,7 @@ local GetActor2DParams = function(nPanelId, nCharId, nSkinId, param, nSpecifyTyp
 	if mapSkinData == nil then
 		printError("未找到角色皮肤数据")
 	end
-	local bL = tbConfig.bL2D and LocalSettingData.mapData.UseLive2D
+	local bL = tbConfig.bL2D and LocalSettingData.mapData.UseLive2D or b_UseLive2D_EX
 	if type(param) == "table" and param[1] == "TalentL2D" then
 		bL = true
 	end
@@ -668,10 +669,7 @@ function Actor2DManager.ClearAll()
 	mapL2DPrefab = {}
 	mapSprite = {}
 	mapBg = {}
-	GameResourceLoader.Unload("Actor2D")
-	GameResourceLoader.Unload("Disc")
-	GameResourceLoader.Unload("CG")
-	GameResourceLoader.Unload("Image")
+	GameResourceLoader.Unload("UI")
 end
 function Actor2DManager.SetActor2D_ForSubSKill(nPanelId, rawImg, nCharId, nSkinId, param, nIndex)
 	RT_SUB_SKILL_SHOW = true
@@ -1097,6 +1095,9 @@ function Actor2DManager.GetActor2DTypeByPanel(nPanelId, nCharId)
 		return mapActor2DType[sMainKey][sSubKey]
 	end
 	return TF
+end
+function Actor2DManager.ForceUseL2D(bForce)
+	b_UseLive2D_EX = bForce == true
 end
 function Actor2DManager.SwitchActor2DDragOffset()
 	local mapCurChar = mapCurrent.tbChar[1]

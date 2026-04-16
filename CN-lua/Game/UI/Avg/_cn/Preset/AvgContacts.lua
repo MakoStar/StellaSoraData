@@ -198,6 +198,14 @@ return {
 		signature = "刀，是不会迟疑的"
 	},
 	{
+		id = 145,
+		icon = "Icon/Head/head_14501_S",
+		name = "乙叶",
+		landmark = "无处不在",
+		signature = "该用户因违反相关规则账号已被封锁",
+		ver = "1.9.0"
+	},
+	{
 		id = 147,
 		icon = "Icon/Head/head_14701_S",
 		name = "焦糖",
@@ -247,6 +255,13 @@ return {
 		signature = "休假外出中。"
 	},
 	{
+		id = 3136,
+		icon = "Icon/Head/head_npc13601_S",
+		name = "红宝石",
+		landmark = "联合种业菲莱分公司",
+		signature = "胸怀大志气昂昂~"
+	},
+	{
 		id = 999,
 		icon = "Icon/Head/head_group_S",
 		name = "工作永远做不完",
@@ -277,7 +292,7 @@ return {
 	{
 		id = 995,
 		icon = "Icon/Head/head_anonymity_S",
-		name = " ",
+		name = "匿名",
 		landmark = "",
 		signature = " "
 	},

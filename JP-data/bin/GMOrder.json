@@ -331,5 +331,14 @@
     "ParamName2": "",
     "ParamName3": "",
     "ParamName4": ""
+  },
+  "38": {
+    "Order": "changeTrekkerVersusLevelExp",
+    "Desc": "",
+    "ParamCount": 3,
+    "ParamName1": "",
+    "ParamName2": "",
+    "ParamName3": "",
+    "ParamName4": ""
   }
 }

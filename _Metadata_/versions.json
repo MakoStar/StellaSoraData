@@ -1,162 +1,162 @@
 {
     "CN": {
-        "lua.arcx": {
-            "file_name": "lua.arcx",
-            "hash": "159b58aea7ad531050c1ec7bdcfe0ce9",
-            "version": 99
-        },
-        "ss_win_add.mani": {
-            "file_name": "ss_win_add.mani",
-            "hash": "035357a48efc99b2a6cfc50bb74c289e",
-            "version": 99
+        "ss_win.mani": {
+            "file_name": "ss_win.mani",
+            "hash": "250c407b6a8859addef00cc806585013",
+            "version": 100
         },
         "data.json": {
             "file_name": "data.json",
-            "hash": "3b75da9a10e3245dbbab05b579610df3",
-            "version": 97
-        },
-        "ss_win.mani": {
-            "file_name": "ss_win.mani",
-            "hash": "3f58ce0629583a859cc763da46110a45",
-            "version": 99
-        },
-        "lua.json": {
-            "file_name": "lua.json",
-            "hash": "def1283d551b5ac9a79582314d0ecdd2",
-            "version": 99
+            "hash": "fac451f4996326c442dc0f5a9bfb6558",
+            "version": 100
         },
         "data.arcx": {
             "file_name": "data.arcx",
-            "hash": "bf8288b4dc295a8298be0ba637c6ef79",
-            "version": 99
+            "hash": "5ff371aaff6c2d833b3fd827f0316c7a",
+            "version": 100
+        },
+        "ss_win_add.mani": {
+            "file_name": "ss_win_add.mani",
+            "hash": "e21e8b581c33e3ada4318380dabf8e9b",
+            "version": 100
+        },
+        "lua.json": {
+            "file_name": "lua.json",
+            "hash": "2cffc3f2ae2276a3da3d5222fe4c00c8",
+            "version": 100
+        },
+        "lua.arcx": {
+            "file_name": "lua.arcx",
+            "hash": "7fda18bbe20fbf40ecb5e4b2fcb47960",
+            "version": 100
         }
     },
     "EN": {
-        "ss_win_add.mani": {
-            "file_name": "ss_win_add.mani",
-            "hash": "66f129e0d13104fc2e208e41422e7795",
-            "version": 98
-        },
-        "data.arcx": {
-            "file_name": "data.arcx",
-            "hash": "51925a8e1455d823a51749433a59095c",
-            "version": 98
-        },
-        "lua.arcx": {
-            "file_name": "lua.arcx",
-            "hash": "6a1b36cd99efda81eda8ce6526896200",
-            "version": 98
-        },
-        "ss_win.mani": {
-            "file_name": "ss_win.mani",
-            "hash": "89fbfadf39e2d92385f2a6e040ee798a",
-            "version": 98
-        },
-        "lua.json": {
-            "file_name": "lua.json",
-            "hash": "1b112a72e0688335588d34cabd67a526",
-            "version": 98
-        },
         "data.json": {
             "file_name": "data.json",
-            "hash": "13eb7fc32cbe5c420a7b835f57f48a9d",
-            "version": 96
-        }
-    },
-    "JP": {
-        "ss_win.mani": {
-            "file_name": "ss_win.mani",
-            "hash": "98a5f2d7e10d8e02e4f213980793cbd1",
-            "version": 101
-        },
-        "data.json": {
-            "file_name": "data.json",
-            "hash": "c4f41b4fc256d685318ec70b815a56c7",
+            "hash": "7b82353c3ba6046972a7d86f78f2557a",
             "version": 99
         },
         "lua.json": {
             "file_name": "lua.json",
-            "hash": "c01c47917f4843f02d2700962927c013",
-            "version": 101
+            "hash": "97f8cea25527e33068cdfc24344352dd",
+            "version": 99
         },
-        "data.arcx": {
-            "file_name": "data.arcx",
-            "hash": "8b19eefb070bfd4231aa8d5c8e0907cf",
-            "version": 101
-        },
-        "lua.arcx": {
-            "file_name": "lua.arcx",
-            "hash": "3a55bd32e534018b1f6b4f9e7df7521b",
-            "version": 101
+        "ss_win.mani": {
+            "file_name": "ss_win.mani",
+            "hash": "8a83a28beed804be33375ad6786b7948",
+            "version": 99
         },
         "ss_win_add.mani": {
             "file_name": "ss_win_add.mani",
-            "hash": "d434533a32471b4d41285c981b159b73",
-            "version": 101
+            "hash": "5269d21f0a612ffafaaab068599a53ae",
+            "version": 99
+        },
+        "lua.arcx": {
+            "file_name": "lua.arcx",
+            "hash": "dbbbc73a878100fcd25cd1e06446e105",
+            "version": 99
+        },
+        "data.arcx": {
+            "file_name": "data.arcx",
+            "hash": "0704ad41a9966591d753ff44ab85443f",
+            "version": 99
+        }
+    },
+    "JP": {
+        "lua.json": {
+            "file_name": "lua.json",
+            "hash": "557c41f9276fad649ffcbbdec436f1d6",
+            "version": 102
+        },
+        "ss_win_add.mani": {
+            "file_name": "ss_win_add.mani",
+            "hash": "a6fc7dd96bf9d8a7ae8a93cfbc87e416",
+            "version": 102
+        },
+        "data.arcx": {
+            "file_name": "data.arcx",
+            "hash": "6045c35a6ddd30cbf88b302d4f4033ab",
+            "version": 102
+        },
+        "data.json": {
+            "file_name": "data.json",
+            "hash": "220da7baefd1d03bb363af8776e7d360",
+            "version": 102
+        },
+        "lua.arcx": {
+            "file_name": "lua.arcx",
+            "hash": "6f85ccc446d87149a7fe3a3958ce6558",
+            "version": 102
+        },
+        "ss_win.mani": {
+            "file_name": "ss_win.mani",
+            "hash": "928c5a47a47256ea2550bac1b0415197",
+            "version": 102
         }
     },
     "KR": {
         "lua.arcx": {
             "file_name": "lua.arcx",
-            "hash": "3d777801a4cb2770028542e39cd00040",
-            "version": 103
-        },
-        "data.arcx": {
-            "file_name": "data.arcx",
-            "hash": "3b0876ff257cf8555b3be012588ad076",
-            "version": 103
-        },
-        "lua.json": {
-            "file_name": "lua.json",
-            "hash": "f613263b191987eb6c61050a50ceb106",
-            "version": 103
-        },
-        "ss_win.mani": {
-            "file_name": "ss_win.mani",
-            "hash": "7c0623f0f8f21920eae520af18c7c25a",
-            "version": 103
+            "hash": "92632af130b760ce799d660559ab6d28",
+            "version": 104
         },
         "ss_win_add.mani": {
             "file_name": "ss_win_add.mani",
-            "hash": "36498d091f9c66a0253d830eb9ca06cb",
-            "version": 103
+            "hash": "a8aaf474a3c9e9d8bb80c1c434ba5c48",
+            "version": 104
+        },
+        "ss_win.mani": {
+            "file_name": "ss_win.mani",
+            "hash": "49c114cc84212a51874be0d75860dcf0",
+            "version": 104
+        },
+        "lua.json": {
+            "file_name": "lua.json",
+            "hash": "aae00828d616e126bf1c6efb7c6da5a9",
+            "version": 104
         },
         "data.json": {
             "file_name": "data.json",
-            "hash": "3d47a2c9976dbe9233405bc26f066ec4",
-            "version": 101
+            "hash": "6ae397cf69f59e646abeec578a15acb0",
+            "version": 104
+        },
+        "data.arcx": {
+            "file_name": "data.arcx",
+            "hash": "0545e4882213d29429997c0c9797b861",
+            "version": 104
         }
     },
     "TW": {
-        "data.json": {
-            "file_name": "data.json",
-            "hash": "0efd53a982ca0e1eaf1bccfaa4cf4bf3",
-            "version": 106
+        "lua.arcx": {
+            "file_name": "lua.arcx",
+            "hash": "f326d5a9280f2acecb1ebb5bd10d424b",
+            "version": 109
         },
         "ss_win_add.mani": {
             "file_name": "ss_win_add.mani",
-            "hash": "d5771738a72fe163e9d4cf683d505b8c",
-            "version": 108
+            "hash": "f27af2efcbdbf44842f02dc8ba4425fc",
+            "version": 109
         },
-        "lua.arcx": {
-            "file_name": "lua.arcx",
-            "hash": "c992e0d0af6f790ac70363fcf7c913e3",
-            "version": 108
-        },
-        "lua.json": {
-            "file_name": "lua.json",
-            "hash": "73856cdfe34e696bf065e624f9790910",
-            "version": 108
+        "data.json": {
+            "file_name": "data.json",
+            "hash": "6773e40a06fb306e4f2b3c1ba8e7045e",
+            "version": 109
         },
         "ss_win.mani": {
             "file_name": "ss_win.mani",
-            "hash": "1235782f1936f9e2232ed11acc69ce7d",
-            "version": 108
+            "hash": "4502aab5685f6e1c08512cef6bee02c1",
+            "version": 109
         },
         "data.arcx": {
             "file_name": "data.arcx",
-            "hash": "780ddd0d322a036f884212207ff848e3",
-            "version": 108
+            "hash": "9434cf622ae875009a9719d03e38ccab",
+            "version": 109
+        },
+        "lua.json": {
+            "file_name": "lua.json",
+            "hash": "f48f613cb47b0300d718686874b99e53",
+            "version": 109
         }
     }
 }

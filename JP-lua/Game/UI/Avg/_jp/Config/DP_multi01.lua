@@ -612,16 +612,6 @@ return {
 		}
 	},
 	{
-		cmd = "SetCharL2D",
-		param = {
-			"avg1_125",
-			0,
-			"avg_emoji_think",
-			"",
-			0
-		}
-	},
-	{
 		cmd = "SetTalk",
 		param = {
 			7,

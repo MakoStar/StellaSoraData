@@ -2922,7 +2922,7 @@
     "Desc": "EffectDesc.370001.1",
     "RandomAttrDesc": "EffectDesc.370001.2",
     "Attribute": "EnergyConvRatio",
-    "WordID": 0,
+    "WordID": 46,
     "IsPercent": true,
     "Icon": "",
     "Format": 3

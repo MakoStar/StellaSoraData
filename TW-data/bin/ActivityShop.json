@@ -154,5 +154,21 @@
     ],
     "OtherExchangeItem2": [],
     "OtherExchangeItem3": []
+  },
+  "1009": {
+    "Id": 1009,
+    "Type": 0,
+    "Name": "ActivityShop.1009.1",
+    "Sequence": 1,
+    "RefreshTimeType": 0,
+    "RefreshInterval": 0,
+    "UnlockCondType": 0,
+    "UnlockCondParams": "",
+    "CurrencyItemId": 73109,
+    "ExchangeItemId": 1,
+    "Rate": 300.0,
+    "OtherExchangeItem1": [],
+    "OtherExchangeItem2": [],
+    "OtherExchangeItem3": []
   }
 }

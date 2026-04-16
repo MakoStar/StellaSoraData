@@ -213,7 +213,7 @@
   "MainlineFormation": {
     "Id": "MainlineFormation",
     "Title": "TopBar.MainlineFormation.1",
-    "EntryId": 0,
+    "EntryId": 200302,
     "HideBack": false,
     "Energy": false,
     "Coin": false,
@@ -1946,6 +1946,159 @@
     "CoinIds": [
       73108
     ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "RankBuildDetail": {
+    "Id": "RankBuildDetail",
+    "Title": "TopBar.RankBuildDetail.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "TrekkerVersus_600002": {
+    "Id": "TrekkerVersus_600002",
+    "Title": "TopBar.TrekkerVersus_600002.1",
+    "EntryId": 200801,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "EquipmentUpgrade": {
+    "Id": "EquipmentUpgrade",
+    "Title": "TopBar.EquipmentUpgrade.1",
+    "EntryId": 0,
+    "HideBack": true,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      1,
+      35010
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": true,
+    "HideHome": false
+  },
+  "PotentialPreselectionList": {
+    "Id": "PotentialPreselectionList",
+    "Title": "TopBar.PotentialPreselectionList.1",
+    "EntryId": 200302,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "PotentialPreselectionEdit": {
+    "Id": "PotentialPreselectionEdit",
+    "Title": "TopBar.PotentialPreselectionEdit.1",
+    "EntryId": 200302,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "ActivityLevelsSelectPanel_20102": {
+    "Id": "ActivityLevelsSelectPanel_20102",
+    "Title": "TopBar.ActivityLevelsSelectPanel_20102.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": true,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Task_20102": {
+    "Id": "Task_20102",
+    "Title": "TopBar.Task_20102.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73109
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Shop_20102": {
+    "Id": "Shop_20102",
+    "Title": "TopBar.Shop_20102.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "SolodanceThemePanel": {
+    "Id": "SolodanceThemePanel",
+    "Title": "TopBar.SolodanceThemePanel.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73109
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "SolodanceStory": {
+    "Id": "SolodanceStory",
+    "Title": "TopBar.SolodanceStory.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "GoldenSpyLevelSelectPanel": {
+    "Id": "GoldenSpyLevelSelectPanel",
+    "Title": "TopBar.GoldenSpyLevelSelectPanel.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73109
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "ActivityLevelsSelectPanel_10107": {
+    "Id": "ActivityLevelsSelectPanel_10107",
+    "Title": "TopBar.ActivityLevelsSelectPanel_10107.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": true,
+    "Coin": false,
+    "CoinIds": [],
     "HideCoinAdd": false,
     "DelayShow": false,
     "HideHome": false

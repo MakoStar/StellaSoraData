@@ -8,9 +8,11 @@
     "Name": "StoryChapter.1.1",
     "Desc": "StoryChapter.1.2",
     "ChapterIcon": "Icon/MapChapter/chapter_stage_01",
+    "BannerIcon": "UI/big_sprites/banner_avg_chapter1",
     "ChapterYear": "StoryChapter.1.3",
     "UnlockShowStoryId": 101,
-    "OpenTime": ""
+    "OpenTime": "",
+    "StoryPanelId": 0
   },
   "2": {
     "Id": 2,
@@ -23,9 +25,11 @@
     "Name": "StoryChapter.2.1",
     "Desc": "StoryChapter.2.2",
     "ChapterIcon": "Icon/MapChapter/chapter_stage_02",
+    "BannerIcon": "UI/big_sprites/banner_avg_chapter2",
     "ChapterYear": "StoryChapter.2.3",
     "UnlockShowStoryId": 204,
-    "OpenTime": ""
+    "OpenTime": "",
+    "StoryPanelId": 0
   },
   "3": {
     "Id": 3,
@@ -38,9 +42,11 @@
     "Name": "StoryChapter.3.1",
     "Desc": "StoryChapter.3.2",
     "ChapterIcon": "Icon/MapChapter/chapter_stage_03",
+    "BannerIcon": "UI/big_sprites/banner_avg_chapter3",
     "ChapterYear": "StoryChapter.3.3",
     "UnlockShowStoryId": 304,
-    "OpenTime": ""
+    "OpenTime": "",
+    "StoryPanelId": 0
   },
   "4": {
     "Id": 4,
@@ -53,9 +59,11 @@
     "Name": "StoryChapter.4.1",
     "Desc": "StoryChapter.4.2",
     "ChapterIcon": "Icon/MapChapter/chapter_stage_04",
+    "BannerIcon": "UI/big_sprites/banner_avg_chapter4",
     "ChapterYear": "StoryChapter.4.3",
     "UnlockShowStoryId": 403,
-    "OpenTime": ""
+    "OpenTime": "",
+    "StoryPanelId": 0
   },
   "5": {
     "Id": 5,
@@ -68,9 +76,11 @@
     "Name": "StoryChapter.5.1",
     "Desc": "StoryChapter.5.2",
     "ChapterIcon": "Icon/MapChapter/chapter_stage_05",
+    "BannerIcon": "UI/big_sprites/banner_avg_chapter5",
     "ChapterYear": "StoryChapter.5.3",
     "UnlockShowStoryId": 504,
-    "OpenTime": ""
+    "OpenTime": "",
+    "StoryPanelId": 0
   },
   "6": {
     "Id": 6,
@@ -83,8 +93,27 @@
     "Name": "StoryChapter.6.1",
     "Desc": "StoryChapter.6.2",
     "ChapterIcon": "Icon/MapChapter/chapter_stage_06",
+    "BannerIcon": "UI/big_sprites/banner_avg_chapter6",
     "ChapterYear": "StoryChapter.6.3",
     "UnlockShowStoryId": 604,
-    "OpenTime": ""
+    "OpenTime": "",
+    "StoryPanelId": 0
+  },
+  "7": {
+    "Id": 7,
+    "Type": 2,
+    "WorldClass": 18,
+    "PrevStories": [
+      "STm06_13"
+    ],
+    "Index": "",
+    "Name": "StoryChapter.7.1",
+    "Desc": "StoryChapter.7.2",
+    "ChapterIcon": "Icon/MapChapter/chapter_stage_SP1",
+    "BannerIcon": "UI/big_sprites/banner_avg_chapter6x5",
+    "ChapterYear": "StoryChapter.7.3",
+    "UnlockShowStoryId": 6503,
+    "OpenTime": "2026-04-16T12:00:00+08:00",
+    "StoryPanelId": 431
   }
 }

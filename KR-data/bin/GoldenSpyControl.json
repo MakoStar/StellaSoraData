@@ -1,0 +1,14 @@
+{
+  "400008": {
+    "Id": 400008,
+    "UseType": 0,
+    "UIAssets": "",
+    "CtrlName": "",
+    "LevelGroupList": [
+      101,
+      102,
+      103,
+      104
+    ]
+  }
+}

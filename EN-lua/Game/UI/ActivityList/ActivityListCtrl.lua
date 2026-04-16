@@ -133,7 +133,12 @@ function ActivityListCtrl:OnGridBtnClick(goGrid, gridIndex)
 		return
 	end
 	local actData = self.tbActList[nIndex].actData
-	local bOpen = self.tbActList[nIndex].nType == AllEnum.ActivityMainType.Activity and actData:CheckActivityOpen() or actData:CheckActGroupShow()
+	local bOpen = false
+	if actData == nil then
+		printError("活动列表中该活动数据为空")
+	elseif self.tbActList[nIndex].nType == AllEnum.ActivityMainType.Activity and actData:CheckActivityOpen() or self.tbActList[nIndex].nType == AllEnum.ActivityMainType.ActivityGroup and actData:CheckActGroupShow() then
+		bOpen = true
+	end
 	if not bOpen then
 		EventManager.Hit(EventId.OpenMessageBox, {
 			nType = AllEnum.MessageBox.Tips,

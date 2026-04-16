@@ -176,6 +176,14 @@
         "The Best Maid"
     ],
     [
+        "119",
+        "Nanoha",
+        "The Academy",
+        "1",
+        "Getting hungry. Gonna go to the cafeteria.",
+        "Maid Attendant"
+    ],
+    [
         "120",
         "Canace",
         "The Cave",
@@ -222,6 +230,14 @@
         "3",
         "It's still early. Chat a bit longer.",
         "True Heart"
+    ],
+    [
+        "125",
+        "Freesia",
+        "The Market",
+        "4",
+        "Haven't been to that area yet.",
+        "A Snack"
     ],
     [
         "126",
@@ -288,6 +304,14 @@
         "Borrowing Books"
     ],
     [
+        "132",
+        "Minova",
+        "Hot Spring Resort",
+        "3",
+        "Wander around for a bit.",
+        "Deceptive Packaging"
+    ],
+    [
         "133",
         "Nazuka",
         "The Market",
@@ -336,6 +360,14 @@
         "Material Gathering"
     ],
     [
+        "135",
+        "Mistique",
+        "The Market",
+        "2",
+        "There's an event you can join in the game area.",
+        "Broom and Vroom"
+    ],
+    [
         "141",
         "Chixia",
         "The Cave",
@@ -350,6 +382,14 @@
         "2",
         "Haven't had enough. Let's order some more.",
         "Cake Artistry"
+    ],
+    [
+        "141",
+        "Chixia",
+        "Hot Spring Resort",
+        "1",
+        "Let’s go soak in the hot springs.",
+        "A Hot Spring Mystery"
     ],
     [
         "142",
@@ -400,6 +440,22 @@
         "A Sugar-Tempered Blade"
     ],
     [
+        "145",
+        "Otoha",
+        "The Dessert Shop",
+        "2",
+        "Haven't had enough. Let's order some more.",
+        "Dietary Discipline"
+    ],
+    [
+        "145",
+        "Otoha",
+        "The Port",
+        "2",
+        "Take a small boat out for some coastal sightseeing.",
+        "Beyond the Horizon"
+    ],
+    [
         "147",
         "Caramel",
         "The Port",
@@ -430,6 +486,14 @@
         "2",
         "Take a small boat out for some coastal sightseeing.",
         "Sea Prayer"
+    ],
+    [
+        "149",
+        "Gerie",
+        "Hot Spring Resort",
+        "3",
+        "Wander around for a bit.",
+        "The Snow Spirit"
     ],
     [
         "150",
@@ -478,6 +542,14 @@
         "1",
         "How about doing some night fishing?",
         "Seaside Fishing"
+    ],
+    [
+        "156",
+        "Nazuna",
+        "The Dessert Shop",
+        "1",
+        "Take part in the raffle inside the store.",
+        "Raffle Support"
     ],
     [
         "158",

@@ -219,6 +219,12 @@ return {
 		name_bg_color = "#555559"
 	},
 	{
+		id = "avg1_140",
+		name = "***",
+		name_bg_color = "#91aca8",
+		ver = "1.11.0"
+	},
+	{
 		id = "avg1_141",
 		name = "赤霞",
 		name_bg_color = "#d75d5e"
@@ -308,6 +314,12 @@ return {
 		ver = "1.6.0"
 	},
 	{
+		id = "avg1_164",
+		name = "朔",
+		name_bg_color = "#5a91ca",
+		ver = "1.9.0"
+	},
+	{
 		id = "avg2_001",
 		name = "樹樹鼠·打手",
 		name_bg_color = "#0ABEC5"
@@ -321,6 +333,12 @@ return {
 		id = "avg2_003",
 		name = "樹樹鼠·擲彈兵",
 		name_bg_color = "#0ABEC5"
+	},
+	{
+		id = "avg2_946",
+		name = "劇院魅影",
+		name_bg_color = "#0ABEC5",
+		ver = "1.9.0"
 	},
 	{
 		id = "avg2_949",
@@ -1018,8 +1036,8 @@ return {
 	},
 	{
 		id = "avg3_207",
-		name = "沙蝎副團長",
-		name_bg_color = "#0ABEC5",
+		name = "彌爾沙",
+		name_bg_color = "#9c8183",
 		ver = "1.8.0"
 	},
 	{
@@ -1043,8 +1061,32 @@ return {
 	{
 		id = "avg3_211",
 		name = "尋寶團頭目",
-		name_bg_color = "#0ABEC5",
+		name_bg_color = "#a78c86",
 		ver = "1.8.0"
+	},
+	{
+		id = "avg3_213",
+		name = "通用魔女",
+		name_bg_color = "#0ABEC5",
+		ver = "1.9.0"
+	},
+	{
+		id = "avg3_214",
+		name = "***",
+		name_bg_color = "#0ABEC5",
+		ver = "1.10.0"
+	},
+	{
+		id = "avg3_215",
+		name = "瑪蒂爾達",
+		name_bg_color = "#0ABEC5",
+		ver = "1.9.0"
+	},
+	{
+		id = "avg3_220",
+		name = "梅爾庫莉婭",
+		name_bg_color = "#0ABEC5",
+		ver = "1.9.0"
 	},
 	{
 		id = "avg3_873",
@@ -2588,6 +2630,48 @@ return {
 		reuse = "avg1_143"
 	},
 	{
+		id = "avg3_1285",
+		name = "乙葉B",
+		name_bg_color = "#90a1c6",
+		reuse = "avg1_145"
+	},
+	{
+		id = "avg3_1286",
+		name = "乙葉C",
+		name_bg_color = "#90a1c6",
+		reuse = "avg1_145"
+	},
+	{
+		id = "avg3_1287",
+		name = "沙蝎雜兵（女）A",
+		name_bg_color = "#0ABEC5",
+		reuse = "avg3_208"
+	},
+	{
+		id = "avg3_1288",
+		name = "沙蝎雜兵（男）A",
+		name_bg_color = "#0ABEC5",
+		reuse = "avg3_209"
+	},
+	{
+		id = "avg3_1289",
+		name = "焦糖A",
+		name_bg_color = "#f0d2a1",
+		reuse = "avg1_147"
+	},
+	{
+		id = "avg3_1290",
+		name = "通用魔女A",
+		name_bg_color = "#0ABEC5",
+		reuse = "avg3_213"
+	},
+	{
+		id = "avg3_1291",
+		name = "通用魔女B",
+		name_bg_color = "#0ABEC5",
+		reuse = "avg3_213"
+	},
+	{
 		id = "avg4_100",
 		name = "菈露發光",
 		name_bg_color = "#0ABEC5"
@@ -2600,6 +2684,11 @@ return {
 	{
 		id = "avg4_102",
 		name = "神秘人A",
+		name_bg_color = "#0ABEC5"
+	},
+	{
+		id = "avg4_103",
+		name = "火垂發光",
 		name_bg_color = "#0ABEC5"
 	},
 	{

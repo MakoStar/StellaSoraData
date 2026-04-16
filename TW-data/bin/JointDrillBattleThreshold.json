@@ -198,7 +198,7 @@
     "Hp": 300000
   },
   "10": {
-    "MissionId": 1,
+    "MissionId": 1010,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -220,7 +220,7 @@
     "Hp": 300000
   },
   "11": {
-    "MissionId": 2,
+    "MissionId": 1011,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -242,7 +242,7 @@
     "Hp": 300000
   },
   "12": {
-    "MissionId": 3,
+    "MissionId": 1012,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -264,7 +264,7 @@
     "Hp": 300000
   },
   "13": {
-    "MissionId": 4,
+    "MissionId": 1013,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -286,7 +286,7 @@
     "Hp": 300000
   },
   "14": {
-    "MissionId": 11,
+    "MissionId": 1014,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -308,7 +308,7 @@
     "Hp": 300000
   },
   "15": {
-    "MissionId": 12,
+    "MissionId": 1,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -330,7 +330,7 @@
     "Hp": 300000
   },
   "16": {
-    "MissionId": 13,
+    "MissionId": 2,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -352,7 +352,7 @@
     "Hp": 300000
   },
   "17": {
-    "MissionId": 14,
+    "MissionId": 3,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -374,7 +374,7 @@
     "Hp": 300000
   },
   "18": {
-    "MissionId": 21,
+    "MissionId": 4,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -396,7 +396,7 @@
     "Hp": 300000
   },
   "19": {
-    "MissionId": 22,
+    "MissionId": 11,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -418,7 +418,7 @@
     "Hp": 300000
   },
   "20": {
-    "MissionId": 23,
+    "MissionId": 12,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -440,7 +440,7 @@
     "Hp": 300000
   },
   "21": {
-    "MissionId": 24,
+    "MissionId": 13,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -462,7 +462,7 @@
     "Hp": 300000
   },
   "22": {
-    "MissionId": 31,
+    "MissionId": 14,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -484,7 +484,7 @@
     "Hp": 300000
   },
   "23": {
-    "MissionId": 32,
+    "MissionId": 21,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -506,7 +506,7 @@
     "Hp": 300000
   },
   "24": {
-    "MissionId": 33,
+    "MissionId": 22,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -528,7 +528,7 @@
     "Hp": 300000
   },
   "25": {
-    "MissionId": 34,
+    "MissionId": 23,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -550,7 +550,7 @@
     "Hp": 300000
   },
   "26": {
-    "MissionId": 41,
+    "MissionId": 24,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -572,7 +572,7 @@
     "Hp": 300000
   },
   "27": {
-    "MissionId": 42,
+    "MissionId": 31,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -594,7 +594,7 @@
     "Hp": 300000
   },
   "28": {
-    "MissionId": 43,
+    "MissionId": 32,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -616,7 +616,7 @@
     "Hp": 300000
   },
   "29": {
-    "MissionId": 44,
+    "MissionId": 33,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -638,7 +638,7 @@
     "Hp": 300000
   },
   "30": {
-    "MissionId": 51,
+    "MissionId": 34,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -660,7 +660,7 @@
     "Hp": 300000
   },
   "31": {
-    "MissionId": 52,
+    "MissionId": 41,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -682,7 +682,7 @@
     "Hp": 300000
   },
   "32": {
-    "MissionId": 53,
+    "MissionId": 42,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -704,7 +704,7 @@
     "Hp": 300000
   },
   "33": {
-    "MissionId": 54,
+    "MissionId": 43,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -726,7 +726,7 @@
     "Hp": 300000
   },
   "34": {
-    "MissionId": 61,
+    "MissionId": 44,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -748,7 +748,7 @@
     "Hp": 300000
   },
   "35": {
-    "MissionId": 62,
+    "MissionId": 51,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -770,7 +770,7 @@
     "Hp": 300000
   },
   "36": {
-    "MissionId": 63,
+    "MissionId": 52,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -792,7 +792,7 @@
     "Hp": 300000
   },
   "37": {
-    "MissionId": 64,
+    "MissionId": 53,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -814,7 +814,7 @@
     "Hp": 300000
   },
   "38": {
-    "MissionId": 71,
+    "MissionId": 54,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -836,7 +836,7 @@
     "Hp": 300000
   },
   "39": {
-    "MissionId": 72,
+    "MissionId": 61,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -858,7 +858,7 @@
     "Hp": 300000
   },
   "40": {
-    "MissionId": 73,
+    "MissionId": 62,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -880,7 +880,7 @@
     "Hp": 300000
   },
   "41": {
-    "MissionId": 74,
+    "MissionId": 63,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -902,7 +902,7 @@
     "Hp": 300000
   },
   "42": {
-    "MissionId": 81,
+    "MissionId": 64,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -924,7 +924,7 @@
     "Hp": 300000
   },
   "43": {
-    "MissionId": 82,
+    "MissionId": 71,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -946,7 +946,7 @@
     "Hp": 300000
   },
   "44": {
-    "MissionId": 83,
+    "MissionId": 72,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -968,7 +968,7 @@
     "Hp": 300000
   },
   "45": {
-    "MissionId": 84,
+    "MissionId": 73,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -990,7 +990,7 @@
     "Hp": 300000
   },
   "46": {
-    "MissionId": 91,
+    "MissionId": 74,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1012,7 +1012,7 @@
     "Hp": 300000
   },
   "47": {
-    "MissionId": 92,
+    "MissionId": 81,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1034,7 +1034,7 @@
     "Hp": 300000
   },
   "48": {
-    "MissionId": 93,
+    "MissionId": 82,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1056,7 +1056,7 @@
     "Hp": 300000
   },
   "49": {
-    "MissionId": 94,
+    "MissionId": 83,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1078,7 +1078,7 @@
     "Hp": 300000
   },
   "50": {
-    "MissionId": 101,
+    "MissionId": 84,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1100,7 +1100,7 @@
     "Hp": 300000
   },
   "51": {
-    "MissionId": 102,
+    "MissionId": 91,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1122,7 +1122,7 @@
     "Hp": 300000
   },
   "52": {
-    "MissionId": 103,
+    "MissionId": 92,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1144,7 +1144,7 @@
     "Hp": 300000
   },
   "53": {
-    "MissionId": 104,
+    "MissionId": 93,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1166,7 +1166,7 @@
     "Hp": 300000
   },
   "54": {
-    "MissionId": 111,
+    "MissionId": 94,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1188,7 +1188,7 @@
     "Hp": 300000
   },
   "55": {
-    "MissionId": 112,
+    "MissionId": 101,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1210,7 +1210,7 @@
     "Hp": 300000
   },
   "56": {
-    "MissionId": 113,
+    "MissionId": 102,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1232,7 +1232,7 @@
     "Hp": 300000
   },
   "57": {
-    "MissionId": 114,
+    "MissionId": 103,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1254,7 +1254,7 @@
     "Hp": 300000
   },
   "58": {
-    "MissionId": 121,
+    "MissionId": 104,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1276,7 +1276,7 @@
     "Hp": 300000
   },
   "59": {
-    "MissionId": 122,
+    "MissionId": 111,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1298,7 +1298,7 @@
     "Hp": 300000
   },
   "60": {
-    "MissionId": 123,
+    "MissionId": 112,
     "Version": 1,
     "FromSrcAtk": 600000,
     "FromPerkIntensityRatio": 0,
@@ -1320,6 +1320,116 @@
     "Hp": 300000
   },
   "61": {
+    "MissionId": 113,
+    "Version": 1,
+    "FromSrcAtk": 600000,
+    "FromPerkIntensityRatio": 0,
+    "FromSlotDmgRatio": 300000,
+    "FromEE": 200000,
+    "FromGenDmgRatio": 30000,
+    "FromDmgPlus": 10,
+    "FromCritRatio": 400000,
+    "FromFinalDmgRatio": 100000,
+    "FromFinalDmgPlus": 0,
+    "ToErAmend": 100000,
+    "ToDefAmend": 1000000,
+    "ToRcdSlotDmgRatio": 300000,
+    "ToEERCD": 200000,
+    "ToGenDmgRcdRatio": 200000,
+    "ToDmgPlusRcd": 0,
+    "Dmg": 0,
+    "CritRate": 8000,
+    "Hp": 300000
+  },
+  "62": {
+    "MissionId": 114,
+    "Version": 1,
+    "FromSrcAtk": 600000,
+    "FromPerkIntensityRatio": 0,
+    "FromSlotDmgRatio": 300000,
+    "FromEE": 200000,
+    "FromGenDmgRatio": 30000,
+    "FromDmgPlus": 10,
+    "FromCritRatio": 400000,
+    "FromFinalDmgRatio": 100000,
+    "FromFinalDmgPlus": 0,
+    "ToErAmend": 100000,
+    "ToDefAmend": 1000000,
+    "ToRcdSlotDmgRatio": 300000,
+    "ToEERCD": 200000,
+    "ToGenDmgRcdRatio": 200000,
+    "ToDmgPlusRcd": 0,
+    "Dmg": 0,
+    "CritRate": 8000,
+    "Hp": 300000
+  },
+  "63": {
+    "MissionId": 121,
+    "Version": 1,
+    "FromSrcAtk": 600000,
+    "FromPerkIntensityRatio": 0,
+    "FromSlotDmgRatio": 300000,
+    "FromEE": 200000,
+    "FromGenDmgRatio": 30000,
+    "FromDmgPlus": 10,
+    "FromCritRatio": 400000,
+    "FromFinalDmgRatio": 100000,
+    "FromFinalDmgPlus": 0,
+    "ToErAmend": 100000,
+    "ToDefAmend": 1000000,
+    "ToRcdSlotDmgRatio": 300000,
+    "ToEERCD": 200000,
+    "ToGenDmgRcdRatio": 200000,
+    "ToDmgPlusRcd": 0,
+    "Dmg": 0,
+    "CritRate": 8000,
+    "Hp": 300000
+  },
+  "64": {
+    "MissionId": 122,
+    "Version": 1,
+    "FromSrcAtk": 600000,
+    "FromPerkIntensityRatio": 0,
+    "FromSlotDmgRatio": 300000,
+    "FromEE": 200000,
+    "FromGenDmgRatio": 30000,
+    "FromDmgPlus": 10,
+    "FromCritRatio": 400000,
+    "FromFinalDmgRatio": 100000,
+    "FromFinalDmgPlus": 0,
+    "ToErAmend": 100000,
+    "ToDefAmend": 1000000,
+    "ToRcdSlotDmgRatio": 300000,
+    "ToEERCD": 200000,
+    "ToGenDmgRcdRatio": 200000,
+    "ToDmgPlusRcd": 0,
+    "Dmg": 0,
+    "CritRate": 8000,
+    "Hp": 300000
+  },
+  "65": {
+    "MissionId": 123,
+    "Version": 1,
+    "FromSrcAtk": 600000,
+    "FromPerkIntensityRatio": 0,
+    "FromSlotDmgRatio": 300000,
+    "FromEE": 200000,
+    "FromGenDmgRatio": 30000,
+    "FromDmgPlus": 10,
+    "FromCritRatio": 400000,
+    "FromFinalDmgRatio": 100000,
+    "FromFinalDmgPlus": 0,
+    "ToErAmend": 100000,
+    "ToDefAmend": 1000000,
+    "ToRcdSlotDmgRatio": 300000,
+    "ToEERCD": 200000,
+    "ToGenDmgRcdRatio": 200000,
+    "ToDmgPlusRcd": 0,
+    "Dmg": 0,
+    "CritRate": 8000,
+    "Hp": 300000
+  },
+  "66": {
     "MissionId": 124,
     "Version": 1,
     "FromSrcAtk": 600000,

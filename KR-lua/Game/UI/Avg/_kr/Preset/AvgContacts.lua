@@ -169,6 +169,14 @@ return {
 		signature = "휴가 중 복귀일 미정"
 	},
 	{
+		id = 140,
+		icon = "Icon/Head/head_14001_S",
+		name = "***",
+		landmark = "현재 이동 중입니다. 급한 일은 직접 전화 주세요.",
+		signature = "급한 일만 연락 부탁",
+		ver = "1.11.0"
+	},
+	{
 		id = 141,
 		icon = "Icon/Head/head_14101_S",
 		name = "치시아",
@@ -196,6 +204,14 @@ return {
 		name = "치토세",
 		landmark = "「빗소리」 쉼터",
 		signature = "칼은 망설이지 않는다"
+	},
+	{
+		id = 145,
+		icon = "Icon/Head/head_14501_S",
+		name = "오토하",
+		landmark = "모든 곳에 존재한다",
+		signature = "운영 정책 위반으로 인해 계정 이용이 제한되었습니다",
+		ver = "1.9.0"
 	},
 	{
 		id = 147,
@@ -247,6 +263,13 @@ return {
 		signature = "휴가 중."
 	},
 	{
+		id = 3136,
+		icon = "Icon/Head/head_npc13601_S",
+		name = "루비",
+		landmark = "아그리 유니온 필리에 지사",
+		signature = "가슴에 큰 뜻을 품고 의기양양하게~"
+	},
+	{
 		id = 999,
 		icon = "Icon/Head/head_group_S",
 		name = "일은 끝이 없다",
@@ -277,7 +300,7 @@ return {
 	{
 		id = 995,
 		icon = "Icon/Head/head_anonymity_S",
-		name = "",
+		name = "익명",
 		landmark = "",
 		signature = ""
 	},
