@@ -270,7 +270,7 @@
   "CharacterArchiveBaseInfo.12607.1": "武器",
   "CharacterArchiveBaseInfo.12607.2": "オリフラム",
   "CharacterArchiveBaseInfo.12608.1": "出演料",
-  "CharacterArchiveBaseInfo.12608.2": "500万ドーラ～（応相談）\r\n※備考：出演のご相談は半月前までにご連絡ください。",
+  "CharacterArchiveBaseInfo.12608.2": "500万ドーラ～（応相談）\n※備考：出演のご相談は半月前までにご連絡ください。",
   "CharacterArchiveBaseInfo.12701.1": "氏名",
   "CharacterArchiveBaseInfo.12701.2": "テレサ",
   "CharacterArchiveBaseInfo.12702.1": "生年月日",
@@ -561,5 +561,5 @@
   "CharacterArchiveBaseInfo.15907.1": "武器",
   "CharacterArchiveBaseInfo.15907.2": "ピュア・ハート",
   "CharacterArchiveBaseInfo.15908.1": "希望報酬",
-  "CharacterArchiveBaseInfo.15908.2": "初診料500ドーラ\r\n巡遊者としての依頼については応相談"
+  "CharacterArchiveBaseInfo.15908.2": "初診料500ドーラ\n巡遊者としての依頼については応相談"
 }

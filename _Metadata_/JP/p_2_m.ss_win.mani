@@ -1,11 +1,10 @@
-$RES_VER:2604151812
+$RES_VER:2604201307
 $CLIENT_VER:1.9.0
 $CLIENT_VER_COMP_MODE:TARGET
 $GAME_VER:1.9.0
 $CLEAR_EXPIRED_FILES:1
-$BIN_DIFF_PATCH_VER:2
-$BIN_DIFF_PATCH_INFO:1|2604171412|13|9182774
-$BIN_DIFF_PATCH_INFO:2|2604201307|2|1985956
+$BIN_DIFF_PATCH_FILE:p_2_u.hotfix.arch|f039b5e761bf8ffac383a449db29cce7|628|@529a7b71932bf135268e6c0f4e8d207b|U
+$BIN_DIFF_PATCH_FILE:p_2_u.data.arcx|0ab1e774a333b36c27a213b232a2c928|1985328|@e81ae967a4f899d22e3245a5a9211d83|U
 actor_2d_common.unity3d|1480deeda0a8c5e6a6308b78bfe4498c|4317|2999771922|
 actor_common.unity3d|4c23d8ecbcb64fc5f4d99c30fa74f816|10777435|1199685637|
 actor_l2d_common.unity3d|f6d2d503376425f8b80e2d43deafd4fa|10793179|3122012615|
@@ -15,7 +14,7 @@ adventure_fatecard.unity3d|73a298e060120c5af324bb8a42324bf8|605474|2936317743|
 adventure_towerdefence.unity3d|1c71f8b47222e0c80637d26d3d0e121a|6483|860172670|
 adventure_vampiresurvivor.unity3d|51ecf19d221ea0d025d12110c9da6da5|6428|2473993909|
 adventuremodulescene.unity3d|799cd77c442fb53d0b85d3ab2741605f|44175|3359835070|
-audio.unity3d|0e0152f265a9270a4fc792353bf9d889|1456495|3697511549|
+audio.unity3d|cd5d6cad0fb6db464fa38bb231e3d6ca|1456824|2620705611|
 breakout_1_1.unity3d|dcbf93ad3de27222c4381102d43e2683|52865|2998426018|
 breakout_1_1_assets.unity3d|1ed7212ae1eef6d3297eaa8b681a450d|1476277|1944705939|
 breakout_1_2.unity3d|96da1a6dcc69099b01b04f8653d7acb5|53027|2464892643|
@@ -661,7 +660,7 @@ char_2d_15001.unity3d|05d5f19b16b569ae601462810db918f8|25182688|1879323859|
 char_2d_15002.unity3d|7d3afbc8eab2e6e9bc66430574834730|10300186|2668143148|
 char_2d_15501.unity3d|5b5dc65d09380a4c6bb31f299e533d98|27250452|1295524443|
 char_2d_15502.unity3d|e82dc92f7c99b586254d7c5427689b11|8997817|1293450698|
-char_2d_15601.unity3d|993b5230773382b38efa366af1bd3397|17412424|973483843|
+char_2d_15601.unity3d|87384efe251c35e0cfb9c7c2bd229a3b|17417669|3834813079|
 char_2d_15602.unity3d|f468284bba7bfa86d9d5956dc871b9fc|7806892|1988827427|
 char_2d_15603.unity3d|cae12f7d839deecb036e34bff7319615|10507093|449998445|
 char_2d_15801.unity3d|4ba04897235a44b3e7e0973713ef6206|22437652|2258221732|
@@ -2370,7 +2369,7 @@ icon-a.unity3d|90f4eda57bdd09896917375082a4af4c|36150020|239187979|
 icon-a.jp.unity3d|509ae6128e5e91c0fa1181dfd232c1fc|1469866|2516436896|
 icon-b.unity3d|366b245fba2cb507145efe811ed08e8a|20280236|4189374027|
 icon-b.jp.unity3d|b81465ae73c81bc03b1097010e125207|500109|472638566|
-icon-c.unity3d|b94b3714f9dd42c73ad56c4a3fc91fc6|25981321|1236647594|
+icon-c.unity3d|e2ab4c93b203f7b9a42a2ff30d9ded72|25993375|302085975|
 icon-c.jp.unity3d|e6a33e49a81b40990069b001034f44ad|1178553|3258006992|
 icon-d.unity3d|e26d50d81ed6eda94567e1b223131744|20283587|3126464586|
 icon-d.jp.unity3d|5c79908b657aa46c004a87e643178e12|1754129|2057966899|
@@ -6535,8 +6534,8 @@ ui_mail.unity3d|a08e4a40ea16ce06f4177b37c6c9e93d|78405|2670193540|
 ui_mail.jp.unity3d|2a969af74e848542d2054dd888ceda8e|65056|673401783|
 ui_mainlineex.unity3d|36dabe8cec15fd606d1ea15236f12684|3970926|898344483|
 ui_mainlineex.jp.unity3d|7153818993a0548a62aac4950d6331b5|2310779|1484121978|
-ui_mainlineex_solodancestory.unity3d|5922574cc5ae9f5b8caf32a378030a70|743063|83039896|
-ui_mainlineex_solodancestory.jp.unity3d|09c2f5bc95ae99428add5e8fa2615491|172619|2961986870|
+ui_mainlineex_solodancestory.unity3d|aaa564f7dac771ce54994ea6e99e991d|755216|694608188|
+ui_mainlineex_solodancestory.jp.unity3d|32448a2a980de613919702a59468fa71|172481|2598259889|
 ui_mainlineformationdisc.unity3d|302c868fe195e9e4a5745238dbf45b18|1188364|2349710660|
 ui_mainlineformationdisc.jp.unity3d|ff30ac894c2fc91478bb2843ecd1ab76|948944|3223492395|
 ui_mainlineformationex.unity3d|a9c44e78e4a9230e498a2d20c1c4dd6e|209032|2674317519|
@@ -6593,8 +6592,8 @@ ui_popuptips.unity3d|976a63e8dd54db63dbc785d5bb97962f|8860|3241807125|
 ui_popuptips.jp.unity3d|485c5ecdf367a875d0a186aed8d5b646|8856|3228780234|
 ui_potentialdetail.unity3d|9a179e6086007b2f7fa2eff487ea4112|650836|1131027564|
 ui_potentialdetail.jp.unity3d|ba37b4d9afd16f0b623eecc18e50c938|651326|85372653|
-ui_potentialpreselection.unity3d|e7bd2d871523008ef79e63fbfd325282|830015|1437324733|
-ui_potentialpreselection.jp.unity3d|ed1914d3065bf7ffceca7d37af4b4e07|816668|3791588741|
+ui_potentialpreselection.unity3d|022432443942d399aec20db040b24036|829939|2128049304|
+ui_potentialpreselection.jp.unity3d|daaa69b4826ccdeefde344efcaab253a|816650|1796615977|
 ui_quest.unity3d|31d61d5b17185688934b3a015b253a45|26271829|3525190102|
 ui_quest.jp.unity3d|7e26cca5b5f726a89a28cd2ebea84841|1294436|1045849750|
 ui_questnewbie.unity3d|ca824d25446c433f6da63d626ebf409d|223264|2811660768|
@@ -6669,7 +6668,7 @@ vs_scene_03a.unity3d|2db62d56e85d42b7b34ca5ae6d2757b4|30282|2029625221|
 vs_scene_03a_assets.unity3d|4e92e40b83d977aa65047fb601791876|5081112|383854920|
 vs_scene_04a.unity3d|5e5df129d8893cb66a0117e94ea8f6be|67772|1457640887|
 vs_scene_04a_assets.unity3d|77f02b755f2529ec8b6f86efe9eefbec|6691752|2218640369|
-win.unity3d|5513b08eeac73b0a7762e8957acfefe3|253853|3642344103|
+win.unity3d|30f038fd13f2b8b8ebe30bcdbe82965f|253842|1158019986|
 Ambience_Boss.bnk|14c4ba5592a81ccc6d07b9ae5da04b1e|1910818|@WWI|
 Ambience_City.bnk|2b49db48eca7d5fd9f9c8822f34a76b9|3052460|@WWI|
 Ambience_Coast.bnk|9a3575452678e83e3fa59e022a3c98fe|18849|@WWI|
@@ -6700,7 +6699,7 @@ Mode_Huochui.bnk|f32dadb2e58663b77430aee3fb6d2297|157888|@WWI|
 Mode_JointDrill.bnk|4772e566e633c2206164ea3cee592140|188960|@WWI|
 Mode_Present.bnk|2a0ef7c58c272e9e0df8bfd76abc3fb8|614778|@WWI|
 Mode_SpringFestival2025.bnk|fbff404f7f0e7cfdac4be26fcbdb45b5|1783304|@WWI|
-Mode_Steal.bnk|d299e2c83f48b9b56327809aab5a2262|521605|@WWI|
+Mode_Steal.bnk|d876b5c087382f1c54aa386a3080af5f|521605|@WWI|
 Mode_TowerDefense.bnk|4626746298470fa48f60f70914c6cfe5|3668117|@WWI|
 Mode_YIye.bnk|46b9b1aa1ef4149339e3b47f611467a3|277320|@WWI|
 Monster_10001.bnk|6fa42f7f73ba876b66e1937a4770da8b|641722|@WWI|
@@ -13238,7 +13237,7 @@ vo_cgstory_159_i_cn.wem|71cc0783eb610ac20975c445a754a335|165648|@WWI|Voice_CN
 vo_cgstory_159_i_jp.wem|fd9f19217f4c7847cf226e6c17f30f31|118404|@WWI|Voice_JP
 vo_LoginNpc103_ChineseNewYear26_day04_cn.wem|a131c17a48d7dfb8df1a4b1b3a6f642b|141502|@WWI|Voice_CN
 vo_LoginNpc103_ChineseNewYear26_day04_jp.wem|b8ad68be1ccc1f74d780cfa251d722e9|118540|@WWI|Voice_JP
-vo_LoginNpc103_HalfAnniversary_day02_cn.wem|0bf2a7ceeaa3f418f9ca6c92872a4b9b|288203|@WWI|Voice_CN
+vo_LoginNpc103_HalfAnniversary_day02_cn.wem|5ea6bc25262f11108b367309f17ce719|289744|@WWI|Voice_CN
 vo_LoginNpc103_HalfAnniversary_day02_jp.wem|dd0530a16ecc696719034426cdceceee|318940|@WWI|Voice_JP
 vo_LoginNpc103_NewYear26_day02_cn.wem|a20fd4787b47608e51e3c1c3ea4fb9aa|78598|@WWI|Voice_CN
 vo_LoginNpc103_NewYear26_day02_jp.wem|67992d1d48fafd7acd41b6dd73a17db3|77733|@WWI|Voice_JP
@@ -16486,3 +16485,9 @@ Prologue-Prologue_P2.mp4|c42f950bf14b214a1304c04d3b2fd84d|26791663|@VID|
 Prologue-Prologue_P3.mp4|1a0f4bb2ca39ae53f4b33bb33889752a|19638313|@VID|
 Prologue-Prologue_P4.mp4|112e282369bb2434965c56ee8e176f36|74947941|@VID|
 Prologue-Prologue_P4_JPVA_FP_JP.srt|1cb3f65b3dbd0d2be9143344324e6313|1410|@VID|
+data.arcx|109805cabf0ddcea9b2743ee81a6343a|19384567|@TAB|
+lua.arcx|791d491723538db5af4d94dc58a0d1b5|42465080|@SCR|
+hotfix.arch|df0cdf584e5b4f23ff48441f7ee9974b|5857064|@SCR|
+Launch.mp4|9b6d6ed316e62bd18e268b180c972dcd|9715791|@VID|
+Launch_BGM.mp4|79b579c542aed5da28472d3b487f43d1|6158728|@VID|
+LaunchVideo.config|33ad329fbec1fd46c97fcbc8297b8b2e|250|@VID|
