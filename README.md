@@ -1,5 +1,13 @@
 # 斯特拉索拉数据
 
+> [!IMPORTANT]
+> **Migration Notice**
+>
+> This project has been migrated to a new repository:
+> 
+> data: **[ss-data](https://github.com/MakoStar/ss-data)**
+> lua: **[ss-lua](https://github.com/MakoStar/ss-lua)**
+>
 <!-- 
 update commit message: 
 `chore(CN): auto-update data v120 (p18) [c1.9.0_g1.12.1_p20]`
