@@ -2121,6 +2121,20 @@
     "DelayShow": false,
     "HideHome": false
   },
+  "GoldenSpyLevelSelectPanel_400017": {
+    "Id": "GoldenSpyLevelSelectPanel_400017",
+    "Title": "TopBar.GoldenSpyLevelSelectPanel_400017.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73116
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
   "ActivityLevelsSelectPanel_10107": {
     "Id": "ActivityLevelsSelectPanel_10107",
     "Title": "TopBar.ActivityLevelsSelectPanel_10107.1",
@@ -2316,6 +2330,32 @@
   "CookieBoardPanel_400010": {
     "Id": "CookieBoardPanel_400010",
     "Title": "TopBar.CookieBoardPanel_400010.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "CookieGamePanel_400016": {
+    "Id": "CookieGamePanel_400016",
+    "Title": "TopBar.CookieGamePanel_400016.1",
+    "EntryId": 400301,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73115
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "CookieBoardPanel_400016": {
+    "Id": "CookieBoardPanel_400016",
+    "Title": "TopBar.CookieBoardPanel_400016.1",
     "EntryId": 0,
     "HideBack": false,
     "Energy": false,
@@ -2811,6 +2851,106 @@
     "CoinIds": [
       73114
     ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "ActivityLevelsSelectPanel_10111": {
+    "Id": "ActivityLevelsSelectPanel_10111",
+    "Title": "TopBar.ActivityLevelsSelectPanel_10111.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": true,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Shop_10111": {
+    "Id": "Shop_10111",
+    "Title": "TopBar.Shop_10111.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "Task_10111": {
+    "Id": "Task_10111",
+    "Title": "TopBar.Task_10111.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73115
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "CultivationManualStory_10111": {
+    "Id": "CultivationManualStory_10111",
+    "Title": "TopBar.CultivationManualStory_10111.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "CultivationManualPanel": {
+    "Id": "CultivationManualPanel",
+    "Title": "TopBar.CultivationManualPanel.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": true,
+    "CoinIds": [
+      73115
+    ],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "TrialSkinSelectPanel": {
+    "Id": "TrialSkinSelectPanel",
+    "Title": "TopBar.TrialSkinSelectPanel.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "TrialSkinFormationScenePanel": {
+    "Id": "TrialSkinFormationScenePanel",
+    "Title": "TopBar.TrialSkinFormationScenePanel.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
+    "HideCoinAdd": false,
+    "DelayShow": false,
+    "HideHome": false
+  },
+  "EventReminderPanel": {
+    "Id": "EventReminderPanel",
+    "Title": "TopBar.EventReminderPanel.1",
+    "EntryId": 0,
+    "HideBack": false,
+    "Energy": false,
+    "Coin": false,
+    "CoinIds": [],
     "HideCoinAdd": false,
     "DelayShow": false,
     "HideHome": false
