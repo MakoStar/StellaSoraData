@@ -1,0 +1,10 @@
+{
+  "1": {
+    "Difficulty": 1,
+    "TokenRate": 0
+  },
+  "2": {
+    "Difficulty": 2,
+    "TokenRate": 50
+  }
+}

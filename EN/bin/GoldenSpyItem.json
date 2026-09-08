@@ -13,7 +13,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": false
   },
   "1102": {
     "Id": 1102,
@@ -29,7 +30,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": false
   },
   "1103": {
     "Id": 1103,
@@ -45,7 +47,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": true
   },
   "1104": {
     "Id": 1104,
@@ -61,7 +64,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": false
   },
   "1105": {
     "Id": 1105,
@@ -77,7 +81,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": false
   },
   "1106": {
     "Id": 1106,
@@ -93,7 +98,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": true
   },
   "1107": {
     "Id": 1107,
@@ -109,7 +115,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": false
   },
   "1108": {
     "Id": 1108,
@@ -125,7 +132,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": false
   },
   "1109": {
     "Id": 1109,
@@ -141,7 +149,8 @@
     ],
     "ShowValue": true,
     "IsTask": true,
-    "NeedShowFlash": true
+    "NeedShowFlash": true,
+    "IsBig": true
   },
   "1201": {
     "Id": 1201,
@@ -160,7 +169,8 @@
     ],
     "ShowValue": false,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": true
   },
   "1202": {
     "Id": 1202,
@@ -179,7 +189,8 @@
     ],
     "ShowValue": false,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": true
   },
   "1203": {
     "Id": 1203,
@@ -198,7 +209,8 @@
     ],
     "ShowValue": false,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": false
   },
   "1204": {
     "Id": 1204,
@@ -216,7 +228,8 @@
     ],
     "ShowValue": true,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": false
   },
   "1205": {
     "Id": 1205,
@@ -232,7 +245,8 @@
     ],
     "ShowValue": false,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": false
   },
   "1301": {
     "Id": 1301,
@@ -248,7 +262,8 @@
     ],
     "ShowValue": true,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": false
   },
   "1311": {
     "Id": 1311,
@@ -264,7 +279,8 @@
     ],
     "ShowValue": true,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": false
   },
   "1312": {
     "Id": 1312,
@@ -280,7 +296,8 @@
     ],
     "ShowValue": true,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": false
   },
   "1313": {
     "Id": 1313,
@@ -296,6 +313,7 @@
     ],
     "ShowValue": true,
     "IsTask": false,
-    "NeedShowFlash": false
+    "NeedShowFlash": false,
+    "IsBig": false
   }
 }
