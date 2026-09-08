@@ -2213,6 +2213,114 @@
     "LevelData": 0,
     "MainOrSupport": 0
   },
+  "13701011": {
+    "Id": 13701011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13705001": {
+    "Id": 13705001,
+    "LevelTypeData": 1,
+    "LevelData": 513705,
+    "MainOrSupport": 0
+  },
+  "13708001": {
+    "Id": 13708001,
+    "LevelTypeData": 1,
+    "LevelData": 513708,
+    "MainOrSupport": 0
+  },
+  "13721011": {
+    "Id": 13721011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13722011": {
+    "Id": 13722011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13722021": {
+    "Id": 13722021,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13723011": {
+    "Id": 13723011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13723021": {
+    "Id": 13723021,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13725001": {
+    "Id": 13725001,
+    "LevelTypeData": 1,
+    "LevelData": 513725,
+    "MainOrSupport": 0
+  },
+  "13725012": {
+    "Id": 13725012,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13727001": {
+    "Id": 13727001,
+    "LevelTypeData": 1,
+    "LevelData": 513727,
+    "MainOrSupport": 0
+  },
+  "13727002": {
+    "Id": 13727002,
+    "LevelTypeData": 1,
+    "LevelData": 513727,
+    "MainOrSupport": 0
+  },
+  "13728001": {
+    "Id": 13728001,
+    "LevelTypeData": 1,
+    "LevelData": 513728,
+    "MainOrSupport": 0
+  },
+  "13729001": {
+    "Id": 13729001,
+    "LevelTypeData": 1,
+    "LevelData": 513729,
+    "MainOrSupport": 0
+  },
+  "13730001": {
+    "Id": 13730001,
+    "LevelTypeData": 1,
+    "LevelData": 513730,
+    "MainOrSupport": 0
+  },
+  "13730002": {
+    "Id": 13730002,
+    "LevelTypeData": 1,
+    "LevelData": 513730,
+    "MainOrSupport": 0
+  },
+  "13742001": {
+    "Id": 13742001,
+    "LevelTypeData": 1,
+    "LevelData": 513742,
+    "MainOrSupport": 0
+  },
+  "13796511": {
+    "Id": 13796511,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
   "11606001": {
     "Id": 11606001,
     "LevelTypeData": 1,
@@ -8481,6 +8589,198 @@
     "Id": 4058125,
     "LevelTypeData": 6,
     "LevelData": 4058105,
+    "MainOrSupport": 0
+  },
+  "4059111": {
+    "Id": 4059111,
+    "LevelTypeData": 6,
+    "LevelData": 4059101,
+    "MainOrSupport": 0
+  },
+  "4059112": {
+    "Id": 4059112,
+    "LevelTypeData": 6,
+    "LevelData": 4059102,
+    "MainOrSupport": 0
+  },
+  "4059113": {
+    "Id": 4059113,
+    "LevelTypeData": 6,
+    "LevelData": 4059103,
+    "MainOrSupport": 0
+  },
+  "4059114": {
+    "Id": 4059114,
+    "LevelTypeData": 6,
+    "LevelData": 4059104,
+    "MainOrSupport": 0
+  },
+  "4059115": {
+    "Id": 4059115,
+    "LevelTypeData": 6,
+    "LevelData": 4059105,
+    "MainOrSupport": 0
+  },
+  "4059121": {
+    "Id": 4059121,
+    "LevelTypeData": 6,
+    "LevelData": 4059101,
+    "MainOrSupport": 0
+  },
+  "4059122": {
+    "Id": 4059122,
+    "LevelTypeData": 6,
+    "LevelData": 4059102,
+    "MainOrSupport": 0
+  },
+  "4059123": {
+    "Id": 4059123,
+    "LevelTypeData": 6,
+    "LevelData": 4059103,
+    "MainOrSupport": 0
+  },
+  "4059124": {
+    "Id": 4059124,
+    "LevelTypeData": 6,
+    "LevelData": 4059104,
+    "MainOrSupport": 0
+  },
+  "4059125": {
+    "Id": 4059125,
+    "LevelTypeData": 6,
+    "LevelData": 4059105,
+    "MainOrSupport": 0
+  },
+  "4060011": {
+    "Id": 4060011,
+    "LevelTypeData": 6,
+    "LevelData": 406001,
+    "MainOrSupport": 0
+  },
+  "4060012": {
+    "Id": 4060012,
+    "LevelTypeData": 6,
+    "LevelData": 406002,
+    "MainOrSupport": 0
+  },
+  "4060013": {
+    "Id": 4060013,
+    "LevelTypeData": 6,
+    "LevelData": 406003,
+    "MainOrSupport": 0
+  },
+  "4060014": {
+    "Id": 4060014,
+    "LevelTypeData": 6,
+    "LevelData": 406004,
+    "MainOrSupport": 0
+  },
+  "4060015": {
+    "Id": 4060015,
+    "LevelTypeData": 6,
+    "LevelData": 406005,
+    "MainOrSupport": 0
+  },
+  "4060016": {
+    "Id": 4060016,
+    "LevelTypeData": 6,
+    "LevelData": 406006,
+    "MainOrSupport": 0
+  },
+  "4060021": {
+    "Id": 4060021,
+    "LevelTypeData": 6,
+    "LevelData": 406001,
+    "MainOrSupport": 0
+  },
+  "4060022": {
+    "Id": 4060022,
+    "LevelTypeData": 6,
+    "LevelData": 406002,
+    "MainOrSupport": 0
+  },
+  "4060023": {
+    "Id": 4060023,
+    "LevelTypeData": 6,
+    "LevelData": 406003,
+    "MainOrSupport": 0
+  },
+  "4060024": {
+    "Id": 4060024,
+    "LevelTypeData": 6,
+    "LevelData": 406004,
+    "MainOrSupport": 0
+  },
+  "4060025": {
+    "Id": 4060025,
+    "LevelTypeData": 6,
+    "LevelData": 406005,
+    "MainOrSupport": 0
+  },
+  "4060026": {
+    "Id": 4060026,
+    "LevelTypeData": 6,
+    "LevelData": 406006,
+    "MainOrSupport": 0
+  },
+  "4060111": {
+    "Id": 4060111,
+    "LevelTypeData": 6,
+    "LevelData": 4060101,
+    "MainOrSupport": 0
+  },
+  "4060112": {
+    "Id": 4060112,
+    "LevelTypeData": 6,
+    "LevelData": 4060102,
+    "MainOrSupport": 0
+  },
+  "4060113": {
+    "Id": 4060113,
+    "LevelTypeData": 6,
+    "LevelData": 4060103,
+    "MainOrSupport": 0
+  },
+  "4060114": {
+    "Id": 4060114,
+    "LevelTypeData": 6,
+    "LevelData": 4060104,
+    "MainOrSupport": 0
+  },
+  "4060115": {
+    "Id": 4060115,
+    "LevelTypeData": 6,
+    "LevelData": 4060105,
+    "MainOrSupport": 0
+  },
+  "4060211": {
+    "Id": 4060211,
+    "LevelTypeData": 6,
+    "LevelData": 4060201,
+    "MainOrSupport": 0
+  },
+  "4060212": {
+    "Id": 4060212,
+    "LevelTypeData": 6,
+    "LevelData": 4060202,
+    "MainOrSupport": 0
+  },
+  "4060213": {
+    "Id": 4060213,
+    "LevelTypeData": 6,
+    "LevelData": 4060203,
+    "MainOrSupport": 0
+  },
+  "4060214": {
+    "Id": 4060214,
+    "LevelTypeData": 6,
+    "LevelData": 4060204,
+    "MainOrSupport": 0
+  },
+  "4060215": {
+    "Id": 4060215,
+    "LevelTypeData": 6,
+    "LevelData": 4060205,
     "MainOrSupport": 0
   },
   "260110611": {

@@ -15938,6 +15938,699 @@
     "Votype": "catchphrase",
     "SkinId": 0
   },
+  "1375601": {
+    "Id": 1375601,
+    "VoResource": "vo_137_combat_ultskill_001",
+    "CharacterId": 137,
+    "Votype": "ultskill",
+    "SkinId": 0
+  },
+  "1375602": {
+    "Id": 1375602,
+    "VoResource": "vo_137_combat_ultskill_002",
+    "CharacterId": 137,
+    "Votype": "ultskill",
+    "SkinId": 0
+  },
+  "1375701": {
+    "Id": 1375701,
+    "VoResource": "vo_137_combat_dead_001",
+    "CharacterId": 137,
+    "Votype": "dead",
+    "SkinId": 0
+  },
+  "1375702": {
+    "Id": 1375702,
+    "VoResource": "vo_137_combat_dead_002",
+    "CharacterId": 137,
+    "Votype": "dead",
+    "SkinId": 0
+  },
+  "1370101": {
+    "Id": 1370101,
+    "VoResource": "vo_137_combat_perk_001",
+    "CharacterId": 137,
+    "Votype": "perk",
+    "SkinId": 0
+  },
+  "1370102": {
+    "Id": 1370102,
+    "VoResource": "vo_137_combat_perk_002",
+    "CharacterId": 137,
+    "Votype": "perk",
+    "SkinId": 0
+  },
+  "1370103": {
+    "Id": 1370103,
+    "VoResource": "vo_137_combat_perk_003",
+    "CharacterId": 137,
+    "Votype": "perk",
+    "SkinId": 0
+  },
+  "1370201": {
+    "Id": 1370201,
+    "VoResource": "vo_137_combat_subPerk_001",
+    "CharacterId": 137,
+    "Votype": "subPerk",
+    "SkinId": 0
+  },
+  "1370202": {
+    "Id": 1370202,
+    "VoResource": "vo_137_combat_subPerk_002",
+    "CharacterId": 137,
+    "Votype": "subPerk",
+    "SkinId": 0
+  },
+  "1370301": {
+    "Id": 1370301,
+    "VoResource": "vo_137_combat_chat_001",
+    "CharacterId": 137,
+    "Votype": "chat",
+    "SkinId": 0
+  },
+  "1370302": {
+    "Id": 1370302,
+    "VoResource": "vo_137_combat_chat_002",
+    "CharacterId": 137,
+    "Votype": "chat",
+    "SkinId": 0
+  },
+  "1370303": {
+    "Id": 1370303,
+    "VoResource": "vo_137_combat_chat_003",
+    "CharacterId": 137,
+    "Votype": "chat",
+    "SkinId": 0
+  },
+  "1370304": {
+    "Id": 1370304,
+    "VoResource": "vo_137_combat_chat_004",
+    "CharacterId": 137,
+    "Votype": "chat",
+    "SkinId": 0
+  },
+  "1370305": {
+    "Id": 1370305,
+    "VoResource": "vo_137_combat_chat_005",
+    "CharacterId": 137,
+    "Votype": "chat",
+    "SkinId": 0
+  },
+  "1370401": {
+    "Id": 1370401,
+    "VoResource": "vo_137_combat_chatLvUp_001",
+    "CharacterId": 137,
+    "Votype": "chatLvUp",
+    "SkinId": 0
+  },
+  "1370501": {
+    "Id": 1370501,
+    "VoResource": "vo_137_combat_chatNext_001",
+    "CharacterId": 137,
+    "Votype": "chatNext",
+    "SkinId": 0
+  },
+  "1370601": {
+    "Id": 1370601,
+    "VoResource": "vo_137_combat_shopRoom_001",
+    "CharacterId": 137,
+    "Votype": "shopRoom",
+    "SkinId": 0
+  },
+  "1370701": {
+    "Id": 1370701,
+    "VoResource": "vo_137_combat_restRoom_001",
+    "CharacterId": 137,
+    "Votype": "restRoom",
+    "SkinId": 0
+  },
+  "1370801": {
+    "Id": 1370801,
+    "VoResource": "vo_137_combat_eventRoom_001",
+    "CharacterId": 137,
+    "Votype": "eventRoom",
+    "SkinId": 0
+  },
+  "1370901": {
+    "Id": 1370901,
+    "VoResource": "vo_137_combat_battleClear_001",
+    "CharacterId": 137,
+    "Votype": "battleClear",
+    "SkinId": 0
+  },
+  "1370902": {
+    "Id": 1370902,
+    "VoResource": "vo_137_combat_battleClear_002",
+    "CharacterId": 137,
+    "Votype": "battleClear",
+    "SkinId": 0
+  },
+  "1370903": {
+    "Id": 1370903,
+    "VoResource": "vo_137_combat_battleClear_003",
+    "CharacterId": 137,
+    "Votype": "battleClear",
+    "SkinId": 0
+  },
+  "1371001": {
+    "Id": 1371001,
+    "VoResource": "vo_137_ui_greet_001",
+    "CharacterId": 137,
+    "Votype": "greet",
+    "SkinId": 0
+  },
+  "1371002": {
+    "Id": 1371002,
+    "VoResource": "vo_137_ui_greet_002",
+    "CharacterId": 137,
+    "Votype": "greet",
+    "SkinId": 0
+  },
+  "1371101": {
+    "Id": 1371101,
+    "VoResource": "vo_137_ui_greetmorn_001",
+    "CharacterId": 137,
+    "Votype": "greetmorn",
+    "SkinId": 0
+  },
+  "1371201": {
+    "Id": 1371201,
+    "VoResource": "vo_137_ui_greetnoon_001",
+    "CharacterId": 137,
+    "Votype": "greetnoon",
+    "SkinId": 0
+  },
+  "1371301": {
+    "Id": 1371301,
+    "VoResource": "vo_137_ui_greetnight_001",
+    "CharacterId": 137,
+    "Votype": "greetnight",
+    "SkinId": 0
+  },
+  "1371401": {
+    "Id": 1371401,
+    "VoResource": "vo_137_ui_standee_001",
+    "CharacterId": 137,
+    "Votype": "standee",
+    "SkinId": 0
+  },
+  "1371402": {
+    "Id": 1371402,
+    "VoResource": "vo_137_ui_standee_002",
+    "CharacterId": 137,
+    "Votype": "standee",
+    "SkinId": 0
+  },
+  "1371501": {
+    "Id": 1371501,
+    "VoResource": "vo_137_ui_fullscreen_001",
+    "CharacterId": 137,
+    "Votype": "fullscreen",
+    "SkinId": 0
+  },
+  "1371502": {
+    "Id": 1371502,
+    "VoResource": "vo_137_ui_fullscreen_002",
+    "CharacterId": 137,
+    "Votype": "fullscreen",
+    "SkinId": 0
+  },
+  "1371601": {
+    "Id": 1371601,
+    "VoResource": "vo_137_ui_posterchat_001",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1371602": {
+    "Id": 1371602,
+    "VoResource": "vo_137_ui_posterchat_002",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1371603": {
+    "Id": 1371603,
+    "VoResource": "vo_137_ui_posterchat_003",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1371604": {
+    "Id": 1371604,
+    "VoResource": "vo_137_ui_posterchat_004",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1371605": {
+    "Id": 1371605,
+    "VoResource": "vo_137_ui_posterchat_005",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1371606": {
+    "Id": 1371606,
+    "VoResource": "vo_137_ui_posterchat_006",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1371701": {
+    "Id": 1371701,
+    "VoResource": "vo_137_ui_affchat1_001",
+    "CharacterId": 137,
+    "Votype": "affchat1",
+    "SkinId": 0
+  },
+  "1371801": {
+    "Id": 1371801,
+    "VoResource": "vo_137_ui_affchat2_001",
+    "CharacterId": 137,
+    "Votype": "affchat2",
+    "SkinId": 0
+  },
+  "1371901": {
+    "Id": 1371901,
+    "VoResource": "vo_137_ui_affchat3_001",
+    "CharacterId": 137,
+    "Votype": "affchat3",
+    "SkinId": 0
+  },
+  "1372001": {
+    "Id": 1372001,
+    "VoResource": "vo_137_ui_affchat4_001",
+    "CharacterId": 137,
+    "Votype": "affchat4",
+    "SkinId": 0
+  },
+  "1372101": {
+    "Id": 1372101,
+    "VoResource": "vo_137_ui_affchat5_001",
+    "CharacterId": 137,
+    "Votype": "affchat5",
+    "SkinId": 0
+  },
+  "1372201": {
+    "Id": 1372201,
+    "VoResource": "vo_137_ui_discuss_001",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1372202": {
+    "Id": 1372202,
+    "VoResource": "vo_137_ui_discuss_002",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1372203": {
+    "Id": 1372203,
+    "VoResource": "vo_137_ui_discuss_003",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1372204": {
+    "Id": 1372204,
+    "VoResource": "vo_137_ui_discuss_004",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1372205": {
+    "Id": 1372205,
+    "VoResource": "vo_137_ui_discuss_005",
+    "CharacterId": 137,
+    "Votype": "posterchat",
+    "SkinId": 0
+  },
+  "1372301": {
+    "Id": 1372301,
+    "VoResource": "vo_137_ui_hfc_001",
+    "CharacterId": 137,
+    "Votype": "hfc",
+    "SkinId": 0
+  },
+  "1372302": {
+    "Id": 1372302,
+    "VoResource": "vo_137_ui_hfc_002",
+    "CharacterId": 137,
+    "Votype": "hfc",
+    "SkinId": 0
+  },
+  "1372401": {
+    "Id": 1372401,
+    "VoResource": "vo_137_ui_hang_001",
+    "CharacterId": 137,
+    "Votype": "hang",
+    "SkinId": 0
+  },
+  "1372402": {
+    "Id": 1372402,
+    "VoResource": "vo_137_ui_hang_002",
+    "CharacterId": 137,
+    "Votype": "hang",
+    "SkinId": 0
+  },
+  "1372501": {
+    "Id": 1372501,
+    "VoResource": "vo_137_ui_exhang_001",
+    "CharacterId": 137,
+    "Votype": "exhang",
+    "SkinId": 0
+  },
+  "1372601": {
+    "Id": 1372601,
+    "VoResource": "vo_137_ui_logo_001",
+    "CharacterId": 137,
+    "Votype": "yostar",
+    "SkinId": 0
+  },
+  "1372701": {
+    "Id": 1372701,
+    "VoResource": "vo_137_ui_gachaNew_001",
+    "CharacterId": 137,
+    "Votype": "gachaNew",
+    "SkinId": 0
+  },
+  "1372801": {
+    "Id": 1372801,
+    "VoResource": "vo_137_ui_gacha_001",
+    "CharacterId": 137,
+    "Votype": "gacha",
+    "SkinId": 0
+  },
+  "1372901": {
+    "Id": 1372901,
+    "VoResource": "vo_137_ui_win_001",
+    "CharacterId": 137,
+    "Votype": "win",
+    "SkinId": 0
+  },
+  "1372902": {
+    "Id": 1372902,
+    "VoResource": "vo_137_ui_win_002",
+    "CharacterId": 137,
+    "Votype": "win",
+    "SkinId": 0
+  },
+  "1373001": {
+    "Id": 1373001,
+    "VoResource": "vo_137_ui_lose_001",
+    "CharacterId": 137,
+    "Votype": "lose",
+    "SkinId": 0
+  },
+  "1373002": {
+    "Id": 1373002,
+    "VoResource": "vo_137_ui_lose_002",
+    "CharacterId": 137,
+    "Votype": "lose",
+    "SkinId": 0
+  },
+  "1373101": {
+    "Id": 1373101,
+    "VoResource": "vo_137_ui_charup_001",
+    "CharacterId": 137,
+    "Votype": "charUp",
+    "SkinId": 0
+  },
+  "1373201": {
+    "Id": 1373201,
+    "VoResource": "vo_137_ui_excharup_001",
+    "CharacterId": 137,
+    "Votype": "exCharUp",
+    "SkinId": 0
+  },
+  "1373301": {
+    "Id": 1373301,
+    "VoResource": "vo_137_ui_uniMusic_001",
+    "CharacterId": 137,
+    "Votype": "uniMusic",
+    "SkinId": 0
+  },
+  "1373401": {
+    "Id": 1373401,
+    "VoResource": "vo_137_ui_music_001",
+    "CharacterId": 137,
+    "Votype": "music",
+    "SkinId": 0
+  },
+  "1373501": {
+    "Id": 1373501,
+    "VoResource": "vo_137_ui_unlockLook_001",
+    "CharacterId": 137,
+    "Votype": "unlockLook",
+    "SkinId": 0
+  },
+  "1373601": {
+    "Id": 1373601,
+    "VoResource": "vo_137_ui_unlockCG_001",
+    "CharacterId": 137,
+    "Votype": "unlockCG",
+    "SkinId": 0
+  },
+  "1373701": {
+    "Id": 1373701,
+    "VoResource": "vo_137_ui_swap_001",
+    "CharacterId": 137,
+    "Votype": "swap",
+    "SkinId": 0
+  },
+  "1373702": {
+    "Id": 1373702,
+    "VoResource": "vo_137_ui_swap_002",
+    "CharacterId": 137,
+    "Votype": "swap",
+    "SkinId": 0
+  },
+  "1373703": {
+    "Id": 1373703,
+    "VoResource": "vo_137_ui_swap_003",
+    "CharacterId": 137,
+    "Votype": "swap",
+    "SkinId": 0
+  },
+  "1373704": {
+    "Id": 1373704,
+    "VoResource": "vo_137_ui_swap_004",
+    "CharacterId": 137,
+    "Votype": "swap",
+    "SkinId": 0
+  },
+  "1373801": {
+    "Id": 1373801,
+    "VoResource": "vo_137_ui_swap_001",
+    "CharacterId": 137,
+    "Votype": "buildPick",
+    "SkinId": 0
+  },
+  "1373802": {
+    "Id": 1373802,
+    "VoResource": "vo_137_ui_swap_002",
+    "CharacterId": 137,
+    "Votype": "buildPick",
+    "SkinId": 0
+  },
+  "1373803": {
+    "Id": 1373803,
+    "VoResource": "vo_137_ui_swap_003",
+    "CharacterId": 137,
+    "Votype": "buildPick",
+    "SkinId": 0
+  },
+  "1373804": {
+    "Id": 1373804,
+    "VoResource": "vo_137_ui_swap_004",
+    "CharacterId": 137,
+    "Votype": "buildPick",
+    "SkinId": 0
+  },
+  "1373901": {
+    "Id": 1373901,
+    "VoResource": "vo_137_ui_afflv1_001",
+    "CharacterId": 137,
+    "Votype": "afflv1",
+    "SkinId": 0
+  },
+  "1374001": {
+    "Id": 1374001,
+    "VoResource": "vo_137_ui_afflv2_001",
+    "CharacterId": 137,
+    "Votype": "afflv2",
+    "SkinId": 0
+  },
+  "1374101": {
+    "Id": 1374101,
+    "VoResource": "vo_137_ui_afflv3_001",
+    "CharacterId": 137,
+    "Votype": "afflv3",
+    "SkinId": 0
+  },
+  "1374201": {
+    "Id": 1374201,
+    "VoResource": "vo_137_ui_afflv4_001",
+    "CharacterId": 137,
+    "Votype": "afflv4",
+    "SkinId": 0
+  },
+  "1374301": {
+    "Id": 1374301,
+    "VoResource": "vo_137_ui_thankSmall_001",
+    "CharacterId": 137,
+    "Votype": "thankSmall",
+    "SkinId": 0
+  },
+  "1374401": {
+    "Id": 1374401,
+    "VoResource": "vo_137_ui_thank_001",
+    "CharacterId": 137,
+    "Votype": "thank",
+    "SkinId": 0
+  },
+  "1374501": {
+    "Id": 1374501,
+    "VoResource": "vo_137_ui_thankEx_001",
+    "CharacterId": 137,
+    "Votype": "thankEx",
+    "SkinId": 0
+  },
+  "1375801": {
+    "Id": 1375801,
+    "VoResource": "vo_137_ui_valentine_001",
+    "CharacterId": 137,
+    "Votype": "valentine",
+    "SkinId": 0
+  },
+  "1375901": {
+    "Id": 1375901,
+    "VoResource": "vo_137_ui_xmas_001",
+    "CharacterId": 137,
+    "Votype": "xmas",
+    "SkinId": 0
+  },
+  "1376001": {
+    "Id": 1376001,
+    "VoResource": "vo_137_ui_newyear_001",
+    "CharacterId": 137,
+    "Votype": "newyear",
+    "SkinId": 0
+  },
+  "1376101": {
+    "Id": 1376101,
+    "VoResource": "vo_137_ui_birth_001",
+    "CharacterId": 137,
+    "Votype": "birth",
+    "SkinId": 0
+  },
+  "1376201": {
+    "Id": 1376201,
+    "VoResource": "vo_137_ui_yourbirth_001",
+    "CharacterId": 137,
+    "Votype": "yourbirth",
+    "SkinId": 0
+  },
+  "1374601": {
+    "Id": 1374601,
+    "VoResource": "vo_story_137_001_confirm",
+    "CharacterId": 137,
+    "Votype": "confirm",
+    "SkinId": 0
+  },
+  "1374701": {
+    "Id": 1374701,
+    "VoResource": "vo_story_137_002_deny",
+    "CharacterId": 137,
+    "Votype": "deny",
+    "SkinId": 0
+  },
+  "1374801": {
+    "Id": 1374801,
+    "VoResource": "vo_story_137_003_question",
+    "CharacterId": 137,
+    "Votype": "question",
+    "SkinId": 0
+  },
+  "1374901": {
+    "Id": 1374901,
+    "VoResource": "vo_story_137_004_confuse",
+    "CharacterId": 137,
+    "Votype": "confuse",
+    "SkinId": 0
+  },
+  "1375001": {
+    "Id": 1375001,
+    "VoResource": "vo_story_137_005_sad",
+    "CharacterId": 137,
+    "Votype": "sad",
+    "SkinId": 0
+  },
+  "1375101": {
+    "Id": 1375101,
+    "VoResource": "vo_story_137_006_excit",
+    "CharacterId": 137,
+    "Votype": "excit",
+    "SkinId": 0
+  },
+  "1375201": {
+    "Id": 1375201,
+    "VoResource": "vo_story_137_007_angry",
+    "CharacterId": 137,
+    "Votype": "angry",
+    "SkinId": 0
+  },
+  "1375301": {
+    "Id": 1375301,
+    "VoResource": "vo_story_137_008_happy",
+    "CharacterId": 137,
+    "Votype": "happy",
+    "SkinId": 0
+  },
+  "1375401": {
+    "Id": 1375401,
+    "VoResource": "vo_story_137_009_sigh",
+    "CharacterId": 137,
+    "Votype": "sigh",
+    "SkinId": 0
+  },
+  "1375501": {
+    "Id": 1375501,
+    "VoResource": "vo_story_137_010_catchphrase",
+    "CharacterId": 137,
+    "Votype": "catchphrase",
+    "SkinId": 0
+  },
+  "1375502": {
+    "Id": 1375502,
+    "VoResource": "vo_story_137_011_catchphrase",
+    "CharacterId": 137,
+    "Votype": "catchphrase",
+    "SkinId": 0
+  },
+  "1375503": {
+    "Id": 1375503,
+    "VoResource": "vo_story_137_012_catchphrase",
+    "CharacterId": 137,
+    "Votype": "catchphrase",
+    "SkinId": 0
+  },
+  "1375504": {
+    "Id": 1375504,
+    "VoResource": "vo_story_137_013_catchphrase",
+    "CharacterId": 137,
+    "Votype": "catchphrase",
+    "SkinId": 0
+  },
+  "1375505": {
+    "Id": 1375505,
+    "VoResource": "vo_story_137_014_catchphrase",
+    "CharacterId": 137,
+    "Votype": "catchphrase",
+    "SkinId": 0
+  },
   "1405601": {
     "Id": 1405601,
     "VoResource": "vo_140_combat_ultskill_001",
@@ -27156,6 +27849,146 @@
     "Id": 81340901,
     "VoResource": "vo_134_ui_exhang_001",
     "CharacterId": 8134,
+    "Votype": "exhang_npc",
+    "SkinId": 0
+  },
+  "81370101": {
+    "Id": 81370101,
+    "VoResource": "vo_137_ui_greet_001",
+    "CharacterId": 8137,
+    "Votype": "greet_npc",
+    "SkinId": 0
+  },
+  "81370102": {
+    "Id": 81370102,
+    "VoResource": "vo_137_ui_greet_002",
+    "CharacterId": 8137,
+    "Votype": "greet_npc",
+    "SkinId": 0
+  },
+  "81370201": {
+    "Id": 81370201,
+    "VoResource": "vo_137_ui_greetmorn_001",
+    "CharacterId": 8137,
+    "Votype": "greetmorn_npc",
+    "SkinId": 0
+  },
+  "81370301": {
+    "Id": 81370301,
+    "VoResource": "vo_137_ui_greetnoon_001",
+    "CharacterId": 8137,
+    "Votype": "greetnoon_npc",
+    "SkinId": 0
+  },
+  "81370401": {
+    "Id": 81370401,
+    "VoResource": "vo_137_ui_greetnight_001",
+    "CharacterId": 8137,
+    "Votype": "greetnight_npc",
+    "SkinId": 0
+  },
+  "81370501": {
+    "Id": 81370501,
+    "VoResource": "vo_137_ui_posterchat_001",
+    "CharacterId": 8137,
+    "Votype": "posterchat_npc",
+    "SkinId": 0
+  },
+  "81370502": {
+    "Id": 81370502,
+    "VoResource": "vo_137_ui_posterchat_002",
+    "CharacterId": 8137,
+    "Votype": "posterchat_npc",
+    "SkinId": 0
+  },
+  "81370503": {
+    "Id": 81370503,
+    "VoResource": "vo_137_ui_posterchat_003",
+    "CharacterId": 8137,
+    "Votype": "posterchat_npc",
+    "SkinId": 0
+  },
+  "81370504": {
+    "Id": 81370504,
+    "VoResource": "vo_137_ui_posterchat_004",
+    "CharacterId": 8137,
+    "Votype": "posterchat_npc",
+    "SkinId": 0
+  },
+  "81370505": {
+    "Id": 81370505,
+    "VoResource": "vo_137_ui_posterchat_005",
+    "CharacterId": 8137,
+    "Votype": "posterchat_npc",
+    "SkinId": 0
+  },
+  "81370506": {
+    "Id": 81370506,
+    "VoResource": "vo_137_ui_posterchat_006",
+    "CharacterId": 8137,
+    "Votype": "posterchat_npc",
+    "SkinId": 0
+  },
+  "81370601": {
+    "Id": 81370601,
+    "VoResource": "vo_story_137_012_catchphrase",
+    "CharacterId": 8137,
+    "Votype": "limited",
+    "SkinId": 0
+  },
+  "81370602": {
+    "Id": 81370602,
+    "VoResource": "vo_story_137_013_catchphrase",
+    "CharacterId": 8137,
+    "Votype": "limited",
+    "SkinId": 0
+  },
+  "81370603": {
+    "Id": 81370603,
+    "VoResource": "vo_137_ui_swap_003",
+    "CharacterId": 8137,
+    "Votype": "limited",
+    "SkinId": 0
+  },
+  "81370604": {
+    "Id": 81370604,
+    "VoResource": "vo_story_137_008_happy",
+    "CharacterId": 8137,
+    "Votype": "limited",
+    "SkinId": 0
+  },
+  "81370701": {
+    "Id": 81370701,
+    "VoResource": "vo_137_ui_hfc_001",
+    "CharacterId": 8137,
+    "Votype": "hfc_npc",
+    "SkinId": 0
+  },
+  "81370702": {
+    "Id": 81370702,
+    "VoResource": "vo_story_137_010_catchphrase",
+    "CharacterId": 8137,
+    "Votype": "hfc_npc",
+    "SkinId": 0
+  },
+  "81370801": {
+    "Id": 81370801,
+    "VoResource": "vo_137_ui_hang_001",
+    "CharacterId": 8137,
+    "Votype": "hang_npc",
+    "SkinId": 0
+  },
+  "81370802": {
+    "Id": 81370802,
+    "VoResource": "vo_story_137_014_catchphrase",
+    "CharacterId": 8137,
+    "Votype": "hang_npc",
+    "SkinId": 0
+  },
+  "81370901": {
+    "Id": 81370901,
+    "VoResource": "vo_137_ui_discuss_005",
+    "CharacterId": 8137,
     "Votype": "exhang_npc",
     "SkinId": 0
   },

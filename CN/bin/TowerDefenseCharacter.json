@@ -35,9 +35,11 @@
     "NormalAtkId": 8010301,
     "SkillId": 8010302,
     "SkillCd": 80000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8010301,
-    "Icon": "Icon/Head/head_10301"
+    "Icon": "Icon/Head/head_10301",
+    "IsShapeshifter": false
   },
   "8011101": {
     "Id": 8011101,
@@ -75,9 +77,11 @@
     "NormalAtkId": 8011101,
     "SkillId": 8011102,
     "SkillCd": 150000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8011101,
-    "Icon": "Icon/Head/head_11101"
+    "Icon": "Icon/Head/head_11101",
+    "IsShapeshifter": false
   },
   "8011201": {
     "Id": 8011201,
@@ -115,9 +119,11 @@
     "NormalAtkId": 8011201,
     "SkillId": 8011202,
     "SkillCd": 100000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8011201,
-    "Icon": "Icon/Head/head_11201"
+    "Icon": "Icon/Head/head_11201",
+    "IsShapeshifter": false
   },
   "8012701": {
     "Id": 8012701,
@@ -155,9 +161,11 @@
     "NormalAtkId": 8012701,
     "SkillId": 8012702,
     "SkillCd": 100000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8012701,
-    "Icon": "Icon/Head/head_12701"
+    "Icon": "Icon/Head/head_12701",
+    "IsShapeshifter": false
   },
   "8013401": {
     "Id": 8013401,
@@ -195,9 +203,11 @@
     "NormalAtkId": 8013401,
     "SkillId": 8013402,
     "SkillCd": 90000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8013401,
-    "Icon": "Icon/Head/head_13401"
+    "Icon": "Icon/Head/head_13401",
+    "IsShapeshifter": false
   },
   "8015601": {
     "Id": 8015601,
@@ -235,9 +245,11 @@
     "NormalAtkId": 8015601,
     "SkillId": 8015602,
     "SkillCd": 90000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8015601,
-    "Icon": "Icon/Head/head_15601"
+    "Icon": "Icon/Head/head_15601",
+    "IsShapeshifter": false
   },
   "8013301": {
     "Id": 8013301,
@@ -275,9 +287,11 @@
     "NormalAtkId": 8013301,
     "SkillId": 8013302,
     "SkillCd": 80000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8013301,
-    "Icon": "Icon/Head/head_13301"
+    "Icon": "Icon/Head/head_13301",
+    "IsShapeshifter": false
   },
   "8011801": {
     "Id": 8011801,
@@ -315,9 +329,11 @@
     "NormalAtkId": 8011801,
     "SkillId": 8011802,
     "SkillCd": 100000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8011801,
-    "Icon": "Icon/Head/head_11801"
+    "Icon": "Icon/Head/head_11801",
+    "IsShapeshifter": false
   },
   "8011001": {
     "Id": 8011001,
@@ -355,9 +371,11 @@
     "NormalAtkId": 8011001,
     "SkillId": 8011002,
     "SkillCd": 120000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8011001,
-    "Icon": "Icon/Head/head_11001"
+    "Icon": "Icon/Head/head_11001",
+    "IsShapeshifter": false
   },
   "8012301": {
     "Id": 8012301,
@@ -395,9 +413,11 @@
     "NormalAtkId": 8012301,
     "SkillId": 8012302,
     "SkillCd": 150000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8012301,
-    "Icon": "Icon/Head/head_12301"
+    "Icon": "Icon/Head/head_12301",
+    "IsShapeshifter": false
   },
   "8011899": {
     "Id": 8011899,
@@ -435,9 +455,11 @@
     "NormalAtkId": 8011801,
     "SkillId": 8011802,
     "SkillCd": 50000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8011801,
-    "Icon": "Icon/Head/head_11801"
+    "Icon": "Icon/Head/head_11801",
+    "IsShapeshifter": false
   },
   "8013399": {
     "Id": 8013399,
@@ -475,9 +497,11 @@
     "NormalAtkId": 8013301,
     "SkillId": 8013302,
     "SkillCd": 30000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8013301,
-    "Icon": "Icon/Head/head_13301"
+    "Icon": "Icon/Head/head_13301",
+    "IsShapeshifter": false
   },
   "8012399": {
     "Id": 8012399,
@@ -515,9 +539,11 @@
     "NormalAtkId": 8012301,
     "SkillId": 8012302,
     "SkillCd": 40000,
+    "SkillStartCharge": 0,
     "CdStartTime": true,
     "Templete": 8012301,
-    "Icon": "Icon/Head/head_12301"
+    "Icon": "Icon/Head/head_12301",
+    "IsShapeshifter": false
   },
   "8013001": {
     "Id": 8013001,
@@ -555,9 +581,11 @@
     "NormalAtkId": 8013001,
     "SkillId": 8013002,
     "SkillCd": 120000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8013001,
-    "Icon": "Icon/Head/head_13001"
+    "Icon": "Icon/Head/head_13001",
+    "IsShapeshifter": false
   },
   "8014301": {
     "Id": 8014301,
@@ -595,9 +623,11 @@
     "NormalAtkId": 8014301,
     "SkillId": 8014302,
     "SkillCd": 80000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8014301,
-    "Icon": "Icon/Head/head_14301"
+    "Icon": "Icon/Head/head_14301",
+    "IsShapeshifter": false
   },
   "8014101": {
     "Id": 8014101,
@@ -635,9 +665,11 @@
     "NormalAtkId": 8014101,
     "SkillId": 8014102,
     "SkillCd": 100000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8014101,
-    "Icon": "Icon/Head/head_14101"
+    "Icon": "Icon/Head/head_14101",
+    "IsShapeshifter": false
   },
   "8010701": {
     "Id": 8010701,
@@ -675,9 +707,11 @@
     "NormalAtkId": 8010701,
     "SkillId": 8010702,
     "SkillCd": 140000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8010701,
-    "Icon": "Icon/Head/head_10701"
+    "Icon": "Icon/Head/head_10701",
+    "IsShapeshifter": false
   },
   "8011401": {
     "Id": 8011401,
@@ -715,9 +749,11 @@
     "NormalAtkId": 8011401,
     "SkillId": 8011402,
     "SkillCd": 80000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8011401,
-    "Icon": "Icon/Head/head_11401"
+    "Icon": "Icon/Head/head_11401",
+    "IsShapeshifter": false
   },
   "8013501": {
     "Id": 8013501,
@@ -755,9 +791,11 @@
     "NormalAtkId": 8013501,
     "SkillId": 8013502,
     "SkillCd": 140000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8013501,
-    "Icon": "Icon/Head/head_13501"
+    "Icon": "Icon/Head/head_13501",
+    "IsShapeshifter": false
   },
   "8012601": {
     "Id": 8012601,
@@ -795,9 +833,11 @@
     "NormalAtkId": 8012601,
     "SkillId": 8012602,
     "SkillCd": 110000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8012601,
-    "Icon": "Icon/Head/head_12601"
+    "Icon": "Icon/Head/head_12601",
+    "IsShapeshifter": false
   },
   "8014001": {
     "Id": 8014001,
@@ -835,8 +875,10 @@
     "NormalAtkId": 8014001,
     "SkillId": 8014002,
     "SkillCd": 50000,
+    "SkillStartCharge": 0,
     "CdStartTime": false,
     "Templete": 8014001,
-    "Icon": "Icon/Head/head_14001"
+    "Icon": "Icon/Head/head_14001",
+    "IsShapeshifter": false
   }
 }

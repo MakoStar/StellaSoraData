@@ -34,5 +34,14 @@
     "DesText": "",
     "NotifyMailDaysBeforeClose": 0,
     "BGM": ""
+  },
+  "400016": {
+    "Id": 400016,
+    "UIAssets": "CookieAct",
+    "CtrlName": "CookieActCtrl",
+    "RewardsShow": "",
+    "DesText": "",
+    "NotifyMailDaysBeforeClose": 0,
+    "BGM": ""
   }
 }

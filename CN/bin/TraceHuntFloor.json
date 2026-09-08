@@ -43,5 +43,59 @@
     "BGM": "city_combatBoss_setState",
     "LeaveTriggerEvent": "amb_city_all_stop",
     "IntroCutscene": ""
+  },
+  "10031": {
+    "Id": 10031,
+    "SceneName": "Levels/Roguelike/Roguelike_2/Roguelike_2_Boss_003",
+    "ConfigPrefabName": "TraceHunt_MaoDa",
+    "Theme": 0,
+    "BGM": "city_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_city_all_stop",
+    "IntroCutscene": ""
+  },
+  "10032": {
+    "Id": 10032,
+    "SceneName": "Levels/Roguelike/Roguelike_2/Roguelike_2_Boss_003",
+    "ConfigPrefabName": "TraceHunt_MaoDa_Hard",
+    "Theme": 0,
+    "BGM": "city_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_city_all_stop",
+    "IntroCutscene": ""
+  },
+  "10033": {
+    "Id": 10033,
+    "SceneName": "Levels/Roguelike/Roguelike_2/Roguelike_2_MiniBoss_005",
+    "ConfigPrefabName": "TraceHunt_BingXiangGuai",
+    "Theme": 0,
+    "BGM": "city_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_city_all_stop",
+    "IntroCutscene": ""
+  },
+  "10034": {
+    "Id": 10034,
+    "SceneName": "Levels/Roguelike/Roguelike_2/Roguelike_2_MiniBoss_005",
+    "ConfigPrefabName": "TraceHunt_BingXiangGuai_Hard",
+    "Theme": 0,
+    "BGM": "city_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_city_all_stop",
+    "IntroCutscene": ""
+  },
+  "10035": {
+    "Id": 10035,
+    "SceneName": "Levels/Roguelike/Roguelike_3/Roguelike_3_MiniBoss_001",
+    "ConfigPrefabName": "TraceHunt_XiaoGaoDa_Fire",
+    "Theme": 0,
+    "BGM": "city_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_city_all_stop",
+    "IntroCutscene": ""
+  },
+  "10036": {
+    "Id": 10036,
+    "SceneName": "Levels/Roguelike/Roguelike_3/Roguelike_3_MiniBoss_001",
+    "ConfigPrefabName": "TraceHunt_XiaoGaoDa_Fire_Hard",
+    "Theme": 0,
+    "BGM": "city_combatBoss_setState",
+    "LeaveTriggerEvent": "amb_city_all_stop",
+    "IntroCutscene": ""
   }
 }
