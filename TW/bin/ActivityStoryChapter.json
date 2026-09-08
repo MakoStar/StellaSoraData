@@ -78,5 +78,13 @@
     "ActivityGroupType": 1,
     "IconRes": "",
     "IsPersonalityTouchMainline": false
+  },
+  "1011102": {
+    "Id": 1011102,
+    "ChapterId": 10111,
+    "PersonalityId": 0,
+    "ActivityGroupType": 1,
+    "IconRes": "",
+    "IsPersonalityTouchMainline": false
   }
 }

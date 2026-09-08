@@ -571,6 +571,19 @@
     "Sort": 0,
     "BGType": 2
   },
+  "116015": {
+    "Id": 116015,
+    "Name": "Honor.116015.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_116015_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_116015_S",
+    "Sort": 0,
+    "BGType": 2
+  },
   "117001": {
     "Id": 117001,
     "Name": "Honor.117001.1",
@@ -802,6 +815,45 @@
     "Priotity": 0,
     "MainRes": "Icon/HonorTitle/HonorTitle_117053_L_lang",
     "SubRes": "Icon/HonorTitle/HonorTitle_117053_S",
+    "Sort": 0,
+    "BGType": 2
+  },
+  "117061": {
+    "Id": 117061,
+    "Name": "Honor.117061.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_117061_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_117061_S",
+    "Sort": 0,
+    "BGType": 2
+  },
+  "117062": {
+    "Id": 117062,
+    "Name": "Honor.117062.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_117062_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_117062_S",
+    "Sort": 0,
+    "BGType": 2
+  },
+  "117063": {
+    "Id": 117063,
+    "Name": "Honor.117063.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_117063_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_117063_S",
     "Sort": 0,
     "BGType": 2
   },
@@ -1758,6 +1810,21 @@
     "Priotity": 0,
     "MainRes": "Icon/HonorTitle/HonorTitle_Affinity_135_L",
     "SubRes": "Icon/HonorTitle/HonorTitle_Affinity_135_S",
+    "Sort": 0,
+    "BGType": 1
+  },
+  "112137": {
+    "Id": 112137,
+    "Name": "Honor.112137.1",
+    "IsUnlock": false,
+    "Type": 2,
+    "TabType": 2,
+    "Params": [
+      137
+    ],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_Affinity_137_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_Affinity_137_S",
     "Sort": 0,
     "BGType": 1
   },

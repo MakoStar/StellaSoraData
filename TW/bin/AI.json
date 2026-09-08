@@ -799,6 +799,26 @@
     "FCGlobal": "AIScript.Character._14301.ParallelScript_Support",
     "FCComboGroup": "Character/14301/Combos/ComboGroup_Char_143"
   },
+  "13701": {
+    "Id": 13701,
+    "FCSpawn": "",
+    "FCIdle": "",
+    "FCAction": "AIScript.Character._13701.ActionScript_MainControl",
+    "FCLostControl": "",
+    "FCDeath": "",
+    "FCGlobal": "AIScript.Character._13701.ParallelScript_MainControl",
+    "FCComboGroup": "Character/13701/Combos/ComboGroup_Char_137"
+  },
+  "13702": {
+    "Id": 13702,
+    "FCSpawn": "",
+    "FCIdle": "",
+    "FCAction": "AIScript.Character._13701.ActionScript_Support",
+    "FCLostControl": "",
+    "FCDeath": "",
+    "FCGlobal": "AIScript.Character._13701.ParallelScript_Support",
+    "FCComboGroup": "Character/13701/Combos/ComboGroup_Char_137"
+  },
   "10101": {
     "Id": 10101,
     "FCSpawn": "",
@@ -1029,16 +1049,6 @@
     "FCGlobal": "Character/10501/Behaviour/SubBehaviour",
     "FCComboGroup": "Character/10501/Combos/Char_10501_ComboGroup"
   },
-  "99701": {
-    "Id": 99701,
-    "FCSpawn": "",
-    "FCIdle": "AIScript.Character._99701.Idle",
-    "FCAction": "AIScript.Character._99701.Action",
-    "FCLostControl": "",
-    "FCDeath": "",
-    "FCGlobal": "AIScript.Character._99701.Parallel",
-    "FCComboGroup": "Character/Federn/Combos/Char_Federn_ComboGroup"
-  },
   "99711": {
     "Id": 99711,
     "FCSpawn": "",
@@ -1058,16 +1068,6 @@
     "FCDeath": "",
     "FCGlobal": "AIScript.Character._99701.Parallel",
     "FCComboGroup": "Character/Federn/Combos/Char_Federn_ComboGroup"
-  },
-  "99801": {
-    "Id": 99801,
-    "FCSpawn": "",
-    "FCIdle": "Character/One/Char_Behaviour/IdleBehaviour",
-    "FCAction": "Character/One/Char_Behaviour/ActionBehaviour",
-    "FCLostControl": "Character/One/Char_Behaviour/LostControlBehaviour",
-    "FCDeath": "",
-    "FCGlobal": "Character/One/Char_Behaviour/SubBehaviour",
-    "FCComboGroup": "Character/One/Combos/Char_One_ComboGroup"
   },
   "99811": {
     "Id": 99811,
