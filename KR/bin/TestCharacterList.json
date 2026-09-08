@@ -15,7 +15,7 @@
     "Id": 126,
     "MainControl": false,
     "Mustassistant": false,
-    "Assistant": true
+    "Assistant": false
   },
   "134": {
     "Id": 134,
@@ -49,15 +49,27 @@
   },
   "127": {
     "Id": 127,
-    "MainControl": false,
+    "MainControl": true,
     "Mustassistant": false,
-    "Assistant": false
+    "Assistant": true
   },
   "144": {
     "Id": 144,
-    "MainControl": false,
+    "MainControl": true,
     "Mustassistant": false,
     "Assistant": false
+  },
+  "160": {
+    "Id": 160,
+    "MainControl": true,
+    "Mustassistant": true,
+    "Assistant": true
+  },
+  "130": {
+    "Id": 130,
+    "MainControl": false,
+    "Mustassistant": false,
+    "Assistant": true
   },
   "112": {
     "Id": 112,
@@ -121,7 +133,7 @@
   },
   "110": {
     "Id": 110,
-    "MainControl": true,
+    "MainControl": false,
     "Mustassistant": false,
     "Assistant": false
   },
@@ -135,13 +147,13 @@
     "Id": 135,
     "MainControl": false,
     "Mustassistant": false,
-    "Assistant": true
+    "Assistant": false
   },
   "142": {
     "Id": 142,
-    "MainControl": true,
+    "MainControl": false,
     "Mustassistant": false,
-    "Assistant": true
+    "Assistant": false
   },
   "147": {
     "Id": 147,
@@ -151,15 +163,15 @@
   },
   "145": {
     "Id": 145,
-    "MainControl": true,
-    "Mustassistant": true,
-    "Assistant": true
+    "MainControl": false,
+    "Mustassistant": false,
+    "Assistant": false
   },
   "116": {
     "Id": 116,
     "MainControl": false,
     "Mustassistant": false,
-    "Assistant": false
+    "Assistant": true
   },
   "149": {
     "Id": 149,
@@ -171,7 +183,7 @@
     "Id": 156,
     "MainControl": false,
     "Mustassistant": false,
-    "Assistant": true
+    "Assistant": false
   },
   "159": {
     "Id": 159,

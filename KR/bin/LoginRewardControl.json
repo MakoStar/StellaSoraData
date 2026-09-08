@@ -5,7 +5,8 @@
     "DesText": "LoginRewardControl.301001.1",
     "UIAssets": "_301001/loginReward_act_01",
     "CtrlName": "_301001/LoginRewardCtrl_01",
-    "PopUpUIAssets": "_301001/LoginReward_01"
+    "PopUpUIAssets": "_301001/LoginReward_01",
+    "IsMove": false
   },
   "301011": {
     "Id": 301011,
@@ -13,7 +14,8 @@
     "DesText": "LoginRewardControl.301011.1",
     "UIAssets": "_301011/loginSpReward_act_01",
     "CtrlName": "_301011/LoginSpRewardCtrl_01",
-    "PopUpUIAssets": "_301011/LoginSpReward_01"
+    "PopUpUIAssets": "_301011/LoginSpReward_01",
+    "IsMove": false
   },
   "301012": {
     "Id": 301012,
@@ -21,7 +23,8 @@
     "DesText": "LoginRewardControl.301012.1",
     "UIAssets": "_301012/loginReward_act_01",
     "CtrlName": "_301012/LoginRewardCtrl_01",
-    "PopUpUIAssets": "_301012/LoginReward_01"
+    "PopUpUIAssets": "_301012/LoginReward_01",
+    "IsMove": false
   },
   "301013": {
     "Id": 301013,
@@ -29,7 +32,8 @@
     "DesText": "LoginRewardControl.301013.1",
     "UIAssets": "_301013/loginSpReward_act_01",
     "CtrlName": "_301013/LoginSpRewardCtrl_01",
-    "PopUpUIAssets": "_301013/LoginSpReward_01"
+    "PopUpUIAssets": "_301013/LoginSpReward_01",
+    "IsMove": false
   },
   "301021": {
     "Id": 301021,
@@ -37,7 +41,8 @@
     "DesText": "LoginRewardControl.301021.1",
     "UIAssets": "_301021/loginSpReward_act_01",
     "CtrlName": "_301021/LoginSpRewardCtrl_01",
-    "PopUpUIAssets": "_301021/LoginSpReward_01"
+    "PopUpUIAssets": "_301021/LoginSpReward_01",
+    "IsMove": false
   },
   "301022": {
     "Id": 301022,
@@ -45,7 +50,8 @@
     "DesText": "LoginRewardControl.301022.1",
     "UIAssets": "_301022/loginSpReward_act_01",
     "CtrlName": "_301022/LoginSpRewardCtrl_01",
-    "PopUpUIAssets": "_301022/LoginSpReward_01"
+    "PopUpUIAssets": "_301022/LoginSpReward_01",
+    "IsMove": false
   },
   "301031": {
     "Id": 301031,
@@ -53,7 +59,8 @@
     "DesText": "LoginRewardControl.301031.1",
     "UIAssets": "_301031/loginReward_act_01",
     "CtrlName": "_301031/LoginRewardCtrl_01",
-    "PopUpUIAssets": "_301031/LoginReward_01"
+    "PopUpUIAssets": "_301031/LoginReward_01",
+    "IsMove": false
   },
   "301032": {
     "Id": 301032,
@@ -61,7 +68,8 @@
     "DesText": "LoginRewardControl.301032.1",
     "UIAssets": "_301032/loginSpReward_act_01",
     "CtrlName": "_301032/LoginSpRewardCtrl_01",
-    "PopUpUIAssets": "_301032/LoginSpReward_01"
+    "PopUpUIAssets": "_301032/LoginSpReward_01",
+    "IsMove": false
   },
   "301033": {
     "Id": 301033,
@@ -69,7 +77,8 @@
     "DesText": "LoginRewardControl.301033.1",
     "UIAssets": "_301033/loginReward_act_01",
     "CtrlName": "_301033/LoginRewardCtrl_01",
-    "PopUpUIAssets": "_301033/LoginReward_01"
+    "PopUpUIAssets": "_301033/LoginReward_01",
+    "IsMove": false
   },
   "301041": {
     "Id": 301041,
@@ -77,7 +86,8 @@
     "DesText": "LoginRewardControl.301041.1",
     "UIAssets": "_301041/loginSpReward_act_01",
     "CtrlName": "_301041/LoginSpRewardCtrl_01",
-    "PopUpUIAssets": "_301041/LoginSpReward_01"
+    "PopUpUIAssets": "_301041/LoginSpReward_01",
+    "IsMove": false
   },
   "301042": {
     "Id": 301042,
@@ -85,6 +95,7 @@
     "DesText": "LoginRewardControl.301042.1",
     "UIAssets": "_301042/loginReward_act_01",
     "CtrlName": "_301042/LoginRewardCtrl_01",
-    "PopUpUIAssets": "_301042/LoginReward_01"
+    "PopUpUIAssets": "_301042/LoginReward_01",
+    "IsMove": false
   }
 }

@@ -19,7 +19,10 @@
     "Item1Id": 2,
     "Item1Count": 50,
     "Item2Id": 73109,
-    "Item2Count": 300
+    "Item2Count": 300,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "110102": {
     "Id": 110102,
@@ -42,7 +45,10 @@
     "Item1Id": 2,
     "Item1Count": 50,
     "Item2Id": 73109,
-    "Item2Count": 400
+    "Item2Count": 400,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "110201": {
     "Id": 110201,
@@ -64,7 +70,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73109,
-    "Item2Count": 600
+    "Item2Count": 600,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "110202": {
     "Id": 110202,
@@ -87,7 +96,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73109,
-    "Item2Count": 800
+    "Item2Count": 800,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "110301": {
     "Id": 110301,
@@ -110,7 +122,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73109,
-    "Item2Count": 1000
+    "Item2Count": 1000,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "110302": {
     "Id": 110302,
@@ -134,7 +149,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73109,
-    "Item2Count": 2000
+    "Item2Count": 2000,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "110401": {
     "Id": 110401,
@@ -170,7 +188,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73109,
-    "Item2Count": 3000
+    "Item2Count": 3000,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "120101": {
     "Id": 120101,
@@ -192,7 +213,10 @@
     "Item1Id": 2,
     "Item1Count": 50,
     "Item2Id": 73112,
-    "Item2Count": 300
+    "Item2Count": 300,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "120102": {
     "Id": 120102,
@@ -215,7 +239,10 @@
     "Item1Id": 2,
     "Item1Count": 50,
     "Item2Id": 73112,
-    "Item2Count": 400
+    "Item2Count": 400,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "120201": {
     "Id": 120201,
@@ -237,7 +264,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73112,
-    "Item2Count": 600
+    "Item2Count": 600,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "120202": {
     "Id": 120202,
@@ -260,7 +290,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73112,
-    "Item2Count": 800
+    "Item2Count": 800,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "120301": {
     "Id": 120301,
@@ -283,7 +316,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73112,
-    "Item2Count": 1000
+    "Item2Count": 1000,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "120302": {
     "Id": 120302,
@@ -307,7 +343,10 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73112,
-    "Item2Count": 2000
+    "Item2Count": 2000,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   },
   "120401": {
     "Id": 120401,
@@ -343,6 +382,9 @@
     "Item1Id": 2,
     "Item1Count": 100,
     "Item2Id": 73112,
-    "Item2Count": 3000
+    "Item2Count": 3000,
+    "Param1": "",
+    "Param2": "",
+    "Param3": ""
   }
 }
