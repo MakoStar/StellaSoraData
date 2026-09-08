@@ -65,6 +65,14 @@ EquipmentUpgradeCtrl._mapNodeConfig = {
 		sComponentName = "UIButton",
 		callback = "OnBtnClick_Revert"
 	},
+	btnAutoFill = {
+		sComponentName = "UIButton",
+		callback = "OnBtnClick_AutoFill"
+	},
+	txtBtnAutoFill = {
+		sComponentName = "TMP_Text",
+		sLanguageId = "AutoDevelopment_Btn_Fill"
+	},
 	txtBtnUpgrade = {
 		sComponentName = "TMP_Text",
 		sLanguageId = "Equipment_Btn_Upgrade"
@@ -104,7 +112,9 @@ EquipmentUpgradeCtrl._mapNodeConfig = {
 	btnPopUpClose = {sComponentName = "UIButton", callback = "ClosePopUp"},
 	btnPopUpCloseBig = {sComponentName = "UIButton", callback = "ClosePopUp"}
 }
-EquipmentUpgradeCtrl._mapEventConfig = {}
+EquipmentUpgradeCtrl._mapEventConfig = {
+	AutoFillSuccess = "OnEvent_ItemChanged"
+}
 function EquipmentUpgradeCtrl:Open()
 	self._mapNode.blur:SetActive(true)
 	self:PlayInAni()
@@ -122,6 +132,15 @@ function EquipmentUpgradeCtrl:RefreshData()
 	self.mapSlotCfg = ConfigTable.GetData("CharGemSlotControl", self.nSlotId)
 	local tbEquipment = PlayerData.Equipment:GetEquipmentBySlot(self.nCharId, self.nSlotId)
 	self.mapEquipment = tbEquipment[self.nSelectGemIndex]
+	local tbNeedMat = {
+		{
+			nId = self.mapGemCfg.OverlockCostTid,
+			nCount = self.mapSlotCfg.OverlockCostQty
+		}
+	}
+	self.tbFillStep, self.tbUseItem, self.tbShowNeedItem = PlayerData.Item:AutoFillMat(tbNeedMat)
+	local nHasCoin = PlayerData.Coin:GetCoinCount(AllEnum.CoinItemId.Gold)
+	self.bAbleAutoFill = next(self.tbUseItem) ~= nil and nHasCoin >= self.mapSlotCfg.OverlockDoraCostQty
 end
 function EquipmentUpgradeCtrl:RefreshInfo()
 	local sRoman = ConfigTable.GetUIText("RomanNumeral_" .. self.nSelectGemIndex)
@@ -156,6 +175,8 @@ end
 function EquipmentUpgradeCtrl:RefreshDesc()
 	self._mapNode.goRevert:SetActive(false)
 	self._mapNode.goUpgrade:SetActive(false)
+	self._mapNode.btnUpgrade.gameObject:SetActive(true)
+	self._mapNode.btnAutoFill.gameObject:SetActive(false)
 	self._mapNode.goTip:SetActive(false)
 	self._mapNode.goCostCoin:SetActive(false)
 	local nUpgradeCount = self.mapEquipment:GetUpgradeCount()
@@ -173,6 +194,8 @@ function EquipmentUpgradeCtrl:RefreshDesc()
 				local nLeft = mapCfg.OverlockCount - self.mapEquipment.tbUpgradeCount[self.nSelectUpgradeIndex]
 				if 0 < nLeft then
 					self._mapNode.goUpgrade:SetActive(true)
+					self._mapNode.btnUpgrade.gameObject:SetActive(not self.bAbleAutoFill)
+					self._mapNode.btnAutoFill.gameObject:SetActive(self.bAbleAutoFill)
 					self._mapNode.goMat[1]:SetMat(self.mapGemCfg.OverlockCostTid, self.mapSlotCfg.OverlockCostQty)
 					self._mapNode.goMat[2]:SetMat(AllEnum.CoinItemId.Gold, self.mapSlotCfg.OverlockDoraCostQty)
 					self:RefreshCoin()
@@ -321,6 +344,9 @@ function EquipmentUpgradeCtrl:OnBtnClick_Upgrade()
 	local bEnough = nHas >= self.mapSlotCfg.OverlockCostQty and nHasCoin >= self.mapSlotCfg.OverlockDoraCostQty
 	if not bEnough then
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("Equipment_MatNotEnough_Upgrade"))
+		if nHas < self.mapSlotCfg.OverlockCostQty then
+			self:OnBtnClick_MatTip(self._mapNode.btnMat[1], 1)
+		end
 		return
 	end
 	local upgrade = function()
@@ -447,6 +473,9 @@ function EquipmentUpgradeCtrl:OnBtnClick_Revert()
 	}
 	EventManager.Hit(EventId.OpenMessageBox, msg)
 end
+function EquipmentUpgradeCtrl:OnBtnClick_AutoFill()
+	EventManager.Hit(EventId.OpenPanel, PanelId.FillMaterial, self.tbFillStep, self.tbUseItem, self.tbShowNeedItem)
+end
 function EquipmentUpgradeCtrl:OnBtnClick_MatTip(btn, index)
 	if index == 1 then
 		if self.mapGemCfg.OverlockCostTid > 0 then
@@ -467,5 +496,9 @@ function EquipmentUpgradeCtrl:OnBtnClick_MatTip(btn, index)
 		}
 		EventManager.Hit(EventId.OpenPanel, PanelId.ItemTips, btn.transform, mapData)
 	end
+end
+function EquipmentUpgradeCtrl:OnEvent_ItemChanged()
+	self:RefreshData()
+	self:RefreshDesc()
 end
 return EquipmentUpgradeCtrl

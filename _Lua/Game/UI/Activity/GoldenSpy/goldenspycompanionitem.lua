@@ -62,6 +62,8 @@ function GoldenSpyCompanionItem:Init()
 	self.vVisionPoint = Vector3(visionPoint.x, visionPoint.y, 0)
 	self.bDirection = self.vEndPoint.x > self.vStartPoint.x
 	self.bDestination = false
+	self.trParent = self.gameObject.transform.parent
+	self.bFrozen = false
 end
 function GoldenSpyCompanionItem:InitData()
 	self.nVisionAngle = self.itemCfg.Params[2] or VisionAngle
@@ -379,8 +381,8 @@ function GoldenSpyCompanionItem:_CheckVision()
 			local removeItem
 			local hitArea = item.Ctrl:GetHitArea()
 			if hitArea and self:_HitAreaInSector(hitArea, vx, vy, forwardAngle, halfAngle, radius) then
-				if item.Ctrl == self.floorCtrl.catchedItem then
-					goto lbl_176
+				if table.indexof(self.floorCtrl.tbCatchedItem, item.Ctrl) > 0 then
+					goto lbl_179
 				end
 				if item.Ctrl:GetItemCfg().ItemType == GameEnum.GoldenSpyItem.Boom then
 					item.Ctrl:Boom(nil)
@@ -410,7 +412,7 @@ function GoldenSpyCompanionItem:_CheckVision()
 			end
 			tbRemoveItems = {}
 		end
-		::lbl_176::
+		::lbl_179::
 	end
 end
 function GoldenSpyCompanionItem:_StartVisionCheck()

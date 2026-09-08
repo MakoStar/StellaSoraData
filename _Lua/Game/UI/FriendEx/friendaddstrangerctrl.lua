@@ -38,6 +38,15 @@ FriendAddStrangerCtrl._mapNodeConfig = {
 		sComponentName = "TMP_Text",
 		sLanguageId = "MessageBox_Cancel"
 	},
+	btnAgain = {
+		sComponentName = "NaviButton",
+		callback = "OnBtnClick_Again"
+	},
+	againSelect = {},
+	texAgainTip = {
+		sComponentName = "TMP_Text",
+		sLanguageId = "MessageBox_LoginWarning"
+	},
 	txtAddTip = {
 		sComponentName = "TMP_Text",
 		sLanguageId = "Friend_AddStranger"
@@ -64,6 +73,7 @@ function FriendAddStrangerCtrl:Open()
 	self:RefreshInfo()
 	self:RefreshHonorTitle()
 	self:PlayInAni()
+	self._mapNode.againSelect:SetActive(self.bClickAgain)
 end
 function FriendAddStrangerCtrl:RefreshInfo()
 	local mapCfg = ConfigTable.GetData("PlayerHead", self.mapFriend.nHeadIconId)
@@ -102,6 +112,7 @@ function FriendAddStrangerCtrl:Awake()
 	if type(tbParam) == "table" then
 		self.mapFriend = tbParam[1]
 	end
+	self.bClickAgain = false
 end
 function FriendAddStrangerCtrl:OnEnable()
 	self._mapNode.blur:SetActive(true)
@@ -117,6 +128,9 @@ function FriendAddStrangerCtrl:OnBtnClick_Confirm()
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("FRIEND_00"))
 		return
 	end
+	if self.bClickAgain == true then
+		PlayerData.Friend:SetAddStrangerWarning(false)
+	end
 	local callback = function()
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("FRIEND_01"))
 		self:OnBtnClick_Close()
@@ -131,5 +145,9 @@ function FriendAddStrangerCtrl:OnBtnClick_Close()
 		EventManager.Hit(EventId.ClosePanel, PanelId.FriendAddStranger)
 	end, true, true, true)
 	EventManager.Hit(EventId.TemporaryBlockInput, 0.2)
+end
+function FriendAddStrangerCtrl:OnBtnClick_Again()
+	self.bClickAgain = not self.bClickAgain
+	self._mapNode.againSelect:SetActive(self.bClickAgain)
 end
 return FriendAddStrangerCtrl

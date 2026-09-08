@@ -186,6 +186,9 @@ function PlayerQuestData:CheckTourGroupReward(nIndex)
 	return nIndex <= self.nCurTourGroupOrderIndex
 end
 function PlayerQuestData:CheckTeamFormationGroupReward(nAttributeId, nIndex)
+	if self.tbCurTeamFormationGroupIndex == nil then
+		return false
+	end
 	if self.tbCurTeamFormationGroupIndex[nAttributeId] == nil then
 		return false
 	end
@@ -1512,6 +1515,7 @@ function PlayerQuestData:ReceiveVampireQuest(nType, tbList, callback)
 		if callback ~= nil then
 			callback(mapMsgData)
 		end
+		EventManager.Hit(EventId.EventReminder_Update, GameEnum.EventReminderType.Vampire)
 	end
 	HttpNetHandler.SendMsg(NetMsgId.Id.vampire_survivor_quest_reward_receive_req, msg, nil, Callback)
 end

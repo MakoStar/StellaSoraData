@@ -357,7 +357,8 @@ function PlayerJointDrillData_2:JointDrillGameOver(callback, bSettle, bEditor)
 					nNew = netMsg.New
 				end
 				local mapBossInfo = self.mapBossInfo[self.nCurLevel]
-				EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams)
+				local tbLastCharIds = self:GetJointDrillLastTeam()
+				EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams, {}, tbLastCharIds)
 			end
 			self:EventUpload(4, 0)
 			self:ChallengeEnd()
@@ -374,7 +375,8 @@ function PlayerJointDrillData_2:JointDrillGameOver(callback, bSettle, bEditor)
 			local mapChange, mapItems = {}, {}
 			local nOld, nNew = 0, 0
 			local mapBossInfo = self.mapBossInfo[self.nCurLevel]
-			EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams)
+			local tbLastCharIds = self:GetJointDrillLastTeam()
+			EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams, {}, tbLastCharIds)
 		end
 		self:ChallengeEnd()
 	end
@@ -575,6 +577,18 @@ function PlayerJointDrillData_2:GetJointDrillBuildList()
 end
 function PlayerJointDrillData_2:GetJointDrillBattleCount()
 	return #self.tbTeams
+end
+function PlayerJointDrillData_2:GetJointDrillLastTeam()
+	local tbChar = {}
+	if #self.tbTeams > 0 then
+		local tbTeam = self.tbTeams[#self.tbTeams].Chars
+		if tbTeam ~= nil then
+			for _, v in ipairs(tbTeam) do
+				table.insert(tbChar, v.CharId)
+			end
+		end
+	end
+	return tbChar
 end
 function PlayerJointDrillData_2:CheckChallengeCount()
 	if self.nCurLevelId ~= 0 then

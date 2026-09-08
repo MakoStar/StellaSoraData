@@ -1401,9 +1401,6 @@ local ParseDesc = function(mapDescConfig, nCompareLevelType, nCompareLevel, bSim
 						if (mapData.levelTypeData == GameEnum.levelTypeData.Exclusive or mapData.levelTypeData == GameEnum.levelTypeData.Note or mapData.levelTypeData == GameEnum.levelTypeData.SoldierLevel) and nOverrideLevel ~= nil then
 							nLevel = nOverrideLevel
 						end
-						if nCompareLevelType == GameEnum.levelTypeData.SoldierLevel and mapData.levelTypeData == GameEnum.levelTypeData.SkillSlot and nOverrideLevel ~= nil then
-							nLevel = nOverrideLevel
-						end
 						if sParseType == "DamageNum" and sTable == "HitDamage" then
 							local subStr = ParseHitDamageDesc(nKey, nLevel)
 							subStr = LanguagePost(lang, langIdx, subStr)
@@ -2202,6 +2199,16 @@ local GetExchangeCodeUrl = function()
 	end
 	return result, url
 end
+local GenerateManageredResourceId = function(nPanelId, nResId)
+	nPanelId = math.abs(nPanelId)
+	nResId = math.abs(nResId)
+	local sum = nPanelId * 1000000.0 + nResId
+	if sum >= math.maxinteger then
+		sum = 1
+		Debug.LogError("id exceeds max integer")
+	end
+	return -math.abs(sum)
+end
 _G.UTILS = {
 	DecodeChangeInfo = DecodeChangeInfo,
 	OpenReceiveByChangeInfo = OpenReceiveByChangeInfo,
@@ -2248,5 +2255,6 @@ _G.UTILS = {
 	AddKrParticle = AddKrParticle,
 	LanguagePost = LanguagePost,
 	ParseLanguageParam = ParseLanguageParam,
-	RefreshRemainTime = RefreshRemainTime
+	RefreshRemainTime = RefreshRemainTime,
+	GenerateManageredResourceId = GenerateManageredResourceId
 }

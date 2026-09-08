@@ -111,7 +111,7 @@ function SkillBtnCtrl:Awake()
 	self._mapNode.fx_tip:SetActive(false)
 	self.bChargeLoading_CurrentIsActive = nil
 end
-function SkillBtnCtrl:InitSkillBtn(EET, icon, bShowSection, charId, actionId, bIsSupportChar)
+function SkillBtnCtrl:InitSkillBtn(EET, icon, bShowSection, charId, actionId, bIsSupportChar, bApplyUltraAlpha)
 	self:SetMainAlpha(true)
 	self.EET = EET
 	self.ActionId = actionId
@@ -139,6 +139,7 @@ function SkillBtnCtrl:InitSkillBtn(EET, icon, bShowSection, charId, actionId, bI
 	self._mapNode.Action.gameObject:SetActive(true)
 	self._mapNode.Empty:SetActive(false)
 	self.bIsSupportChar = bIsSupportChar == true
+	self.bApplyUltraAlpha = bApplyUltraAlpha == true
 	if self.bIsSupportChar == true then
 		self.parentCanvasGroup = self.gameObject.transform.parent.parent.parent:GetComponent("CanvasGroup")
 	else
@@ -161,7 +162,11 @@ function SkillBtnCtrl:RefreshBtn(bSuportSkillUseable, QTEpercent, CDpercent, CDs
 	end
 	local bCanUse = false
 	if self.ActionId == SKILL_ULTRA then
-		bCanUse = 1 <= ChargeSectionNum and 1 <= ChargePercent and CDpercent <= 0
+		if self.bApplyUltraAlpha == true then
+			bCanUse = 1 <= ChargeSectionNum and 1 <= ChargePercent and CDpercent <= 0
+		else
+			bCanUse = 1 <= ChargeSectionNum and CDpercent <= 0
+		end
 	else
 		bCanUse = 1 <= ChargeSectionNum
 	end
@@ -338,6 +343,11 @@ function SkillBtnCtrl:BtnStateChange(nState)
 	elseif nState == BTN_STATE.Hold then
 		NovaAPI.SetComponentEnable(self._mapNode.imgPressed, self.bInCD == false and self.bCanUse == true)
 		NovaAPI.SetComponentEnable(self._mapNode.imgXtips, self.bInCD == true)
+	end
+end
+function SkillBtnCtrl:ChangeSkillIcon(sIcon)
+	if type(sIcon) == "string" and sIcon ~= "" then
+		self:SetPngSprite(self._mapNode.ICON, sIcon)
 	end
 end
 function SkillBtnCtrl:SetActionBind(sGamepadBind, mapKeyboardBind)

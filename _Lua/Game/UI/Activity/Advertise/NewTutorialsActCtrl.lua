@@ -211,7 +211,7 @@ function NewTutorialsActCtrl:InitActData(actData)
 end
 function NewTutorialsActCtrl:Init()
 	self.bAllAdvanceLocked = true
-	self.bAllBaseComplete = true
+	self.bAllBaseComplete = false
 	self.tbCountDownTimers = {}
 	self.tbCountDownEndTimes = {}
 	self:RefreshGuideQuset()
@@ -671,7 +671,7 @@ end
 function NewTutorialsActCtrl:RefreshAllContent()
 	printLog("NewTutorialsActCtrl: Refreshing all content...")
 	self.bAllAdvanceLocked = true
-	self.bAllBaseComplete = true
+	self.bAllBaseComplete = false
 	self.nShortestTime = nil
 	self.sShortestTime = nil
 	self:RefreshGuideQuset()

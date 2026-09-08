@@ -323,7 +323,7 @@ function BreakOutData:RequestFinishLevel(arrayData, cb)
 				cb()
 			end
 		end
-		EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutLevelDetailPanelS3)
+		EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutLevelDetailPanelS4)
 		HttpNetHandler.SendMsg(NetMsgId.Id.milkout_settle_req, mapMsg, nil, failCallback)
 		return
 	end
@@ -336,7 +336,7 @@ function BreakOutData:RequestFinishLevel(arrayData, cb)
 			FirstComplete = arrayData.Win
 		})
 	end
-	EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutLevelDetailPanelS3)
+	EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutLevelDetailPanelS4)
 	HttpNetHandler.SendMsg(NetMsgId.Id.milkout_settle_req, mapMsg, nil, successCallback)
 end
 function BreakOutData:CreateTempData(nLevelId, bResult)
@@ -390,7 +390,7 @@ function BreakOutData:ShowActivityClosedAlert()
 	EventManager.Hit(EventId.OpenMessageBox, msg)
 end
 function BreakOutData:ForceExitOnFinishFail()
-	EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutPlayPanelS3)
-	EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutLevelDetailPanelS3)
+	EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutPlayPanelS4)
+	EventManager.Hit(EventId.ClosePanel, PanelId.BreakOutLevelDetailPanelS4)
 end
 return BreakOutData

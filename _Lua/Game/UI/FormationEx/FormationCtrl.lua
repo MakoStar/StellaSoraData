@@ -832,7 +832,7 @@ function FormationCtrl:OnBtnClick_Start(btn)
 end
 function FormationCtrl:OnBtnClick_Preselection()
 	PlayerData.PotentialPreselection:SendGetPreselectionList(function()
-		EventManager.Hit(EventId.OpenPanel, PanelId.PotentialPreselectionList, self.curTeam, self._panel.nTeamIndex)
+		EventManager.Hit(EventId.OpenPanel, PanelId.PotentialPreselectionList, self.curTeam, self._panel.nTeamIndex, true)
 	end)
 end
 function FormationCtrl:OnBtnClick_PreDetail()

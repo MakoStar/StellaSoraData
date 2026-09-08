@@ -174,6 +174,9 @@ function PlayerData.Init()
 		CacheTable.SetField("_EnumDesc", mapData.EnumName, mapData.Value, mapData.Key)
 	end
 	ForEachTableLine(DataTable.EnumDesc, foreachEnumDesc)
+	local EventReminderData = require("GameCore.Data.DataClass.EventReminderData")
+	PlayerData.EventReminder = EventReminderData.new()
+	PlayerData.EventReminder:Init()
 end
 function PlayerData.UnInit()
 	PlayerData.Base:UnInit()

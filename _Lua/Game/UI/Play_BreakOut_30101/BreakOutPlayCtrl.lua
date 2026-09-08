@@ -217,6 +217,9 @@ function BreakOutPlayCtrl:OnBtnClick_Pause()
 end
 function BreakOutPlayCtrl:OnEvent_GameEnd_Pre(nResult)
 	self.IsGameEnd = true
+	if self.bInLockState then
+		return
+	end
 	self:ActiveBtnPause(not self.IsGameEnd)
 end
 function BreakOutPlayCtrl:OnEvent_FinishGame(nResult)
@@ -275,7 +278,7 @@ function BreakOutPlayCtrl:OpenBreakOutResultPanel(Result, cb, mapChangeInfo)
 	EventManager.Hit("OpenBreakOutResultPanel", Result, sLevelName, cb, mapChangeInfo)
 end
 function BreakOutPlayCtrl:OnEvent_Restart()
-	if self.IsGameEnd then
+	if self.IsGameEnd and not self.bInLockState then
 		return
 	end
 	if self.bInLockState then

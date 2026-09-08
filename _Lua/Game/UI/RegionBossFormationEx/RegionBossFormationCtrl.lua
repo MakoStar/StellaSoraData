@@ -406,6 +406,11 @@ function RegionBossFormationCtrl:OpenScoreBossBattle()
 		PlayerData.ScoreBoss:SendEnterScoreBossApplyReq(self.selLvId, self.mbuildId)
 	end
 end
+function RegionBossFormationCtrl:OpenScoreBossBattle_GM()
+	if self.isHaveTeam then
+		PlayerData.ScoreBoss:SendEnterScoreBossGM(self.selLvId, self.mbuildId)
+	end
+end
 function RegionBossFormationCtrl:OpenTraceHuntBattle()
 	if self.isHaveTeam then
 		if PlayerData.TraceHunt:GetControlLeftTime() <= 0 then
@@ -572,6 +577,17 @@ function RegionBossFormationCtrl:OnEnable()
 			self.mbuildId = tempBuildId
 		else
 			self.mbuildId = PlayerData.ScoreBoss:GetLevelBuild(self.selLvId)
+		end
+		if self.mbuildId == 0 then
+		end
+		if self.mbuildId ~= 0 then
+			self.isHaveTeam = true
+		end
+	elseif self.nType == AllEnum.RegionBossFormationType.ScoreBoss_GM then
+		self.mbuildId = 0
+		local tempBuildId = PlayerData.ScoreBoss:GetCachedBuild(self.selLvId)
+		if tempBuildId ~= 0 then
+			self.mbuildId = tempBuildId
 		end
 		if self.mbuildId == 0 then
 		end
@@ -818,6 +834,8 @@ function RegionBossFormationCtrl:OnBtnClick_Start(btn)
 			end
 		end
 		PlayerData.ScoreBoss:JudgeOtherLevelHaveSameChar(self.selLvId, self.mbuildId, callBack)
+	elseif self.nType == AllEnum.RegionBossFormationType.ScoreBoss_GM then
+		self:OpenScoreBossBattle_GM()
 	elseif self.nType == AllEnum.RegionBossFormationType.TraceHunt then
 		self:OpenTraceHuntBattle()
 	elseif self.nType == AllEnum.RegionBossFormationType.SkillInstance then

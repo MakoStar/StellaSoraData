@@ -147,9 +147,10 @@ function DepotPotentialCtrl:OnSwitchPotentialRecommendChange()
 	for k, v in ipairs(self._mapNode.PotentialList) do
 		v:OnSwitchPotentialRecommendChange(self.bPotentialRecommend)
 	end
-	self._mapNode.PotentialCard:OnSwitchPotentialRecommendChange(self.bPotentialRecommend)
-	if self.bPotentialRecommend and self.nSelectId then
+	if self.nSelectId then
 		self:OnSetPotentialRecommend(self.nSelectId)
+	else
+		self._mapNode.PotentialCard:SetRecommend(false)
 	end
 end
 function DepotPotentialCtrl:SwitchPotentialAll()
@@ -309,11 +310,15 @@ function DepotPotentialCtrl:OnEvent_SelectDepotPotential(nPotentialId)
 end
 function DepotPotentialCtrl:OnSetPotentialRecommend(nPotentialId)
 	local nLevel = self:GetRecommendPotentialLevel(nPotentialId)
-	local status = false
+	local bEnable = false
 	if self.bPotentialRecommend and -1 < nLevel then
-		status = true
+		bEnable = true
 	end
-	self._mapNode.PotentialCard:OnSetPotentialRecommend(status, nLevel)
+	local nCurLevel = 0
+	if self.mapPotential[nPotentialId] ~= nil then
+		nCurLevel = self.mapPotential[nPotentialId].nLevel or 0
+	end
+	self._mapNode.PotentialCard:SetRecommend(bEnable, bEnable and nLevel or nil, nCurLevel)
 end
 function DepotPotentialCtrl:GetRecommendPotentialLevel(nId)
 	if not self.recommendList then

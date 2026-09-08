@@ -382,7 +382,7 @@ function PhoneCtrl:RefreshCharList(bMax)
 		self._mapNode.giftListLSV:Init(#self.mapCharList, self, self.OnGiftGridRefresh, self.OnGiftGridBtnClick, bKeepPos)
 	end
 	self._mapNode.goGift:Refresh(self._panel.nSelectCharId)
-	if self.bSetGridPos ~= nil and self.bSetGridPos then
+	if self._panel.nSelectCharId ~= nil then
 		local wait = function()
 			coroutine.yield(CS.UnityEngine.WaitForSeconds(0.5))
 			self:SetGiftScrollGridPos()
@@ -530,9 +530,6 @@ function PhoneCtrl:Awake()
 		end
 		if nil ~= tbParam[2] and self._panel.nSelectCharId == nil then
 			self._panel.nSelectCharId = tbParam[2]
-		end
-		if nil ~= tbParam[3] and self.bSetGridPos == nil then
-			self.bSetGridPos = tbParam[3]
 		end
 	end
 end

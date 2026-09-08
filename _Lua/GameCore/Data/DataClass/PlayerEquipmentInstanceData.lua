@@ -1,4 +1,5 @@
 local PlayerEquipmentInstanceData = class("PlayerEquipmentInstanceData")
+local LocalData = require("GameCore.Data.LocalData")
 local newDayTime = UTILS.GetDayRefreshTimeOffset()
 function PlayerEquipmentInstanceData:Init()
 	self.curLevel = nil
@@ -8,12 +9,19 @@ function PlayerEquipmentInstanceData:Init()
 	self.mapLevelCfg = {}
 	self:InitConfigData()
 	EventManager.Add("Equipment_Instance_Gameplay_Time", self, self.OnEvent_Time)
+	EventManager.Add(EventId.UpdateWorldClass, self, self.OnEvent_UpdateWorldClass)
 end
 function PlayerEquipmentInstanceData:OnEvent_Time(nTime)
 	self._TotalTime = nTime
 end
+function PlayerEquipmentInstanceData:OnEvent_UpdateWorldClass()
+	if PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.CharGemInstance) then
+		self:UpdateAllNewRewardSwitch()
+	end
+end
 function PlayerEquipmentInstanceData:UnInit()
 	EventManager.Remove("Equipment_Instance_Gameplay_Time", self, self.OnEvent_Time)
+	EventManager.Remove(EventId.UpdateWorldClass, self, self.OnEvent_UpdateWorldClass)
 end
 function PlayerEquipmentInstanceData:InitConfigData()
 	local funcForeachLine = function(line)
@@ -105,6 +113,7 @@ function PlayerEquipmentInstanceData:CacheEquipmentInstanceLevel(tbData)
 			}
 		}
 	end
+	self:UpdateAllNewRewardSwitch()
 end
 function PlayerEquipmentInstanceData:GetEquipmentInstanceLevelUnlock(nLevelId)
 	local mapLevelCfgData = ConfigTable.GetData("CharGemInstance", nLevelId)
@@ -164,6 +173,36 @@ function PlayerEquipmentInstanceData:GetEquipmentInstanceStar(nLevelId)
 		false
 	} or self.mapAllLevel[nLevelId].tbTarget
 end
+function PlayerEquipmentInstanceData:UpdateAllNewRewardSwitch()
+	local funcForeachLine = function(line)
+		self:UpdateNewRewardSwitch(line.Id)
+	end
+	ForEachTableLine(ConfigTable.Get("CharGemInstanceType"), funcForeachLine)
+end
+function PlayerEquipmentInstanceData:UpdateNewRewardSwitch(nType)
+	local bNew = LocalData.GetPlayerLocalData("CharGemInstanceSwitch" .. nType)
+	if bNew ~= nil then
+		RedDotManager.SetValid(RedDotDefine.CharGemInstanceSwitch, {nType}, bNew == true)
+		return
+	end
+	local nMaxHard = 1
+	local mapMaxLevel
+	local tbLevelList = self.mapLevelCfg[nType]
+	if nil ~= tbLevelList then
+		for nLevelId, mapLevel in pairs(tbLevelList) do
+			if self:GetEquipmentInstanceLevelUnlock(nLevelId) and nMaxHard < mapLevel.Difficulty then
+				nMaxHard = mapLevel.Difficulty
+				mapMaxLevel = mapLevel
+			end
+		end
+	end
+	if mapMaxLevel == nil or mapMaxLevel.DropId == 0 then
+		RedDotManager.SetValid(RedDotDefine.CharGemInstanceSwitch, {nType}, false)
+		return
+	end
+	LocalData.SetPlayerLocalData("CharGemInstanceSwitch" .. nType, true)
+	RedDotManager.SetValid(RedDotDefine.CharGemInstanceSwitch, {nType}, true)
+end
 function PlayerEquipmentInstanceData:MsgEnterEquipmentInstance(nLevelId, nBuildId, callback)
 	self._EntryTime = CS.ClientManager.Instance.serverTimeStampWithTimeZone
 	self._Build_id = nBuildId
@@ -171,6 +210,7 @@ function PlayerEquipmentInstanceData:MsgEnterEquipmentInstance(nLevelId, nBuildI
 	local msg = {}
 	msg.Id = nLevelId
 	msg.BuildId = nBuildId
+	msg.RewardType = self.lastRewardType
 	local msgCallback = function(_, mapChangeInfo)
 		self:EnterEquipmentInstance(nLevelId, nBuildId)
 		if self.mapAllLevel[nLevelId] == nil then
@@ -217,6 +257,10 @@ function PlayerEquipmentInstanceData:MsgSettleEquipmentInstance(nLevelId, nBuild
 					t3
 				}
 			}
+		end
+		local mapLevelCfgData = ConfigTable.GetData("CharGemInstance", nLevelId)
+		if mapLevelCfgData then
+			self:UpdateNewRewardSwitch(mapLevelCfgData.Type)
 		end
 		if callback ~= nil then
 			callback(mapMsgData.AwardItems, mapMsgData.FirstItems, mapMsgData.SurpriseItems, mapMsgData.DoubleItems, mapMsgData.Exp, mapMsgData.Change)
@@ -328,9 +372,28 @@ end
 function PlayerEquipmentInstanceData:GetSettlementState()
 	return self.bInSettlement
 end
+function PlayerEquipmentInstanceData:GetLastRewardType()
+	if self.lastRewardType == nil then
+		local lastType = LocalData.GetPlayerLocalData("EquipmentRewardType")
+		if lastType == nil then
+			self:SetRewardType(GameEnum.CharGemInstanceRewardType.Enhance)
+		else
+			self.lastRewardType = lastType
+		end
+	end
+	return tonumber(self.lastRewardType)
+end
+function PlayerEquipmentInstanceData:SetRewardType(nType)
+	self.lastRewardType = nType
+	LocalData.SetPlayerLocalData("EquipmentRewardType", nType)
+end
 function PlayerEquipmentInstanceData:SendEquipmentInstanceRaidReq(nId, nCount, callback)
 	local Events = {}
-	local msgData = {Id = nId, Times = nCount}
+	local msgData = {
+		Id = nId,
+		RewardType = self.lastRewardType,
+		Times = nCount
+	}
 	if 0 < #Events then
 		msgData.Events = {
 			List = {}

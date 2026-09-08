@@ -181,6 +181,16 @@ function TowerDefenseQuestCtrl:OnRefreshQuestGrid(goGrid, gridIndex)
 	self.tbQuestGridCtrl[nInstanceId]:SetData(self.nActId, self.questList[nIndex])
 end
 function TowerDefenseQuestCtrl:OnBtnClick_GetAllReward()
+	if not self.TowerDefenseData:CheckActivityOpen() then
+		EventManager.Hit(EventId.OpenMessageBox, {
+			nType = AllEnum.MessageBox.Alert,
+			sContent = ConfigTable.GetUIText("Activity_End_Notice"),
+			callbackConfirm = function()
+				PanelManager.Home()
+			end
+		})
+		return
+	end
 	self.TowerDefenseData:RequestReceiveQuest(self.nSelecedGroupId, 0)
 end
 function TowerDefenseQuestCtrl:OnBtnClick_GetAllReward_None()

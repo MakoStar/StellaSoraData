@@ -103,6 +103,19 @@ TowerDefenseLevelDetailCtrl._mapNodeConfig = {
 	miniMapCtrl = {
 		sNodeName = "TowerdefenseMiniMapPanel",
 		sCtrlName = "Game.UI.TowerDefense.TowerDefenseMiniMapCtrl"
+	},
+	btn_Toybox = {
+		sComponentName = "UIButton",
+		callback = "OnBtnClick_Toybox"
+	},
+	txt_Toybox = {
+		sComponentName = "TMP_Text",
+		sLanguageId = "TowerDef_Guide"
+	},
+	GuideBlur = {},
+	guidPanel = {
+		sNodeName = "TowerDefenseGuideRoot",
+		sCtrlName = "Game.UI.TowerDefense.TowerDefenseGuideCtrl"
 	}
 }
 TowerDefenseLevelDetailCtrl._mapEventConfig = {
@@ -113,7 +126,8 @@ TowerDefenseLevelDetailCtrl._mapEventConfig = {
 	TowerDefense_EditorTeam = "OnEvent_OpenTeamEditorPanel",
 	TowerDefenseItemDragStart = "OnEvent_TowerDefenseItemDragStart",
 	TowerDefenseItemDragEnd = "OnEvent_TowerDefenseItemDragEnd",
-	TowerDefenseItemDragging = "OnEvent_TowerDefenseItemDragging"
+	TowerDefenseItemDragging = "OnEvent_TowerDefenseItemDragging",
+	CloseTowerDefenseGuidePanel = "OnEvent_CloseTowerDefenseGuidePanel"
 }
 TowerDefenseLevelDetailCtrl._mapRedDotConfig = {}
 function TowerDefenseLevelDetailCtrl:Awake()
@@ -243,7 +257,10 @@ function TowerDefenseLevelDetailCtrl:InitTeamData()
 	if floorConfig == nil then
 		return
 	end
+	self._mapNode.btn_Toybox.gameObject:SetActive(floorConfig.MemberNum ~= 0)
 	self._mapNode.btn_Team.gameObject:SetActive(floorConfig.MemberNum ~= 0)
+	self._mapNode.GuideBlur.gameObject:SetActive(false)
+	self._mapNode.guidPanel.gameObject:SetActive(false)
 end
 function TowerDefenseLevelDetailCtrl:UpdateCharacter()
 	local floorConfig = ConfigTable.GetData("TowerDefenseFloor", self.levelConfig.FloorId)
@@ -407,12 +424,14 @@ function TowerDefenseLevelDetailCtrl:EnterTeamEditorPanel()
 	self._mapNode.teamCtrl.gameObject:SetActive(true)
 	self.bInEditorPanel = true
 	self._mapNode.btn_Team.interactable = false
+	self._mapNode.btn_Toybox.interactable = false
 	self._mapNode.btn_go1.interactable = false
 end
 function TowerDefenseLevelDetailCtrl:CloseTeamEditorPanel()
 	self._mapNode.teamCtrl.gameObject:SetActive(false)
 	self.bInEditorPanel = false
 	self._mapNode.btn_Team.interactable = true
+	self._mapNode.btn_Toybox.interactable = true
 	self._mapNode.btn_go1.interactable = true
 end
 function TowerDefenseLevelDetailCtrl:InitDragOrderList()
@@ -436,6 +455,16 @@ function TowerDefenseLevelDetailCtrl:OnBtnClick_Reward(btn, index)
 	end
 end
 function TowerDefenseLevelDetailCtrl:OnBtnClick_Go()
+	if not self.TowerDefenseData:CheckActivityOpen() then
+		EventManager.Hit(EventId.OpenMessageBox, {
+			nType = AllEnum.MessageBox.Alert,
+			sContent = ConfigTable.GetUIText("Activity_End_Notice"),
+			callbackConfirm = function()
+				PanelManager.Home()
+			end
+		})
+		return
+	end
 	if self.levelConfig.Skip then
 		local CancelCallback = function()
 			local tbChar = {}
@@ -524,6 +553,11 @@ end
 function TowerDefenseLevelDetailCtrl:OnBtnClick_MiniMap()
 	self._mapNode.miniMapCtrl:Open()
 end
+function TowerDefenseLevelDetailCtrl:OnBtnClick_Toybox()
+	self._mapNode.GuideBlur.gameObject:SetActive(true)
+	self._mapNode.guidPanel.gameObject:SetActive(true)
+	self._mapNode.guidPanel:SetData(self.nActId, self.tbCharGuideId)
+end
 function TowerDefenseLevelDetailCtrl:OnEvent_OpenTeamEditorPanel()
 	self:OnBtnClick_EditorTeam()
 end
@@ -573,5 +607,9 @@ function TowerDefenseLevelDetailCtrl:OnEvent_TowerDefenseItemDragging(nDragInsId
 			return a.nSortIndex < b.nSortIndex
 		end)
 	end
+end
+function TowerDefenseLevelDetailCtrl:OnEvent_CloseTowerDefenseGuidePanel()
+	self._mapNode.guidPanel.gameObject:SetActive(false)
+	self._mapNode.GuideBlur.gameObject:SetActive(false)
 end
 return TowerDefenseLevelDetailCtrl

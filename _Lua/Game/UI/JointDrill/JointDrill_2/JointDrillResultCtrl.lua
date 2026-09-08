@@ -94,7 +94,7 @@ JointDrillResultCtrl._mapNodeConfig = {
 JointDrillResultCtrl._mapEventConfig = {}
 function JointDrillResultCtrl:Refresh()
 	for _, v in ipairs(self._mapNode.btnDamage) do
-		v.gameObject:SetActive(self.tbCharDamage ~= nil)
+		v.gameObject:SetActive(self.tbCharDamage ~= nil and #self.tbCharDamage > 0)
 	end
 	local bInAdventure = ModuleManager.GetIsAdventure()
 	self._mapNode.goBg:SetActive(self.nResultType ~= AllEnum.JointDrillResultType.Success)
@@ -108,6 +108,9 @@ function JointDrillResultCtrl:Refresh()
 		return
 	end
 	nMaxBattleCount = mapLevelCfg.MaxBattleNum
+	if 0 < #self.tbChar then
+		PlayerData.Voice:PlayBattleResultVoice(self.tbChar, self.nResultType == AllEnum.JointDrillResultType.Success)
+	end
 	local nAnimTime = 0
 	if self.nResultType == AllEnum.JointDrillResultType.Success or self.nResultType == AllEnum.JointDrillResultType.ChallengeEnd then
 		self._mapNode.goResult:SetActive(true)
@@ -233,6 +236,7 @@ function JointDrillResultCtrl:OnEnable()
 	self.bSimulate = tbParam[11]
 	self.nBattleCount = tbParam[12]
 	self.tbCharDamage = tbParam[13]
+	self.tbChar = tbParam[14]
 	self.mapSelfRank = PlayerData.JointDrill_2:GetSelfRankData()
 	if self.nOld == 0 and self.nNew == 0 and self.mapSelfRank ~= nil then
 		self.nOld = self.mapSelfRank.Rank

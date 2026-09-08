@@ -35,6 +35,8 @@ Avg_1_BgCtrl._mapEventConfig = {
 }
 function Avg_1_BgCtrl:Awake()
 	self.mapPresetShake = nil
+	self.mapPresetTransition = nil
+	self.nPersonalityIdx = nil
 	self.goCurBgIns = nil
 	self.rtBg = nil
 	self.imgBg = nil
@@ -66,6 +68,8 @@ function Avg_1_BgCtrl:Awake()
 end
 function Avg_1_BgCtrl:OnDisable()
 	self.mapPresetShake = nil
+	self.mapPresetTransition = nil
+	self.nPersonalityIdx = nil
 	if self.goCurBgIns ~= nil then
 		self.rtBg = nil
 		NovaAPI.SetImageSpriteAsset(self.imgBg, nil)
@@ -316,6 +320,64 @@ function Avg_1_BgCtrl:OnEvent_AvgSpeedUp(nRate)
 		NovaAPI.SetAnimatorSpeed(value, nRate)
 	end
 end
+function Avg_1_BgCtrl:Avg_ProcRes_Personality(sResName)
+	local sName = sResName
+	if AVG_EDITOR == true then
+		return sName
+	end
+	local mapFallback = {
+		[1] = {
+			"AAA",
+			"AA",
+			"A"
+		},
+		[2] = {
+			"BBB",
+			"BB",
+			"B"
+		},
+		[0] = {
+			"CCC",
+			"CC",
+			"C"
+		}
+	}
+	local mapResNameSurfix = {
+		"AAA",
+		"BBB",
+		"CCC",
+		"AA",
+		"BB",
+		"CC",
+		"A",
+		"B",
+		"C",
+		"N"
+	}
+	if self.nPersonalityIdx == nil then
+		local _, _, _, _, _, _, n = PlayerData.Avg:CalcPersonality(1)
+		self.nPersonalityIdx = n
+	end
+	if type(self.nPersonalityIdx) == "number" then
+		local sResult = mapResNameSurfix[self.nPersonalityIdx]
+		if type(sResult) == "string" and sResult ~= "" and sResult ~= "N" then
+			local nFallbackIdx = self.nPersonalityIdx % 3
+			local tbFallback = mapFallback[nFallbackIdx]
+			local nStartIdx = table.indexof(tbFallback, sResult)
+			local nCount = #tbFallback
+			if 0 < nStartIdx then
+				for i = nStartIdx, nCount do
+					local s = sName .. "_" .. tbFallback[i]
+					if 0 < table.indexof(self._panel.tbAvgPreset.CgResName, s) then
+						sName = s
+						break
+					end
+				end
+			end
+		end
+	end
+	return sName
+end
 function Avg_1_BgCtrl:SetBg(tbParam)
 	self:CheckOffScreenInited()
 	self:_LoadPreset_Transition()
@@ -370,6 +432,7 @@ function Avg_1_BgCtrl:SetBg(tbParam)
 	end
 	delChildren(self._mapNode.trDelRoot)
 	sResName = Avg_ProcRes_M_F(sResName)
+	sResName = self:Avg_ProcRes_Personality(sResName)
 	self:CreateNewBg(sResName, bIsFG)
 	if bWait == true and 0 < nDuration then
 		return nDuration
@@ -634,6 +697,7 @@ function Avg_1_BgCtrl:RestoreAll(bActive, tbDataBg, tbDataFg, mapBgFx, mapFgFx, 
 	if sResName ~= "" then
 		if self.goCurFgIns == nil then
 			sResName = Avg_ProcRes_M_F(sResName)
+			sResName = self:Avg_ProcRes_Personality(sResName)
 			self:CreateNewBg(sResName, true)
 		else
 			local sFullPath = self._panel:GetBgCgFgResFullPath(sResName)

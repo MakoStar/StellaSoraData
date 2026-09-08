@@ -79,6 +79,7 @@ end
 function PenguinCardConfirmCtrl:Close(callback)
 	self._mapNode.aniWindow:Play("t_window_04_t_out")
 	self._mapNode.aniBlur:SetTrigger("tOut")
+	EventManager.Hit(EventId.TemporaryBlockInput, 0.2)
 	self:AddTimer(1, 0.2, function()
 		self._mapNode.window:SetActive(false)
 		self.gameObject:SetActive(false)
@@ -87,7 +88,6 @@ function PenguinCardConfirmCtrl:Close(callback)
 			callback()
 		end
 	end, true, true, true)
-	EventManager.Hit(EventId.TemporaryBlockInput, 0.2)
 end
 function PenguinCardConfirmCtrl:Awake()
 	self._mapNode.window:SetActive(false)

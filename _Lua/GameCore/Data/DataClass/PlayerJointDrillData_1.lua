@@ -244,6 +244,7 @@ function PlayerJointDrillData_1:GetMonsterMaxHp(nMonsterId, nDifficulty)
 	return NovaAPI.GetJointDrillBossMaxHp(nMonsterId, nDifficulty)
 end
 function PlayerJointDrillData_1:GetMonsterName(nMonsterId)
+	local sName, sIcon = "", ""
 	local mapMonsterCfg = ConfigTable.GetData("Monster", nMonsterId)
 	if mapMonsterCfg ~= nil then
 		local nSkinId = mapMonsterCfg.FAId
@@ -252,11 +253,12 @@ function PlayerJointDrillData_1:GetMonsterName(nMonsterId)
 			local nManualId = mapSkinCfg.MonsterManual
 			local mapManualCfg = ConfigTable.GetData("MonsterManual", nManualId)
 			if mapManualCfg ~= nil then
-				return mapManualCfg.Name
+				sName = mapManualCfg.Name
+				sIcon = mapManualCfg.Icon
 			end
 		end
 	end
-	return ""
+	return sName, sIcon
 end
 function PlayerJointDrillData_1:StartChallengeTime()
 	if self.challengeTimer ~= nil then
@@ -434,7 +436,8 @@ function PlayerJointDrillData_1:JointDrillGameOver(callback, bSettle, bEditor)
 					nOld = netMsg.Old
 					nNew = netMsg.New
 				end
-				EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, self.mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams)
+				local tbLastCharIds = self:GetJointDrillLastTeam()
+				EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, self.mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams, {}, tbLastCharIds)
 			end
 			self:EventUpload(4, 0)
 			self:ChallengeEnd()
@@ -450,7 +453,8 @@ function PlayerJointDrillData_1:JointDrillGameOver(callback, bSettle, bEditor)
 			local mapScore = {}
 			local mapChange, mapItems = {}, {}
 			local nOld, nNew = 0, 0
-			EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, self.mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams)
+			local tbLastCharIds = self:GetJointDrillLastTeam()
+			EventManager.Hit(EventId.OpenPanel, JointDrillContext.GetPanelId(self.nActId, "Result"), nResultType, self.nCurLevel, 0, self.nCurLevelId, self.mapBossInfo, mapScore, mapItems, mapChange, nOld, nNew, self.bSimulate, #self.tbTeams, {}, tbLastCharIds)
 		end
 		self:ChallengeEnd()
 	end
@@ -631,6 +635,18 @@ function PlayerJointDrillData_1:GetJointDrillBuildList()
 end
 function PlayerJointDrillData_1:GetJointDrillBattleCount()
 	return #self.tbTeams
+end
+function PlayerJointDrillData_1:GetJointDrillLastTeam()
+	local tbChar = {}
+	if #self.tbTeams > 0 then
+		local tbTeam = self.tbTeams[#self.tbTeams].Chars
+		if tbTeam ~= nil then
+			for _, v in ipairs(tbTeam) do
+				table.insert(tbChar, v.CharId)
+			end
+		end
+	end
+	return tbChar
 end
 function PlayerJointDrillData_1:CheckChallengeCount()
 	if self.nCurLevelId ~= 0 then

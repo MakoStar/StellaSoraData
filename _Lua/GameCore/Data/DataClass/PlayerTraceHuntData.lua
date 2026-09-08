@@ -34,13 +34,18 @@ function PlayerTraceHuntData:Init()
 		nDailyCount = 0
 	}
 	self.nBuildId = 0
+	self.nSelfBossHard = 1
+	self.nHelpBossHard = 1
 	EventManager.Add(EventId.IsNewDay, self, self.OnEvent_NewDay)
 	self:ProcessTableData()
 end
 function PlayerTraceHuntData:ProcessTableData()
 	self.tbTraceHuntStar = {}
 	local func_ForEach_Star = function(mapData)
-		self.tbTraceHuntStar[mapData.Star] = mapData.ScoreNeed
+		if not self.tbTraceHuntStar[mapData.Star] then
+			self.tbTraceHuntStar[mapData.Star] = {}
+		end
+		self.tbTraceHuntStar[mapData.Star][mapData.Difficulty] = mapData.ScoreNeed
 	end
 	ForEachTableLine(DataTable.TraceHuntStar, func_ForEach_Star)
 	self.tbHuntExtraCost = {}
@@ -54,6 +59,7 @@ function PlayerTraceHuntData:ProcessTableData()
 	self:ProcessTableData_Level()
 	self:ProcessTableData_Config()
 	self:ProcessTableData_Log()
+	self:ProcessTableData_Floor()
 end
 function PlayerTraceHuntData:ProcessTableData_Config()
 	self.nHuntPermitTid = ConfigTable.GetConfigNumber("TraceHuntPermitItemTid")
@@ -90,6 +96,7 @@ end
 function PlayerTraceHuntData:ProcessTableData_Level()
 	self.tbTraceHuntLevel = {}
 	self.nMaxTraceHuntLevel = 0
+	self.nHardOpenLevel = 100
 	local func_ForEach_Level = function(mapData)
 		self.tbTraceHuntLevel[mapData.Level] = {
 			Exp = mapData.Exp,
@@ -106,6 +113,9 @@ function PlayerTraceHuntData:ProcessTableData_Level()
 		if mapData.Level > self.nMaxTraceHuntLevel then
 			self.nMaxTraceHuntLevel = mapData.Level
 		end
+		if #mapData.DifficultyList > 1 and mapData.Level < self.nHardOpenLevel then
+			self.nHardOpenLevel = mapData.Level
+		end
 	end
 	ForEachTableLine(DataTable.TraceHuntLevel, func_ForEach_Level)
 	for i = 1, self.nMaxTraceHuntLevel do
@@ -115,6 +125,16 @@ function PlayerTraceHuntData:ProcessTableData_Level()
 			self.tbTraceHuntLevel[i + 2].DisplayWorldClass = mapNextLevel.WorldClass
 		end
 	end
+end
+function PlayerTraceHuntData:ProcessTableData_Floor()
+	self.tbTraceHuntFloor = {}
+	local func_ForEach_Floor = function(mapData)
+		if not self.tbTraceHuntFloor[mapData.GroupId] then
+			self.tbTraceHuntFloor[mapData.GroupId] = {}
+		end
+		self.tbTraceHuntFloor[mapData.GroupId][mapData.Difficult] = mapData
+	end
+	ForEachTableLine(DataTable.TraceHuntFloorGroup, func_ForEach_Floor)
 end
 function PlayerTraceHuntData:UnInit()
 	EventManager.Remove(EventId.IsNewDay, self, self.OnEvent_NewDay)
@@ -189,6 +209,9 @@ function PlayerTraceHuntData:CacheTraceHuntInfo(mapTraceHuntInfo)
 	self.tbBossCollection = {}
 	for _, v in ipairs(mapTraceHuntInfo.BossCollections) do
 		self:UpdateBossCollection(v.Id, v.HuntCount, v.AssistHuntCount)
+		if NovaAPI.IsEditorPlatform() then
+			printLog("TraceHunt 图鉴 Boss id/讨伐次数/协助次数：" .. "  " .. v.Id .. "/" .. v.HuntCount .. "/" .. v.AssistHuntCount)
+		end
 	end
 	self:UpdateControlData()
 	self:UpdateLevel(mapTraceHuntInfo.Level, mapTraceHuntInfo.Exp)
@@ -259,6 +282,39 @@ end
 function PlayerTraceHuntData:GetCurControlId()
 	return self.nControlId
 end
+function PlayerTraceHuntData:GetControlBlockState()
+	return self.nControlId < ConfigTable.GetConfigNumber("TraceHuntHardOpenControlId")
+end
+function PlayerTraceHuntData:GetSelfBossHard()
+	if self:GetControlBlockState() then
+		self.nSelfBossHard = 1
+	end
+	return self.nSelfBossHard
+end
+function PlayerTraceHuntData:SetSelfBossHard(nHard)
+	self.nSelfBossHard = nHard
+end
+function PlayerTraceHuntData:GetHelpBossHard()
+	if self:GetControlBlockState() then
+		self.nHelpBossHard = 1
+	end
+	local nCost = self:GetHuntCostCount()
+	local nHasCoin = self:GetHuntTokenCount()
+	if nCost > nHasCoin then
+		self.nHelpBossHard = 1
+	end
+	return self.nHelpBossHard
+end
+function PlayerTraceHuntData:SetHelpBossHard(nHard)
+	self.nHelpBossHard = nHard
+end
+function PlayerTraceHuntData:GetDifficultyBySource(bSelf)
+	if bSelf then
+		return self:GetSelfBossHard()
+	else
+		return self:GetHelpBossHard()
+	end
+end
 function PlayerTraceHuntData:GetHuntWarning()
 	return self.bHuntWarning
 end
@@ -315,6 +371,55 @@ end
 function PlayerTraceHuntData:GetTraceHuntMaxLevel()
 	return self.nMaxTraceHuntLevel
 end
+function PlayerTraceHuntData:GetHardOpenLevel()
+	return self.nHardOpenLevel
+end
+function PlayerTraceHuntData:GetLevelDisplayEffects(nLevel)
+	local tbEffect = {}
+	local mapLevel = self:GetTraceHuntLevelData(nLevel)
+	if mapLevel == nil then
+		return tbEffect
+	end
+	if mapLevel.DisplayMaxStar > 0 then
+		table.insert(tbEffect, {
+			sText = orderedFormat(ConfigTable.GetUIText("TraceHunt_LevelEffect_MaxStar"), mapLevel.DisplayMaxStar),
+			bIcon1 = false
+		})
+	end
+	if 0 < mapLevel.DisplayTokenRate then
+		local sTitle = ConfigTable.GetData_Item(AllEnum.CoinItemId.TraceHunt).Title
+		table.insert(tbEffect, {
+			sText = orderedFormat(ConfigTable.GetUIText("TraceHunt_LevelEffect_TokenRate"), sTitle, mapLevel.DisplayTokenRate),
+			bIcon1 = false
+		})
+	end
+	if 0 < mapLevel.DisplayFreeRate then
+		local sTitle = ConfigTable.GetData_Item(self.nTraceRequestTid).Title
+		table.insert(tbEffect, {
+			sText = orderedFormat(ConfigTable.GetUIText("TraceHunt_LevelEffect_FreeRate"), sTitle, mapLevel.DisplayFreeRate),
+			bIcon1 = false
+		})
+	end
+	if 0 < mapLevel.DisplayAddRate then
+		table.insert(tbEffect, {
+			sText = orderedFormat(ConfigTable.GetUIText("TraceHunt_LevelEffect_AddRate"), mapLevel.DisplayAddRate),
+			bIcon1 = true
+		})
+	end
+	if 0 < mapLevel.DisplayLuckyRate then
+		table.insert(tbEffect, {
+			sText = orderedFormat(ConfigTable.GetUIText("TraceHunt_LevelEffect_LuckyRate"), mapLevel.DisplayLuckyRate),
+			bIcon1 = true
+		})
+	end
+	if self.nHardOpenLevel == nLevel and not self:GetControlBlockState() then
+		table.insert(tbEffect, {
+			sText = ConfigTable.GetUIText("TraceHunt_LevelEffect_Hard"),
+			bIcon1 = true
+		})
+	end
+	return tbEffect
+end
 function PlayerTraceHuntData:GetBossId()
 	return self.nBossId
 end
@@ -337,7 +442,20 @@ function PlayerTraceHuntData:GetSelfHuntCount()
 	return self.nSelfBossHuntCount
 end
 function PlayerTraceHuntData:GetStarScore(nStar)
-	return self.tbTraceHuntStar[nStar] or 0
+	local mapData = self.tbTraceHuntStar[nStar]
+	if not mapData then
+		return 0
+	end
+	local nHard = self:GetDifficultyBySource(self.bSelfBoss)
+	return mapData[nHard]
+end
+function PlayerTraceHuntData:GetBossTimeLimit()
+	local nDifficulty = self:GetDifficultyBySource(self.bSelfBoss)
+	if 1 < nDifficulty then
+		return ConfigTable.GetConfigNumber("TraceHuntHardBossTimeLimit")
+	else
+		return ConfigTable.GetConfigNumber("TraceHuntBossTimeLimit")
+	end
 end
 function PlayerTraceHuntData:GetHuntCostCount(bSelf)
 	if self.nControlId == 0 then
@@ -372,7 +490,7 @@ function PlayerTraceHuntData:GetTraceCostCount()
 	end
 	return mapCfg.TraceCost1Qty
 end
-function PlayerTraceHuntData:GetHuntRewardRange()
+function PlayerTraceHuntData:GetHuntRewardRange(bSelf)
 	if self.nControlId == 0 then
 		return 0, 0
 	end
@@ -380,6 +498,14 @@ function PlayerTraceHuntData:GetHuntRewardRange()
 	if not mapCfg then
 		return 0, 0
 	end
+	local nDifficulty = self:GetDifficultyBySource(bSelf)
+	local mapDifficulty = ConfigTable.GetData("TraceHuntDifficulty", nDifficulty)
+	if not mapDifficulty then
+		return 0, 0
+	end
+	local nLevelRate = self:GetLevelTokenRate()
+	local nHardRate = mapDifficulty.TokenRate
+	local nAddRate = 100 + nLevelRate + nHardRate
 	local tbCount = mapCfg.StarDropCount
 	local nMin = tbCount[1]
 	local nMax = 0
@@ -388,6 +514,8 @@ function PlayerTraceHuntData:GetHuntRewardRange()
 			nMax = v
 		end
 	end
+	nMin = math.floor(nMin * nAddRate / 100)
+	nMax = math.floor(nMax * nAddRate / 100)
 	return nMin, nMax
 end
 function PlayerTraceHuntData:GetHuntTokenCount()
@@ -536,8 +664,26 @@ end
 function PlayerTraceHuntData:GetBossCollection()
 	return self.tbBossCollection, self.tbBossList or {}
 end
-function PlayerTraceHuntData:GetStarDropCount()
-	return self.tbStarDropCount or {}
+function PlayerTraceHuntData:GetLevelTokenRate()
+	local nRate = 0
+	for i = 1, self.nLevel do
+		nRate = nRate + self.tbTraceHuntLevel[i].DisplayTokenRate
+	end
+	return nRate
+end
+function PlayerTraceHuntData:GetStarDropCount(nDifficulty)
+	local mapDifficulty = ConfigTable.GetData("TraceHuntDifficulty", nDifficulty)
+	if not mapDifficulty then
+		return {}
+	end
+	local nLevelRate = self:GetLevelTokenRate()
+	local nHardRate = mapDifficulty.TokenRate
+	local nAddRate = 100 + nLevelRate + nHardRate
+	local tbCount = {}
+	for nStar, v in ipairs(self.tbStarDropCount) do
+		tbCount[nStar] = math.floor(v * nAddRate / 100)
+	end
+	return tbCount
 end
 function PlayerTraceHuntData:SetControlTimer()
 	if self.timerControl ~= nil then
@@ -588,18 +734,23 @@ function PlayerTraceHuntData:SendTraceHuntInfoReq(callback)
 	HttpNetHandler.SendMsg(NetMsgId.Id.trace_hunt_info_req, {}, nil, successCallback)
 end
 function PlayerTraceHuntData:SendTraceHuntApplyReq(nOwnerUID, nBossID, nBuildId, nBossCreateTime, mapFriend)
+	local bSelfBoss = PlayerData.Base._nPlayerId == nOwnerUID
+	local nDifficulty = self:GetDifficultyBySource(bSelfBoss)
+	local mapBoss = ConfigTable.GetData("TraceHuntBoss", nBossID)
+	local nFloorId = self.tbTraceHuntFloor[mapBoss.FloorGroup][nDifficulty].Id
 	local msgData = {
 		OwnerUID = nOwnerUID,
 		BossID = nBossID,
 		BuildID = nBuildId,
-		BossCreateTime = nBossCreateTime
+		BossCreateTime = nBossCreateTime,
+		Difficulty = nDifficulty
 	}
 	local successCallback = function(_, mapMainData)
 		self.CurHPLvScore = 0
 		self.HPLvScore = 0
 		self.CurHPDamage = 0
-		self.bSelfBoss = PlayerData.Base._nPlayerId == nOwnerUID
-		self:EnterTraceHunt(nBossID, nBuildId)
+		self.bSelfBoss = bSelfBoss
+		self:EnterTraceHunt(nBossID, nBuildId, nFloorId)
 		PlayerData.Friend:CacheFriendAddStranger(mapFriend)
 	end
 	HttpNetHandler.SendMsg(NetMsgId.Id.trace_hunt_apply_req, msgData, nil, successCallback)
@@ -770,9 +921,10 @@ function PlayerTraceHuntData:UpdateItemEntranceRedDot()
 	local bTraceMax = RedDotManager.GetValid(RedDotDefine.TraceHunt_TraceItem)
 	RedDotManager.SetValid(RedDotDefine.TraceHunt_Item, nil, not bReward and (bHuntMax or bTraceMax))
 end
-function PlayerTraceHuntData:EnterTraceHunt(nLevelId, nBuildId)
+function PlayerTraceHuntData:EnterTraceHunt(nLevelId, nBuildId, nFloorId)
 	self.entryLevelId = nLevelId
 	self.entryBuild = nBuildId
+	self.entryFloorId = nFloorId
 	if self.curLevel == nil then
 		local luaClass = require("Game.Adventure.TraceHunt.TraceHuntLevel")
 		if luaClass == nil then
@@ -784,7 +936,7 @@ function PlayerTraceHuntData:EnterTraceHunt(nLevelId, nBuildId)
 		self.curLevel:BindEvent()
 	end
 	if type(self.curLevel.Init) == "function" then
-		self.curLevel:Init(self, nLevelId, nBuildId, self.isGoAgain)
+		self.curLevel:Init(self, nLevelId, nBuildId, nFloorId, self.isGoAgain)
 	end
 	self.isGoAgain = false
 end
@@ -825,10 +977,11 @@ function PlayerTraceHuntData:GetTotalScore()
 	return totalScore
 end
 function PlayerTraceHuntData:ScoreToStar()
+	local nDifficulty = self:GetDifficultyBySource(self.bSelfBoss)
 	local tmpStar = 0
 	local totalScore = self.HPLvScore + self.CurHPLvScore
 	for i, v in pairs(self.tbTraceHuntStar) do
-		if v <= totalScore and i > tmpStar then
+		if totalScore >= v[nDifficulty] and i > tmpStar then
 			tmpStar = i
 		end
 	end
@@ -867,7 +1020,7 @@ function PlayerTraceHuntData:EntryLvAgain()
 		self.HPLvScore = 0
 		self.CurHPDamage = 0
 		EventManager.Hit("TraceHunt_Restart_Again")
-		self:EnterTraceHunt(self.entryLevelId, self.entryBuild)
+		self:EnterTraceHunt(self.entryLevelId, self.entryBuild, self.entryFloorId)
 	end
 end
 return PlayerTraceHuntData

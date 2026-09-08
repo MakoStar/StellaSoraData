@@ -1,7 +1,10 @@
 local GachaCtrl = class("GachaCtrl", BaseCtrl)
 local LocalData = require("GameCore.Data.LocalData")
+local GameResourceLoader = require("Game.Common.Resource.GameResourceLoader")
+local ResType = GameResourceLoader.ResType
 local newDayTime = UTILS.GetDayRefreshTimeOffset()
 local WwiseManger = CS.WwiseAudioManager
+local sRootPath = Settings.AB_ROOT_PATH
 local coverScript = {
 	[GameEnum.gachaStorageType.CharacterCardPool] = "Game.UI.GachaEx.GachaCover.GachaCoverCtrl_PermanentCharUp",
 	[GameEnum.gachaStorageType.DiscCardPool] = "Game.UI.GachaEx.GachaCover.GachaCoverCtrl_PermanentDiscUp",
@@ -144,18 +147,24 @@ GachaCtrl._mapEventConfig = {
 	GachaNewbieReplaceRecordOver = "OnEvent_GachaNewbieReplaceRecordOver",
 	GachaNewbieObtainRecordOver = "OnEvent_GachaNewbieObtainRecordOver",
 	GachaProcessStart = "OnEvent_GachaProcessStart",
+	GachaNeedRefresh = "OnEvent_GachaNeedRefresh",
 	OnBtnClickGachaCoverEntranceGo = "OnEvent_GachaCoverEntranceGo",
 	[EventId.UIHomeConfirm] = "OnEvent_Home",
 	[EventId.UIBackConfirm] = "OnEvent_Back"
 }
 function GachaCtrl:Awake()
 	self.bGachaProcess = false
+	self.nMaxCoverCount = 6
+	if CS.ClientManager.Instance:GetMemoryType() then
+		self.nMaxCoverCount = 2
+	end
 end
 function GachaCtrl:FadeIn()
 end
 function GachaCtrl:FadeOut()
 end
 function GachaCtrl:OnEnable()
+	self.tbLoadedCover = {}
 	self._mapMaxAcquireReward = {}
 	local forEachAcquireReward = function(mapData)
 		if self._mapMaxAcquireReward[mapData.itemStype] == nil then
@@ -190,7 +199,6 @@ function GachaCtrl:OnEnable()
 		cs_coroutine.start(wait)
 		EventManager.Hit("Guide_GachaOpen")
 	end
-	self._mapNode.TMP_GachaTimes.gameObject:SetActive(false)
 	local newbie_callback = function()
 		PlayerData.Gacha:GetGachaInfomation(callback)
 	end
@@ -202,9 +210,10 @@ function GachaCtrl:OnEnable()
 	self._mapNode.GachaNewBieObtainResult.gameObject:SetActive(false)
 end
 function GachaCtrl:OnDisable()
-	for _, mapCtrl in pairs(self.mapCover) do
-		self:UnbindCtrlByNode(mapCtrl)
+	for _, nPoolId in ipairs(self.tbLoadedCover) do
+		self:UnloadCoverInternal(nPoolId)
 	end
+	self.tbLoadedCover = {}
 	self._panel.nCurPool = self.curPoolId
 	self.mapCover = nil
 	self.mapTab = nil
@@ -217,12 +226,18 @@ end
 function GachaCtrl:OnRelease()
 end
 function GachaCtrl:RefreshAll(bOpen)
+	if #self.tbLoadedCover > 0 then
+		for _, nPoolId in ipairs(self.tbLoadedCover) do
+			self:UnloadCoverInternal(nPoolId)
+		end
+		self.tbLoadedCover = {}
+	end
 	self.tbOpenedPool = PlayerData.Gacha:GetOpenedPool()
-	self:LoadCover()
 	self:RefreshTab()
-	if type(self.curPoolId) ~= "number" or self.curPoolId <= 0 or table.indexof(self.tbOpenedPool, self.curPoolId) < 1 then
+	if type(self.curPoolId) ~= "number" or 0 >= self.curPoolId or table.indexof(self.tbOpenedPool, self.curPoolId) < 1 then
 		self.curPoolId = self.tbOpenedPool[1]
 	end
+	self:LoadCover(self.curPoolId)
 	self:SetTabSelect(self.curPoolId, true)
 	self:RefreshInfo()
 	EventManager.Hit(EventId.SetTransition)
@@ -287,6 +302,7 @@ function GachaCtrl:RefreshInfo()
 	self._mapNode.btn_GachaTen.gameObject:SetActive(not self.isNewBie)
 	self._mapNode.btn_poolHistory.gameObject:SetActive(not self.isNewBie)
 	self._mapNode.btn_shop.gameObject:SetActive(not self.isNewBie)
+	self._mapNode.TMP_GachaTimes.gameObject:SetActive(not self.isNewBie)
 	if self.isNewBie then
 		local newbie = ConfigTable.GetData("GachaNewbie", self.curPoolId)
 		local newbieData = PlayerData.Gacha:GetGachaNewbieData(self.curPoolId)
@@ -302,6 +318,33 @@ function GachaCtrl:RefreshInfo()
 	self:RefreshCover()
 	self._mapNode.GachaInfo:Refresh(self.curPoolId)
 	self._mapNode.GachaProb:Refresh(self.curPoolId)
+	self:RefreshRemainGachaTimes(self.curPoolId)
+end
+function GachaCtrl:RefreshRemainGachaTimes(curPoolId)
+	local LimitTimes = ConfigTable.GetData("Gacha", curPoolId).LimitTimes
+	if 999 < LimitTimes or LimitTimes == nil then
+		self._mapNode.TMP_GachaTimes.gameObject:SetActive(false)
+		return
+	end
+	local nGachaTotalTimes = math.min(PlayerData.Gacha:GetGachaCountById(curPoolId), LimitTimes)
+	local str = orderedFormat(ConfigTable.GetUIText("Gacha_GachaTimeLimit"), nGachaTotalTimes, LimitTimes)
+	NovaAPI.SetTMPText(self._mapNode.TMP_GachaTimes, str)
+end
+function GachaCtrl:IsRemain_Ten(curPoolId)
+	local LimitTimes = ConfigTable.GetData("Gacha", curPoolId).LimitTimes
+	local nGachaTotalTimes = PlayerData.Gacha:GetGachaCountById(curPoolId)
+	if LimitTimes == nil then
+		return true
+	end
+	return 10 <= LimitTimes - nGachaTotalTimes
+end
+function GachaCtrl:IsRemain_One(curPoolId)
+	local LimitTimes = ConfigTable.GetData("Gacha", curPoolId).LimitTimes
+	local nGachaTotalTimes = PlayerData.Gacha:GetGachaCountById(curPoolId)
+	if LimitTimes == nil then
+		return true
+	end
+	return 1 <= LimitTimes - nGachaTotalTimes
 end
 function GachaCtrl:RefreshCoin(mapGacha)
 	if mapGacha == nil then
@@ -423,24 +466,44 @@ function GachaCtrl:RefreshCover()
 		mapCoverCtrl:SetCover(nPoolId)
 	end
 end
-function GachaCtrl:LoadCover()
+function GachaCtrl:LoadCover(nCurPool)
 	self.mapCover = {}
-	for _, nPoolId in ipairs(self.tbOpenedPool) do
-		local mapGacha = ConfigTable.GetData("Gacha", nPoolId)
-		if mapGacha ~= nil then
-			print(string.format("UI_GachaCover/%s/%s.prefab", mapGacha.Image, mapGacha.Image))
-			local coverPrefab = self:LoadAsset(string.format("UI_GachaCover/%s/%s.prefab", mapGacha.Image, mapGacha.Image))
-			local goCover = instantiate(coverPrefab, self._mapNode.coverRoot)
-			goCover:SetActive(false)
-			local sScript = "Game.UI.GachaEx.GachaCoverCtrl"
-			if coverScript[mapGacha.StorageId] ~= nil then
-				sScript = coverScript[mapGacha.StorageId]
+	self:LoadCoverInternal(nCurPool)
+	table.insert(self.tbLoadedCover, 1, nCurPool)
+	if not CS.ClientManager.Instance:GetMemoryType() then
+		for _, nPoolId in ipairs(self.tbOpenedPool) do
+			if #self.tbLoadedCover < self.nMaxCoverCount and nPoolId ~= nCurPool then
+				self:LoadCoverInternal(nPoolId)
+				table.insert(self.tbLoadedCover, nPoolId)
 			end
-			local goCtrl = self:BindCtrlByNode(goCover, sScript)
-			self.mapCover[nPoolId] = goCtrl
-			self.mapCover[nPoolId]:SetCover(nPoolId)
 		end
 	end
+end
+function GachaCtrl:LoadCoverInternal(nPoolId)
+	local mapGacha = ConfigTable.GetData("Gacha", nPoolId)
+	if mapGacha ~= nil then
+		local nCoverId = UTILS.GenerateManageredResourceId(self._panel._nPanelId, nPoolId)
+		local fullPath = string.format(sRootPath .. "UI_GachaCover/%s/%s.prefab", mapGacha.Image, mapGacha.Image)
+		local coverPrefab = GameResourceLoader.LoadAsset(ResType.Any, fullPath, typeof(Object), "UI", nCoverId)
+		local goCover = instantiate(coverPrefab, self._mapNode.coverRoot)
+		goCover:SetActive(false)
+		local sScript = "Game.UI.GachaEx.GachaCoverCtrl"
+		if coverScript[mapGacha.StorageId] ~= nil then
+			sScript = coverScript[mapGacha.StorageId]
+		end
+		local goCtrl = self:BindCtrlByNode(goCover, sScript)
+		self.mapCover[nPoolId] = goCtrl
+		self.mapCover[nPoolId]:SetCover(nPoolId)
+	end
+end
+function GachaCtrl:UnloadCoverInternal(nPoolId)
+	local goCtrl = self.mapCover[nPoolId]
+	local tempGo = goCtrl.gameObject
+	self:UnbindCtrlByNode(goCtrl)
+	destroy(tempGo)
+	self.mapCover[nPoolId] = nil
+	local nCoverId = UTILS.GenerateManageredResourceId(self._panel._nPanelId, nPoolId)
+	GameResourceLoader.UnloadAsset(nCoverId)
 end
 function GachaCtrl:SetTabSelect(nGachaId, bSelect)
 	if nGachaId == nil then
@@ -463,18 +526,32 @@ function GachaCtrl:SetTabSelect(nGachaId, bSelect)
 	self._mapNode.btn_NewBieJump.gameObject:SetActive(gachaData.StorageId == GameEnum.gachaStorageType.BeginnerCardPool)
 	self._mapNode.btn_shop.gameObject:SetActive(gachaData.StorageId == GameEnum.gachaStorageType.BeginnerCardPool)
 end
-function GachaCtrl:SetCoverOpen(nGachaId, bOpen)
+function GachaCtrl:SetCoverOpen(nGachaId)
 	if nGachaId == nil then
 		return
 	end
-	local go = self.mapCover[nGachaId].gameObject
-	if go ~= nil then
-		go:SetActive(bOpen)
-		if bOpen then
-			local gachaData = ConfigTable.GetData("Gacha", nGachaId)
-			if gachaData ~= nil then
-				CS.WwiseAudioManager.Instance:PostEvent(gachaData.Voice)
-			end
+	local curGo = self.mapCover[self.curPoolId].gameObject
+	if curGo ~= nil then
+		curGo:SetActive(false)
+	end
+	local nextGo = self.mapCover[nGachaId]
+	if nextGo == nil then
+		if #self.tbLoadedCover >= self.nMaxCoverCount then
+			local removedId = table.remove(self.tbLoadedCover, #self.tbLoadedCover)
+			self:UnloadCoverInternal(removedId)
+		end
+		self:LoadCoverInternal(nGachaId)
+		table.insert(self.tbLoadedCover, 1, nGachaId)
+		nextGo = self.mapCover[nGachaId]
+	else
+		table.removebyvalue(self.tbLoadedCover, nGachaId, true)
+		table.insert(self.tbLoadedCover, 1, nGachaId)
+	end
+	if nextGo ~= nil then
+		nextGo.gameObject:SetActive(true)
+		local gachaData = ConfigTable.GetData("Gacha", nGachaId)
+		if gachaData ~= nil then
+			CS.WwiseAudioManager.Instance:PostEvent(gachaData.Voice)
 		end
 	end
 end
@@ -716,13 +793,17 @@ function GachaCtrl:OnBtnClick_Tab(goBtn, nGachaId)
 	end
 	self:SetTabSelect(self.curPoolId, false)
 	self:SetTabSelect(nGachaId, true)
-	self:SetCoverOpen(self.curPoolId, false)
-	self:SetCoverOpen(nGachaId, true)
+	self:SetCoverOpen(nGachaId)
 	self.curPoolId = nGachaId
 	self:RefreshInfo()
 	self.mapCover[self.curPoolId]:PlayInAnim()
 end
 function GachaCtrl:OnBtnClick_One()
+	if not self:IsRemain_One(self.curPoolId) then
+		local sTip = ConfigTable.GetUIText("Gacha_GachaTimeLimitTips")
+		EventManager.Hit(EventId.OpenMessageBox, sTip)
+		return
+	end
 	if self.bGachaProcess then
 		return
 	end
@@ -785,6 +866,11 @@ function GachaCtrl:OnBtnClick_One()
 	end
 end
 function GachaCtrl:OnBtnClick_Ten()
+	if not self:IsRemain_Ten(self.curPoolId) then
+		local sTip = ConfigTable.GetUIText("Gacha_GachaTimeLimitTips")
+		EventManager.Hit(EventId.OpenMessageBox, sTip)
+		return
+	end
 	if self.bGachaProcess then
 		return
 	end
@@ -1026,6 +1112,7 @@ function GachaCtrl:GetGachaItem(mapData, nStorageId, bGetFirstTenReward)
 			WwiseManger.Instance:SetState("recruit_rarity", "R")
 		end
 		self:RefreshCover()
+		self:RefreshRemainGachaTimes(self.curPoolId)
 		self._mapNode.GachaShow:ShowResults(tbReward, tbGiveItems)
 		PlayerData.SideBanner:TryOpenSideBanner()
 	end
@@ -1133,6 +1220,9 @@ function GachaCtrl:CheckGachaVideoRes()
 end
 function GachaCtrl:OnEvent_GachaProcessStart(bStart)
 	self.bGachaProcess = bStart
+end
+function GachaCtrl:OnEvent_GachaNeedRefresh()
+	self:RefreshAll()
 end
 function GachaCtrl:GetGachaNewbieItem(mapData)
 	local tbReward = {}

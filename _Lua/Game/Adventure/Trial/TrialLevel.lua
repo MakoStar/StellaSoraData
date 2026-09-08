@@ -15,6 +15,7 @@ function TrialLevel:Init(parent, nLevelId)
 	self.parent = parent
 	self.nLevelId = nLevelId
 	self.mapChangeInfo = {}
+	self.bTrialBattleStartUploaded = false
 	self.mapLevelCfg = ConfigTable.GetData("TrialFloor", nLevelId)
 	if not self.mapLevelCfg then
 		return
@@ -68,6 +69,10 @@ function TrialLevel:OnEvent_LoadLevelRefresh()
 	safe_call_cs_func(CS.AdventureModuleHelper.SetNoteInfo, tbNoteInfo)
 	self.mapEftData = UTILS.AddBuildEffect(mapAllEft, mapDiscEft, mapNoteEffect)
 	EventManager.Hit("OpenTrialInfo", self.nQuestId)
+	if not self.bTrialBattleStartUploaded then
+		self.bTrialBattleStartUploaded = true
+		PlayerData.Trial:UserEventUpload_TrialBattle(1)
+	end
 end
 function TrialLevel:RefreshCharDamageData()
 	self.tbCharDamage = UTILS.GetCharDamageResult(self.tbCharId)
@@ -79,6 +84,7 @@ function TrialLevel:OnEvent_LevelResult(nLevelTime)
 	self:RefreshCharDamageData()
 	local bReceived = PlayerData.Trial:CheckGroupReceived()
 	local bAbandon = not bReceived
+	local bHasReward = PlayerData.Trial:IsActivityTrialMode()
 	EventManager.Hit("TrialBattleEnd")
 	if self.parent:GetSettlementState() then
 		printError("试玩关结算流程重复进入，本次退出")
@@ -88,7 +94,7 @@ function TrialLevel:OnEvent_LevelResult(nLevelTime)
 	if bAbandon then
 		EventManager.Hit("TrialLevelEnd", self.nLevelId)
 		EventManager.Hit(EventId.ClosePanel, PanelId.BtnTips)
-		EventManager.Hit(EventId.OpenPanel, PanelId.TrialResult, false, nLevelTime or 0, self.tbCharId, self.parent.nActId, {}, self.tbCharDamage)
+		EventManager.Hit(EventId.OpenPanel, PanelId.TrialResult, false, nLevelTime or 0, self.tbCharId, self.parent.nActId or 0, {}, self.tbCharDamage, bHasReward)
 		self.parent:LevelEnd()
 		return
 	end
@@ -140,6 +146,7 @@ function TrialLevel:PlaySuccessPerform(nLevelTime)
 	local func_SettlementFinish = function(bSuccess)
 	end
 	local tbChar = self.tbCharId
+	local bHasReward = PlayerData.Trial:IsActivityTrialMode()
 	local function levelEndCallback()
 		EventManager.Remove("ADVENTURE_LEVEL_UNLOAD_COMPLETE", self, levelEndCallback)
 		local nType = self.mapLevelCfg.Theme
@@ -154,7 +161,7 @@ function TrialLevel:PlaySuccessPerform(nLevelTime)
 	EventManager.Add("ADVENTURE_LEVEL_UNLOAD_COMPLETE", self, levelEndCallback)
 	local function openBattleResultPanel()
 		EventManager.Remove("SettlementPerformLoadFinish", self, openBattleResultPanel)
-		EventManager.Hit(EventId.OpenPanel, PanelId.TrialResult, true, nLevelTime or 0, self.tbCharId, self.parent.nActId, self.mapChangeInfo, self.tbCharDamage)
+		EventManager.Hit(EventId.OpenPanel, PanelId.TrialResult, true, nLevelTime or 0, self.tbCharId, self.parent.nActId or 0, self.mapChangeInfo, self.tbCharDamage, bHasReward)
 		self.bSettle = false
 		self.parent:LevelEnd()
 		self:UnBindEvent()
@@ -208,6 +215,10 @@ function TrialLevel:OnEvent_InitQuest(nQuestId)
 	self.nQuestId = nQuestId
 end
 function TrialLevel:OnEvent_QuestComplete()
+	if not PlayerData.Trial:IsActivityTrialMode() then
+		self:ShowTeleportIndicator()
+		return
+	end
 	local bOpen = false
 	local actData = PlayerData.Activity:GetActivityDataById(self.parent.nActId)
 	if actData then

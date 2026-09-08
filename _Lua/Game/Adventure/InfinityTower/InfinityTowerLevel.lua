@@ -15,8 +15,10 @@ function InfinityTowerLevel:Init(parent, floorId, nBuildId, againOrNextLv, isCon
 	local GetBuildCallback = function(mapBuildData)
 		self.mapBuildData = mapBuildData
 		self.tbCharId = {}
+		self.tbCharTrialId = {}
 		for _, mapChar in ipairs(self.mapBuildData.tbChar) do
 			table.insert(self.tbCharId, mapChar.nTid)
+			self.tbCharTrialId[mapChar.nTid] = mapChar.nTrialId
 		end
 		self.tbDiscId = {}
 		for _, nDiscId in ipairs(self.mapBuildData.tbDisc) do
@@ -43,7 +45,7 @@ function InfinityTowerLevel:Init(parent, floorId, nBuildId, againOrNextLv, isCon
 end
 function InfinityTowerLevel:CalCharFixedEffect(nCharId, bMainChar, tbDiscId)
 	local stActorInfo = CS.Lua2CSharpInfo_CharAttribute()
-	PlayerData.Char:CalCharacterAttrBattle(nCharId, stActorInfo, bMainChar, tbDiscId, self.mapBuildData.nBuildId)
+	PlayerData.Build:CalBuildCharacterAttrBattle(self.mapBuildData.nBuildId, nCharId, self.tbCharTrialId and self.tbCharTrialId[nCharId], stActorInfo, bMainChar, tbDiscId)
 	return stActorInfo
 end
 function InfinityTowerLevel:BindEvent()
@@ -97,7 +99,7 @@ end
 function InfinityTowerLevel:SetPersonalPerk()
 	if self.mapBuildData ~= nil then
 		for nCharId, tbPerk in pairs(self.mapBuildData.tbPotentials) do
-			local mapAddLevel = PlayerData.Char:GetCharEnhancedPotential(nCharId)
+			local mapAddLevel = PlayerData.Build:GetBuildEnhancedPotential(self.mapBuildData.nBuildId, nCharId, self.tbCharTrialId and self.tbCharTrialId[nCharId])
 			local tbPerkInfo = {}
 			for _, mapPerkInfo in ipairs(tbPerk) do
 				local nAddLv = mapAddLevel[mapPerkInfo.nPotentialId] or 0
@@ -114,7 +116,7 @@ function InfinityTowerLevel:SetDiscInfo()
 	local tbDiscInfo = {}
 	for k, nDiscId in ipairs(self.mapBuildData.tbDisc) do
 		if k <= 3 then
-			local discInfo = PlayerData.Disc:CalcDiscInfoInBuild(nDiscId, self.mapBuildData.tbSecondarySkill)
+			local discInfo = PlayerData.Build:GetBuildDiscInfoInBuild(self.mapBuildData.nBuildId, nDiscId, self.mapBuildData.tbSecondarySkill)
 			table.insert(tbDiscInfo, discInfo)
 		end
 	end

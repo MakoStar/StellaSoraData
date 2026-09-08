@@ -5,6 +5,7 @@ function LoginRewardActData:Init()
 	self.nActual = 0
 	self.tbRewardList = {}
 	self.loginRewardActCfg = nil
+	self.bIsMove = false
 	self:InitRewardList()
 end
 function LoginRewardActData:InitRewardList()
@@ -22,6 +23,7 @@ function LoginRewardActData:InitRewardList()
 		return a.Order < b.Order
 	end)
 	self.tbRewardList = tbRewardList
+	self.bIsMove = self.loginRewardActCfg.IsMove or false
 end
 function LoginRewardActData:RefreshLoginData(nReceive, nActual)
 	self.nCanReceives = nReceive
@@ -53,5 +55,12 @@ function LoginRewardActData:CheckCanReceive()
 end
 function LoginRewardActData:GetLoginRewardControlCfg()
 	return self.loginRewardActCfg
+end
+function LoginRewardActData:GetActSortId()
+	if self.bIsMove and not self:CheckCanReceive() then
+		return 9999
+	else
+		return self.actCfg.SortId
+	end
 end
 return LoginRewardActData

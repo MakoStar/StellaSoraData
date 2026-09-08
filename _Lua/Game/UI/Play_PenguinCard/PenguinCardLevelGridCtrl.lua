@@ -27,6 +27,17 @@ function PenguinCardLevelGridCtrl:RefreshHard(actData, nLevelId)
 	NovaAPI.SetTMPText(txtBest, ConfigTable.GetUIText("PenguinCard_Level_BestScore"))
 	NovaAPI.SetTMPText(txtScore, self:ThousandsNumber(clearFloat(mapLevel.nScore)))
 end
+function PenguinCardLevelGridCtrl:RefreshEndless(actData, nLevelId)
+	self.actData = actData
+	self.nLevelId = nLevelId
+	local mapLevel = self.actData:GetLevelData(nLevelId)
+	self:Refresh(nLevelId, mapLevel)
+	local txtBest = self._mapNode.trRoot:Find("goOn/imgBestBg/txtBest"):GetComponent("TMP_Text")
+	local txtScore = self._mapNode.trRoot:Find("goOn/imgBestBg/txtScore"):GetComponent("TMP_Text")
+	local nDifficulty = mapLevel.nDifficulty == 0 and 1 or mapLevel.nDifficulty
+	NovaAPI.SetTMPText(txtBest, orderedFormat(ConfigTable.GetUIText("PenguinCard_Endless_LevelGridTittle"), nDifficulty))
+	NovaAPI.SetTMPText(txtScore, self:ThousandsNumber(clearFloat(mapLevel.nScore)))
+end
 function PenguinCardLevelGridCtrl:RefreshNormal(actData, nIndex, nLevelId)
 	self.actData = actData
 	self.nLevelId = nLevelId
@@ -54,7 +65,11 @@ function PenguinCardLevelGridCtrl:Refresh(nLevelId, mapLevel)
 		self._mapNode.goStarOff[i]:SetActive(i > mapLevel.nStar)
 	end
 	self:RefreshLock(nLevelId)
-	self._mapNode.imgComplete:SetActive(mapLevel.nStar > 0)
+	if mapCfg.Type == GameEnum.ActivityPenguinCardLevelType.Endless then
+		self._mapNode.imgComplete:SetActive(mapLevel.nScore > 0)
+	else
+		self._mapNode.imgComplete:SetActive(mapLevel.nStar > 0)
+	end
 end
 function PenguinCardLevelGridCtrl:GetLock()
 	return self.bLock
@@ -136,10 +151,34 @@ function PenguinCardLevelGridCtrl:EnterLevel()
 		EventManager.Hit(EventId.OpenMessageBox, self.sLockTip)
 		return
 	end
-	local callback = function()
-		self.actData:EnterLevel(self.nLevelId)
+	local enter = function()
+		local callback = function()
+			self.actData:EnterLevel(self.nLevelId)
+		end
+		EventManager.Hit("PenguinCard_EnterLevel", callback)
 	end
-	EventManager.Hit("PenguinCard_EnterLevel", callback)
+	local mapLevelData = self.actData:GetLevelData(self.nLevelId)
+	if mapLevelData.sData ~= "" then
+		local msg = {
+			nType = AllEnum.MessageBox.Confirm,
+			sContent = ConfigTable.GetUIText("PenguinCard_Endless_LevelHasData"),
+			sConfirm = ConfigTable.GetUIText("PenguinCard_Btn_ReconnectConfirm"),
+			sCancel = ConfigTable.GetUIText("PenguinCard_Btn_ReconnectCancel"),
+			callbackConfirm = enter,
+			callbackCancel = function()
+				local nStar, nScore, nDifficulty = self.actData:GetLevelDataBySave(mapLevelData.sData)
+				local callback = function()
+					self:RefreshEndless(self.actData, self.nLevelId)
+				end
+				self.actData:SendActivityPenguinCardSettleReq(self.nLevelId, nStar, nScore, nDifficulty, callback)
+			end,
+			bCloseNoHandler = true,
+			bRedCancel = true
+		}
+		EventManager.Hit(EventId.OpenMessageBox, msg)
+	else
+		enter()
+	end
 end
 function PenguinCardLevelGridCtrl:Awake()
 end

@@ -41,7 +41,7 @@ function GameResourceLoader.ExistsAsset(path)
 end
 function GameResourceLoader.MakeBundleGroup(sGroupName, nPanelId)
 	local _clonedBundleGroup
-	if sGroupName ~= nil and nPanelId ~= nil and 0 < nPanelId then
+	if sGroupName ~= nil and nPanelId ~= nil and nPanelId ~= 0 then
 		if tbCachedBundleGroup[nPanelId] == nil then
 			_clonedBundleGroup = CS.GameResourceLoader.CloneBundleGroup(sGroupName)
 			tbCachedBundleGroup[nPanelId] = {clonedBundleGroup = _clonedBundleGroup}

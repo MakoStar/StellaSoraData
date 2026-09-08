@@ -1,5 +1,6 @@
 local MallSkinPreviewCtrl = class("MallSkinPreviewCtrl", BaseCtrl)
 local PlayerCharData = PlayerData.Char
+local PlayerCharSkinData = PlayerData.CharSkin
 local Actor2DManager = require("Game.Actor2D.Actor2DManager")
 local SkinData = require("GameCore.Data.DataClass.SkinData")
 local Animator = CS.UnityEngine.Animator
@@ -110,7 +111,19 @@ MallSkinPreviewCtrl._mapNodeConfig = {
 		sComponentName = "Animator"
 	},
 	aniArrow = {sNodeName = "goArrow", sComponentName = "Animator"},
-	topBarAnim = {sNodeName = "goBack", sComponentName = "Animator"}
+	topBarAnim = {sNodeName = "goBack", sComponentName = "Animator"},
+	imgTrialHead = {sNodeName = "imgBg", sComponentName = "Image"},
+	btnTrialPlay = {
+		sComponentName = "UIButton",
+		callback = "OnBtnClick_Trial"
+	},
+	txtTrialPlay = {
+		sComponentName = "TMP_Text",
+		sLanguageId = "Trial_SkinPlay"
+	},
+	redH = {
+		sNodeName = "redDotEntrance2"
+	}
 }
 MallSkinPreviewCtrl._mapEventConfig = {
 	[EventId.UIBackConfirm] = "OnBtnClick_Back",
@@ -142,6 +155,7 @@ function MallSkinPreviewCtrl:RefreshSelectSkinInfo()
 	end
 	self._mapNode.txtSaleTip.gameObject:SetActive(false)
 	self.nSkinId = skinData.nId
+	self.sMallPackageId = skinData.mapCfg and skinData.mapCfg.Id or nil
 	self.nCharId = 0
 	local bUsed = false
 	local bCharUnlock = false
@@ -161,6 +175,7 @@ function MallSkinPreviewCtrl:RefreshSelectSkinInfo()
 			self._mapNode.imgRoleBg.gameObject:SetActive(true)
 			NovaAPI.SetTMPText(self._mapNode.txtRoleName, mapCharCfg.Name)
 		end
+		self.nTrialGroup = mapSkinCfg.TrialGroup
 	end
 	self._mapNode.btnBuy.gameObject:SetActive(not bUnlock)
 	self._mapNode.btnReplace.gameObject:SetActive(bUnlock and not bUsed and bCharUnlock)
@@ -209,6 +224,7 @@ function MallSkinPreviewCtrl:RefreshSelectSkinInfo()
 	elseif self.nShowMode == show_mode_3d then
 		self:LoadCharacter()
 	end
+	self:RefreshTrialState()
 end
 function MallSkinPreviewCtrl:RefreshActor2D()
 	Actor2DManager.SetActor2D(self:GetPanelId(), self._mapNode.rawImgActor2D, self.nCharId, self.nSkinId)
@@ -392,7 +408,9 @@ function MallSkinPreviewCtrl:OnEnable()
 	local tbParam = self:GetPanelParam()
 	local tbMallList = tbParam[1]
 	self.nSkinId = tbParam[2]
-	self.nSelectIndex = tbParam[3]
+	if self.nSelectIndex == nil then
+		self.nSelectIndex = tbParam[3]
+	end
 	self.tbSkinList = {}
 	for _, v in ipairs(tbMallList) do
 		local mapCfg = ConfigTable.GetData("MallPackage", v.sId)
@@ -466,6 +484,8 @@ function MallSkinPreviewCtrl:OnDisable()
 	end
 	Actor2DManager.UnsetActor2D()
 	self:DestroyCharacter()
+	self:UnRegisterRedNode(self.sMallPackageId)
+	self.nShowModelSkinId = 0
 end
 function MallSkinPreviewCtrl:OnDestroy()
 end
@@ -603,5 +623,34 @@ function MallSkinPreviewCtrl:OnUIZoom_Skin(mZoom)
 	else
 		self.bDragValid = true
 	end
+end
+function MallSkinPreviewCtrl:RefreshTrialState()
+	if self.nTrialGroup == nil or self.nTrialGroup == 0 then
+		self._mapNode.btnTrialPlay.gameObject:SetActive(false)
+		return
+	else
+		self._mapNode.btnTrialPlay.gameObject:SetActive(true)
+	end
+	local mapSkinData = ConfigTable.GetData_CharacterSkin(self.nSkinId)
+	if mapSkinData ~= nil then
+		self:SetPngSprite(self._mapNode.imgTrialHead, mapSkinData.Icon, AllEnum.CharHeadIconSurfix.L)
+	end
+	if PlayerCharSkinData:CheckSkinUnlock(self.nSkinId) then
+		self._mapNode.redH:SetActive(false)
+		return
+	end
+	self:RegisterRedNode(self.sMallPackageId)
+	PlayerCharData:UpdateCharSkinTrialRedDot(self.sMallPackageId)
+end
+function MallSkinPreviewCtrl:OnBtnClick_Trial()
+	PlayerCharData:SetCharSkinTrialRedDot(self.sMallPackageId)
+	PlayerData.Trial:SetSelectTrialGroup(self.nTrialGroup)
+	EventManager.Hit(EventId.OpenPanel, PanelId.TrialSkinSelectPanel)
+end
+function MallSkinPreviewCtrl:RegisterRedNode(sId)
+	RedDotManager.RegisterNode(RedDotDefine.Mall_CharSkinTrial, {sId}, self._mapNode.redH)
+end
+function MallSkinPreviewCtrl:UnRegisterRedNode(sId)
+	RedDotManager.UnRegisterNode(RedDotDefine.Mall_CharSkinTrial, {sId}, self._mapNode.redH)
 end
 return MallSkinPreviewCtrl

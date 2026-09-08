@@ -103,6 +103,13 @@ MainViewCtrl._mapNodeConfig = {
 		sComponentName = "TMP_Text",
 		sLanguageId = "MainView_BattlePass"
 	},
+	BattlePassReminderTime = {
+		sNodeName = "rtBPEventReminderTime"
+	},
+	tmpBattlePassReminderTime = {
+		sNodeName = "tmpBPEventReminderTime",
+		sComponentName = "TMP_Text"
+	},
 	btnMall = {
 		sComponentName = "UIButton",
 		callback = "OnBtnClick_Mall"
@@ -111,6 +118,17 @@ MainViewCtrl._mapNodeConfig = {
 		sComponentName = "TMP_Text",
 		sLanguageId = "MainView_Mall"
 	},
+	btnEventReminder = {
+		sComponentName = "UIButton",
+		callback = "OnBtnClick_EventReminder"
+	},
+	txtEventReminder = {
+		nCount = 2,
+		sComponentName = "TMP_Text",
+		sLanguageId = "MainView_EventReminder"
+	},
+	rtEventReminderTime = {},
+	tmpEventReminderTime = {sComponentName = "TMP_Text"},
 	btnNotice = {
 		sComponentName = "UIButton",
 		callback = "OnBtnClick_Notice"
@@ -407,7 +425,6 @@ function MainViewCtrl:RefreshShow()
 	self:RefreshEnergy()
 	self:RefreshActor2D()
 	self:RefreshNewbieQuestState()
-	self:RefreshComFuncState()
 	self:RefreshLeftActivityList()
 	PlayerData.Activity:RefreshActivityRedDot()
 	PlayerData.Dispatch:CheckReddot()
@@ -419,7 +436,9 @@ function MainViewCtrl:RefreshShow()
 		self:RefreshLeftActivityList()
 	end
 	PlayerData.Activity:SendActivityDetailMsg(RefreshFastBtn)
+	self:RefreshEventReminder()
 	self:RefreshRedDot()
+	self:RefreshBattleReminderTime()
 end
 function MainViewCtrl:RefreshRedDot()
 	local bMall = RedDotManager.GetValid(RedDotDefine.Mall)
@@ -453,6 +472,7 @@ function MainViewCtrl:RefreshWorldClass()
 	local nCurEnergy = PlayerData.Base:GetCurEnergy().nEnergy
 	NovaAPI.SetTMPText(self._mapNode.txtEnergyCount, nCurEnergy .. "/" .. nMaxEnergy)
 	self:RefreshFuncLock()
+	self:RefreshBtnBattlePass()
 	self:SetBanner()
 	PlayerData.Daily.CheckDailyCheckIn()
 end
@@ -495,6 +515,68 @@ function MainViewCtrl:RefreshItemExpire()
 		self._mapNode.imgTime[2]:SetActive(nRemainTime < 86400 and 3600 <= nRemainTime)
 		self._mapNode.imgTime[3]:SetActive(nRemainTime < 3600)
 		NovaAPI.SetTMPText(self._mapNode.tmpEnergy, sTipStr)
+	end
+end
+function MainViewCtrl:RefreshEventReminder()
+	local nMinRemainTime = PlayerData.EventReminder:GetMinRemainTime()
+	if nMinRemainTime == nil then
+		self._mapNode.rtEventReminderTime.gameObject:SetActive(false)
+		NovaAPI.SetTMPText(self._mapNode.tmpEventReminderTime, "")
+		return
+	end
+	if 0 < nMinRemainTime then
+		self._mapNode.rtEventReminderTime.gameObject:SetActive(true)
+		if 86400 <= nMinRemainTime then
+			sTipStr = math.floor(nMinRemainTime / 86400) .. ConfigTable.GetUIText("Depot_Item_LeftTime_Day")
+		elseif 3600 <= nMinRemainTime then
+			sTipStr = math.floor(nMinRemainTime / 3600) .. ConfigTable.GetUIText("Depot_Item_LeftTime_Hour")
+		else
+			local nMin = math.max(math.floor(nMinRemainTime / 60), 1)
+			sTipStr = nMin .. ConfigTable.GetUIText("Depot_LeftTime_Min")
+		end
+		NovaAPI.SetTMPText(self._mapNode.tmpEventReminderTime, sTipStr)
+	else
+		self._mapNode.rtEventReminderTime.gameObject:SetActive(false)
+	end
+end
+function MainViewCtrl:RefreshBtnBattlePass()
+	if not PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.BattlePass) then
+		return
+	end
+	local nRemainTime = PlayerData.BattlePass:GetRemainTime()
+	self:RefreshBtnBattleReminder(nRemainTime)
+end
+function MainViewCtrl:RefreshBtnBattleReminder(nRemainTime)
+	if nRemainTime == nil or nRemainTime == 0 then
+		self._mapNode.BattlePassReminderTime.gameObject:SetActive(false)
+		NovaAPI.SetTMPText(self._mapNode.tmpBattlePassReminderTime, "")
+		return
+	end
+	if nRemainTime <= 259200 then
+		self._mapNode.BattlePassReminderTime:SetActive(true)
+		if 86400 <= nRemainTime then
+			sTipStr = math.floor(nRemainTime / 86400) .. ConfigTable.GetUIText("Depot_Item_LeftTime_Day")
+		elseif 3600 <= nRemainTime then
+			sTipStr = math.floor(nRemainTime / 3600) .. ConfigTable.GetUIText("Depot_LeftTime_Hour2")
+		else
+			local nRem = math.max(math.floor(nRemainTime / 60), 1)
+			sTipStr = nRem .. ConfigTable.GetUIText("Depot_LeftTime_Min2")
+		end
+		NovaAPI.SetTMPText(self._mapNode.tmpBattlePassReminderTime, sTipStr)
+	else
+		self._mapNode.BattlePassReminderTime:SetActive(false)
+	end
+end
+function MainViewCtrl:RefreshBattleReminderTime()
+	if self.battleRemainTimer ~= nil then
+		self.battleRemainTimer:Cancel()
+		self.battleRemainTimer = nil
+	end
+	if not PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.BattlePass) then
+		return
+	end
+	if PlayerData.BattlePass:GetRemainTime() < 86400 then
+		self.battleRemainTimer = self:AddTimer(0, 1, "RefreshBtnBattlePass", true, true, false)
 	end
 end
 function MainViewCtrl:RefreshActor2D()
@@ -961,6 +1043,10 @@ function MainViewCtrl:ResetTimer()
 		self.bannerRefreshTimer:Cancel(false)
 		self.bannerRefreshTimer = nil
 	end
+	if self.battleRemainTimer ~= nil then
+		self.battleRemainTimer:Cancel(false)
+		self.battleRemainTimer = nil
+	end
 end
 function MainViewCtrl:PlayViewAnim(sTriggerName)
 	if nil ~= self.sLastTriggerAnim then
@@ -999,6 +1085,8 @@ function MainViewCtrl:RefreshFuncLock()
 	self._mapNode.LockDispatch:SetActive(not PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.Agent))
 	self._mapNode.LockActivity:SetActive(not PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.Activity))
 	self._mapNode.LockBattlePass:SetActive(not PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.BattlePass))
+	self._mapNode.BattlePassReminderTime:SetActive(PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.BattlePass))
+	self._mapNode.btnEventReminder.gameObject:SetActive(PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.EventReminder))
 	self._mapNode.goRedDotActivity:SetActive(PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.Activity))
 	self._mapNode.goRedDotPhone:SetActive(PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.Phone))
 	self._mapNode.goRedDotTask:SetActive(PlayerData.Base:CheckFunctionUnlock(GameEnum.OpenFuncType.Quest))
@@ -1103,6 +1191,9 @@ function MainViewCtrl:RefreshLeftActivityList()
 					})
 					self._mapNode.activityRedDot_[i].gameObject:SetActive(HasRedDot)
 					self._mapNode.activityRedDotNew_[i].gameObject:SetActive(HasNew and not HasRedDot)
+					local scaleSize = Vector3.one * 1.19
+					self._mapNode.activityRedDot_[i].transform.localScale = bOpened and scaleSize or scaleSize * 1 / 0.85
+					self._mapNode.activityRedDotNew_[i].transform.localScale = bOpened and scaleSize or scaleSize * 1 / 0.85
 				end
 				table.insert(self.tbActivityPrepareShowList, showData)
 			end
@@ -1323,7 +1414,7 @@ function MainViewCtrl:OnEnable()
 		v.anchoredPosition = self.tbBannerInitPos[k]
 	end
 	local bHasBattlePass = PlayerData.BattlePass:GetHasBattlePass()
-	self._mapNode.btnBattlePass.gameObject.transform.localScale = bHasBattlePass and Vector3.one or Vector3.zero
+	self._mapNode.btnBattlePass.gameObject:SetActive(bHasBattlePass)
 	PlayerData.PotentialPreselection:SendGetPreselectionList()
 end
 function MainViewCtrl:OnDisable()
@@ -1687,7 +1778,7 @@ function MainViewCtrl:OnBtnClick_BattlePass(btn)
 		local GetDataCallback = function(mapData)
 			if mapData.nSeasonId == 0 then
 				EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("Mainview_BattlePassExpireHint"))
-				self._mapNode.btnBattlePass.gameObject.transform.localScale = Vector3.zero
+				self._mapNode.btnBattlePass.gameObject:SetActive(false)
 			else
 				local func = function()
 					EventManager.Hit(EventId.OpenPanel, PanelId.BattlePass)
@@ -1716,6 +1807,9 @@ function MainViewCtrl:OnBtnClick_Mall(btn)
 		EventManager.Hit(EventId.OpenPanel, PanelId.Mall)
 	end
 	self:PlayTransition(5, func)
+end
+function MainViewCtrl:OnBtnClick_EventReminder(btn)
+	EventManager.Hit(EventId.OpenPanel, PanelId.EventReminderPanel)
 end
 function MainViewCtrl:OnBtnClick_Shop(btn)
 	local func = function()
@@ -1845,7 +1939,7 @@ function MainViewCtrl:OnEvent_NewDay()
 			self:CheckOpenPanel()
 			self:RefreshShow()
 			local bHasBattlePass = PlayerData.BattlePass:GetHasBattlePass()
-			self._mapNode.btnBattlePass.gameObject.transform.localScale = bHasBattlePass and Vector3.one or Vector3.zero
+			self._mapNode.btnBattlePass.gameObject:SetActive(bHasBattlePass)
 		else
 			self.bNewDay = true
 		end
@@ -1914,14 +2008,6 @@ function MainViewCtrl:OnEvent_AfterCloseNPCReceive()
 	self:RefreshActor2D()
 	BubbleVoiceManager.StopBubbleAnim()
 	PlayerVoiceData:StopCharVoice()
-end
-function MainViewCtrl:RefreshComFuncState()
-	local nState = ConfigTable.GetConfigNumber("IsShowComBtn")
-	local bActive = nState == 1
-	self._mapNode.btnBattlePass.gameObject:SetActive(bActive)
-	self._mapNode.btnMall.gameObject:SetActive(bActive)
-	self._mapNode.imgBtn2.gameObject:SetActive(bActive)
-	self._mapNode.btnAdd2.gameObject:SetActive(bActive)
 end
 function MainViewCtrl:RefreshNewbieQuestState()
 	local nTotalCount, nReceivedCount = PlayerData.TutorialData:GetProgress()

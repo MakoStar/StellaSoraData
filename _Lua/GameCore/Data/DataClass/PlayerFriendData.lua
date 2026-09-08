@@ -13,6 +13,7 @@ function PlayerFriendData:Init()
 	self._nEnergyCount = 0
 	self._nPerReceiveEnergyConfig = ConfigTable.GetConfigNumber("FriendReceiveEnergyCount")
 	self._nMaxReceiveEnergyConfig = ConfigTable.GetConfigNumber("FriendReceiveEnergyMax")
+	self.bAddStrangerWarning = true
 end
 function PlayerFriendData:CacheFriendData(mapMsgData)
 	self._tbFriendList = {}
@@ -96,7 +97,7 @@ function PlayerFriendData:CacheFriendAddStranger(mapFriend)
 	self.mapStrangerFriend = mapFriend
 end
 function PlayerFriendData:TryOpenFriendAddStranger()
-	if not self.mapStrangerFriend then
+	if not self.mapStrangerFriend or not self.bAddStrangerWarning then
 		return
 	end
 	local mapFriend = clone(self.mapStrangerFriend)
@@ -106,6 +107,9 @@ function PlayerFriendData:TryOpenFriendAddStranger()
 		EventManager.Hit(EventId.OpenPanel, PanelId.FriendAddStranger, mapFriend)
 	end
 	cs_coroutine.start(wait)
+end
+function PlayerFriendData:SetAddStrangerWarning(bAble)
+	self.bAddStrangerWarning = bAble
 end
 function PlayerFriendData:JudgeEnergyGetAble()
 	if not self._tbFriendList then

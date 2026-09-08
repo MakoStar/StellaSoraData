@@ -1089,7 +1089,6 @@ function PlayerBaseData:SendEnergyInfoReq()
 			end
 			EventManager.Hit(EventId.UpdateEnergyBattery)
 			EventManager.Hit(EventId.UpdateEnergy)
-			printLog("Lua PlayerBaseData OnCS2LuaEvent_AppFocus, Get APP Focus, curEnergy: " .. tostring(self._nCurEnergy) .. ", curEnergyBattery: " .. tostring(self._nCurEnergyBattery))
 		end
 	end
 	HttpNetHandler.SendMsg(NetMsgId.Id.energy_info_req, {}, nil, callback)
@@ -1312,7 +1311,6 @@ function PlayerBaseData:OnCS2LuaEvent_AppFocus(bFocus)
 		self.nRequestEnergyLimitTime = nNextTime
 		self.nLastEnergy = self._nCurEnergy
 		self.nLastEnergyBattery = self._nCurEnergyBattery
-		printLog("Lua PlayerBaseData OnCS2LuaEvent_AppFocus, Lose APP Focus, nCachedTime: " .. tostring(self.nCachedTime) .. ", nRequestEnergyLimitTime: " .. tostring(self.nRequestEnergyLimitTime) .. ", nLastEnergy: " .. tostring(self.nLastEnergy) .. ", nLastEnergyBattery: " .. tostring(self.nLastEnergyBattery))
 	end
 end
 function PlayerBaseData:OnEvent_SettingsNotificationClose()

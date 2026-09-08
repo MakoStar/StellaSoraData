@@ -43,7 +43,7 @@ function GuideGroup_303:Clear()
 end
 function GuideGroup_303:Step_1()
 	self.msg = {
-		BindIcon = "PenguinCardPanel/----SafeAreaRoot----/---Prepare---/--Info--/fxRotation/imgScoreBg/Image",
+		BindIcon = "PenguinCard_Normal/----SafeAreaRoot----/---Prepare---/--Info--/fxRotation/imgScoreBg/Image",
 		Deviation = {100, -30},
 		Size = {380, 160},
 		Head = "Icon/Head/head_917301",
@@ -61,7 +61,7 @@ function GuideGroup_303:Step_1()
 end
 function GuideGroup_303:Step_2()
 	self.msg = {
-		BindIcon = "PenguinCardPanel/----SafeAreaRoot----/---Prepare---/--Info--/imgTurnBg",
+		BindIcon = "PenguinCard_Normal/----SafeAreaRoot----/---Prepare---/--Info--/imgTurnBg",
 		Deviation = {0, 0},
 		Size = {660, 110},
 		Head = "Icon/Head/head_917301",
@@ -75,7 +75,7 @@ function GuideGroup_303:Step_2()
 end
 function GuideGroup_303:Step_3()
 	self.msg = {
-		BindIcon = "PenguinCardPanel/----SafeAreaRoot----/---Prepare---/--Upgrade--",
+		BindIcon = "PenguinCard_Normal/----SafeAreaRoot----/---Prepare---/--Upgrade--",
 		Deviation = {0, 70},
 		Size = {420, 420},
 		Head = "Icon/Head/head_917401",

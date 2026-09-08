@@ -1,7 +1,8 @@
 local ActivityDataBase = require("GameCore.Data.DataClass.Activity.ActivityDataBase")
 local PenguinCardActData = class("PenguinCardActData", ActivityDataBase)
 local LocalData = require("GameCore.Data.LocalData")
-local PenguinLevel = require("Game.UI.Play_PenguinCard.NormalMode.PenguinLevel_Normal")
+local PenguinLevel_Normal = require("Game.UI.Play_PenguinCard.NormalMode.PenguinLevel_Normal")
+local PenguinLevel_Endless = require("Game.UI.Play_PenguinCard.EndlessMode.PenguinLevel_Endless")
 local ClientManager = CS.ClientManager.Instance
 local RapidJson = require("rapidjson")
 function PenguinCardActData:Init()
@@ -147,7 +148,9 @@ function PenguinCardActData:CacheLevelData(tbLevel)
 	for _, v in ipairs(tbLevel) do
 		self.mapLevelData[v.Id] = {
 			nScore = v.Score,
-			nStar = v.Star
+			nStar = v.Star,
+			nDifficulty = v.Difficulty,
+			sData = v.Data
 		}
 	end
 	self:RefreshLevelRedDot()
@@ -184,7 +187,12 @@ function PenguinCardActData:CheckLevelLockByPrev(nLevelId)
 	return true
 end
 function PenguinCardActData:GetLevelData(nId)
-	return self.mapLevelData[nId] or {nScore = 0, nStar = 0}
+	return self.mapLevelData[nId] or {
+		nScore = 0,
+		nStar = 0,
+		nDifficulty = 0,
+		sData = ""
+	}
 end
 function PenguinCardActData:GetLevelStartTime(nLevelId)
 	local mapCfg = ConfigTable.GetData("ActivityPenguinCardLevel", nLevelId)
@@ -208,8 +216,22 @@ function PenguinCardActData:EnterLevel(nLevelId)
 	if not mapCfg then
 		return
 	end
-	local LevelData = PenguinLevel.new()
-	LevelData:Init(mapCfg.FloorId, nLevelId, self.nActId, mapCfg.StarScore)
+	local mapLevelData = self:GetLevelData(nLevelId)
+	if mapCfg.Type == GameEnum.ActivityPenguinCardLevelType.Endless then
+		local LevelData = PenguinLevel_Endless.new()
+		LevelData:Init(mapCfg.FloorId, nLevelId, self.nActId, mapCfg.StarScore, mapLevelData.sData)
+	elseif mapCfg.Type == GameEnum.ActivityPenguinCardLevelType.Normal then
+		local LevelData = PenguinLevel_Normal.new()
+		LevelData:Init(mapCfg.FloorId, nLevelId, self.nActId, mapCfg.StarScore)
+	end
+end
+function PenguinCardActData:GetLevelDataBySave(sData)
+	if sData == "" then
+		return 0, 0, 0
+	end
+	local sAll = NovaAPIHotfix.DecompressString(sData)
+	local mapData = RapidJson.decode(sAll)
+	return mapData.nCacheStar, mapData.nCacheScore, mapData.nEndlessLevel
 end
 function PenguinCardActData:RefreshQuestRedDot(nId)
 	local mapCfg = ConfigTable.GetData("ActivityPenguinCardQuest", nId)
@@ -260,15 +282,28 @@ function PenguinCardActData:SkipLevelRedDot()
 	end
 	LocalData.SetPlayerLocalData("PenguinCardLevel", RapidJson.encode(self.tbSkipNewLevel))
 end
-function PenguinCardActData:SendActivityPenguinCardSettleReq(nLevelId, nStar, nScore, callback)
+function PenguinCardActData:SendActivityPenguinCardSettleReq(nLevelId, nStar, nScore, nDifficulty, callback)
+	nScore = math.floor(nScore)
 	local msgData = {
 		LevelId = nLevelId,
 		Star = nStar,
-		Score = math.floor(nScore)
+		Score = math.floor(nScore),
+		Difficulty = nDifficulty
 	}
 	local successCallback = function(_, mapMainData)
-		if not self.mapLevelData[nLevelId] or self.mapLevelData[nLevelId] and nScore > self.mapLevelData[nLevelId].nScore then
-			self.mapLevelData[nLevelId] = {nScore = nScore, nStar = nStar}
+		local bEmpty = self.mapLevelData[nLevelId] == nil
+		local bBetterDifficulty = not bEmpty and nDifficulty > self.mapLevelData[nLevelId].nDifficulty
+		local bBetterScore = not bEmpty and nDifficulty == self.mapLevelData[nLevelId].nDifficulty and nScore > self.mapLevelData[nLevelId].nScore
+		if not bEmpty then
+			self.mapLevelData[nLevelId].sData = ""
+		end
+		if bEmpty or bBetterDifficulty or bBetterScore then
+			self.mapLevelData[nLevelId] = {
+				nScore = nScore,
+				nStar = nStar,
+				nDifficulty = nDifficulty,
+				sData = ""
+			}
 		end
 		local mapReward = PlayerData.Item:ProcessRewardChangeInfo(mapMainData)
 		local tbItem = {}
@@ -310,5 +345,18 @@ function PenguinCardActData:SendActivityPenguinCardQuestReceiveReq(nQuestId, nGr
 		UTILS.OpenReceiveByChangeInfo(mapMainData, callback)
 	end
 	HttpNetHandler.SendMsg(NetMsgId.Id.activity_penguin_card_quest_reward_receive_req, msgData, nil, successCallback)
+end
+function PenguinCardActData:SendActivityPenguinCardEndlessLevelSaveReq(nLevelId, nScore, sData, callback)
+	local msgData = {
+		LevelId = nLevelId,
+		Data = sData,
+		Score = nScore
+	}
+	local successCallback = function(_, mapMainData)
+		if callback then
+			callback()
+		end
+	end
+	HttpNetHandler.SendMsg(NetMsgId.Id.activity_penguin_card_endless_level_save_req, msgData, nil, successCallback)
 end
 return PenguinCardActData

@@ -139,7 +139,7 @@ function GunStormTaskCtrl:BuildData(nActivityId)
 					nStatus = taskData.nStatus,
 					sDesc = mapData.Desc,
 					nRarity = mapData.Rarity,
-					nJumpTo = mapData.JumpTo,
+					tbJumpTo = mapData.JumpTo,
 					nCur = taskData.nCur,
 					nMax = taskData.nMax,
 					tbTaskRewardId = {},
@@ -318,11 +318,11 @@ function GunStormTaskCtrl:onGridRefresh_Task(go)
 			_tr.localScale = Vector3.zero
 		end
 	end
-	tr:Find("tmpUndone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 >= mapTask.nJumpTo and Vector3.one or Vector3.zero
+	tr:Find("tmpUndone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 >= #mapTask.tbJumpTo and Vector3.one or Vector3.zero
 	tr:Find("btnDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Complete and Vector3.one or Vector3.zero
 	tr:Find("btnDone"):GetChild(0).name = tostring(mapTask.nTaskId)
-	tr:Find("btnJump").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 < mapTask.nJumpTo and Vector3.one or Vector3.zero
-	tr:Find("btnJump"):GetChild(0).name = tostring(mapTask.nJumpTo)
+	tr:Find("btnJump").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 < #mapTask.tbJumpTo and Vector3.one or Vector3.zero
+	tr:Find("btnJump"):GetChild(0).name = tostring(nIndex)
 	tr:Find("goDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Received and Vector3.one or Vector3.zero
 end
 function GunStormTaskCtrl:onEvent_ClickRewardItem(goBtn)
@@ -345,9 +345,12 @@ function GunStormTaskCtrl:onEvent_ClickTaskDone(goBtn)
 	end
 end
 function GunStormTaskCtrl:onEvent_ClickTaskJump(goBtn)
-	local nJumpId = tonumber(goBtn.transform:GetChild(0).name)
-	if nJumpId ~= nil and 0 < nJumpId then
-		JumpUtil.JumpTo(nJumpId)
+	local nIndex = tonumber(goBtn.transform:GetChild(0).name)
+	local mapData = self.tbData[self.nCurGroupIndex]
+	local mapTask = mapData.tbTaskData[nIndex]
+	local JumpToData = mapTask.tbJumpTo
+	if JumpToData ~= nil and 0 < #JumpToData then
+		JumpUtil.JumpToActivity(JumpToData)
 	end
 end
 function GunStormTaskCtrl:refresh_Group()
