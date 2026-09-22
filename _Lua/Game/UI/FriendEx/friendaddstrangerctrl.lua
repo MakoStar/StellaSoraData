@@ -128,9 +128,6 @@ function FriendAddStrangerCtrl:OnBtnClick_Confirm()
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("FRIEND_00"))
 		return
 	end
-	if self.bClickAgain == true then
-		PlayerData.Friend:SetAddStrangerWarning(false)
-	end
 	local callback = function()
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("FRIEND_01"))
 		self:OnBtnClick_Close()
@@ -149,5 +146,6 @@ end
 function FriendAddStrangerCtrl:OnBtnClick_Again()
 	self.bClickAgain = not self.bClickAgain
 	self._mapNode.againSelect:SetActive(self.bClickAgain)
+	PlayerData.Friend:SetAddStrangerWarning(not self.bClickAgain)
 end
 return FriendAddStrangerCtrl

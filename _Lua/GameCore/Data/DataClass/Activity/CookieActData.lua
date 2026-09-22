@@ -29,6 +29,8 @@ function CookieActData:Init()
 	self.tbModeExcellent = {}
 	self.tbModeCookie = {}
 	self:AddListeners()
+	self.tbLevelDataList = {}
+	self.tbQuestDataList = {}
 end
 function CookieActData:AddListeners()
 	EventManager.Add("Cookie_Game_Complete", self, self.OnEvent_GameComplete)
@@ -87,7 +89,7 @@ function CookieActData:GetLevelData()
 end
 function CookieActData:GetLevelDataById(nId)
 	local levelData
-	for _, v in pairs(self.tbLevelDataList) do
+	for _, v in pairs(self.tbLevelDataList or {}) do
 		if v.nId == nId then
 			levelData = v
 			break
