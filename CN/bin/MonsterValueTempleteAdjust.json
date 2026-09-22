@@ -26571,6 +26571,38 @@
     "SuppressRatio": 0,
     "SuppressFix": 0
   },
+  "7010134": {
+    "Id": 7010134,
+    "TemplateId": 7885,
+    "EET": 3,
+    "ResistEET": [
+      3
+    ],
+    "WeakEET": [
+      1,
+      2
+    ],
+    "HpRatio": 0,
+    "HpFix": 0,
+    "AtkRatio": 0,
+    "AtkFix": 0,
+    "WERRatio": 0,
+    "WERFix": 250,
+    "FERRatio": 0,
+    "FERFix": 250,
+    "SERRatio": 0,
+    "SERFix": 2000,
+    "AERRatio": 0,
+    "AERFix": 750,
+    "LERRatio": 0,
+    "LERFix": 750,
+    "DERRatio": 0,
+    "DERFix": 750,
+    "ToughnessRatio": -1500,
+    "ToughnessFix": 0,
+    "SuppressRatio": 0,
+    "SuppressFix": 0
+  },
   "7010141": {
     "Id": 7010141,
     "TemplateId": 7887,
@@ -26605,7 +26637,7 @@
   },
   "7010201": {
     "Id": 7010201,
-    "TemplateId": 7880,
+    "TemplateId": 7888,
     "EET": 7,
     "ResistEET": [],
     "WeakEET": [],
@@ -26632,7 +26664,7 @@
   },
   "7010208": {
     "Id": 7010208,
-    "TemplateId": 7884,
+    "TemplateId": 7890,
     "EET": 7,
     "ResistEET": [],
     "WeakEET": [],
@@ -26659,7 +26691,7 @@
   },
   "7010210": {
     "Id": 7010210,
-    "TemplateId": 7880,
+    "TemplateId": 7889,
     "EET": 7,
     "ResistEET": [],
     "WeakEET": [],
@@ -26686,7 +26718,7 @@
   },
   "7010223": {
     "Id": 7010223,
-    "TemplateId": 7880,
+    "TemplateId": 7888,
     "EET": 7,
     "ResistEET": [],
     "WeakEET": [
@@ -26716,7 +26748,7 @@
   },
   "7010230": {
     "Id": 7010230,
-    "TemplateId": 7884,
+    "TemplateId": 7890,
     "EET": 7,
     "ResistEET": [],
     "WeakEET": [
@@ -26746,7 +26778,7 @@
   },
   "7010232": {
     "Id": 7010232,
-    "TemplateId": 7880,
+    "TemplateId": 7889,
     "EET": 7,
     "ResistEET": [],
     "WeakEET": [
@@ -26776,7 +26808,7 @@
   },
   "7010245": {
     "Id": 7010245,
-    "TemplateId": 7880,
+    "TemplateId": 7888,
     "EET": 2,
     "ResistEET": [
       2
@@ -26808,7 +26840,7 @@
   },
   "7010252": {
     "Id": 7010252,
-    "TemplateId": 7884,
+    "TemplateId": 7890,
     "EET": 2,
     "ResistEET": [
       2
@@ -26840,7 +26872,7 @@
   },
   "7010254": {
     "Id": 7010254,
-    "TemplateId": 7880,
+    "TemplateId": 7889,
     "EET": 2,
     "ResistEET": [
       2
