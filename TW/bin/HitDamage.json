@@ -99284,7 +99284,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      800000,
+      700000,
       0
     ],
     "SkillAbsAmend": [
@@ -99319,7 +99319,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      900000,
+      800000,
       0
     ],
     "SkillAbsAmend": [
@@ -99354,7 +99354,7 @@
     "DamageTag": [],
     "DamageBonusType": 1,
     "SkillPercentAmend": [
-      300000,
+      250000,
       0
     ],
     "SkillAbsAmend": [
