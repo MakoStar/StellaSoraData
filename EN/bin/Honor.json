@@ -129,6 +129,19 @@
     "Sort": 0,
     "BGType": 2
   },
+  "111011": {
+    "Id": 111011,
+    "Name": "Honor.111011.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 1,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_Story_011_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_Story_011_S",
+    "Sort": 0,
+    "BGType": 2
+  },
   "114001": {
     "Id": 114001,
     "Name": "Honor.114001.1",
@@ -178,6 +191,19 @@
     "Priotity": 0,
     "MainRes": "Icon/HonorTitle/HonorTitle_Operation_004_L_lang",
     "SubRes": "Icon/HonorTitle/HonorTitle_Operation_004_S",
+    "Sort": 0,
+    "BGType": 2
+  },
+  "114005": {
+    "Id": 114005,
+    "Name": "Honor.114005.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 1,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_114005_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_114005_S",
     "Sort": 0,
     "BGType": 2
   },
@@ -581,6 +607,19 @@
     "Priotity": 0,
     "MainRes": "Icon/HonorTitle/HonorTitle_116015_L_lang",
     "SubRes": "Icon/HonorTitle/HonorTitle_116015_S",
+    "Sort": 0,
+    "BGType": 2
+  },
+  "116016": {
+    "Id": 116016,
+    "Name": "Honor.116016.1",
+    "IsUnlock": false,
+    "Type": 1,
+    "TabType": 3,
+    "Params": [],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_116016_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_116016_S",
     "Sort": 0,
     "BGType": 2
   },
@@ -1825,6 +1864,21 @@
     "Priotity": 0,
     "MainRes": "Icon/HonorTitle/HonorTitle_Affinity_137_L_lang",
     "SubRes": "Icon/HonorTitle/HonorTitle_Affinity_137_S",
+    "Sort": 0,
+    "BGType": 1
+  },
+  "112139": {
+    "Id": 112139,
+    "Name": "Honor.112139.1",
+    "IsUnlock": false,
+    "Type": 2,
+    "TabType": 2,
+    "Params": [
+      139
+    ],
+    "Priotity": 0,
+    "MainRes": "Icon/HonorTitle/HonorTitle_Affinity_139_L_lang",
+    "SubRes": "Icon/HonorTitle/HonorTitle_Affinity_139_S",
     "Sort": 0,
     "BGType": 1
   },
