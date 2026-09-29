@@ -683,6 +683,78 @@
     "LevelData": 0,
     "MainOrSupport": 0
   },
+  "13901011": {
+    "Id": 13901011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13902011": {
+    "Id": 13902011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13904011": {
+    "Id": 13904011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13907002": {
+    "Id": 13907002,
+    "LevelTypeData": 1,
+    "LevelData": 513907,
+    "MainOrSupport": 0
+  },
+  "13907013": {
+    "Id": 13907013,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13909001": {
+    "Id": 13909001,
+    "LevelTypeData": 1,
+    "LevelData": 513909,
+    "MainOrSupport": 0
+  },
+  "13913011": {
+    "Id": 13913011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13922011": {
+    "Id": 13922011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13926011": {
+    "Id": 13926011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13927011": {
+    "Id": 13927011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13929011": {
+    "Id": 13929011,
+    "LevelTypeData": 0,
+    "LevelData": 0,
+    "MainOrSupport": 0
+  },
+  "13942001": {
+    "Id": 13942001,
+    "LevelTypeData": 1,
+    "LevelData": 513942,
+    "MainOrSupport": 0
+  },
   "10798011": {
     "Id": 10798011,
     "LevelTypeData": 0,

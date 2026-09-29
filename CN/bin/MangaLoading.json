@@ -456,6 +456,15 @@
     "ConditionType": 1,
     "StartTime": "",
     "EndTime": "",
+    "Weight": 100
+  },
+  "53": {
+    "Id": 53,
+    "Source": "Icon/Loading/loading_comic_53_lang",
+    "Title": "MangaLoading.53.1",
+    "ConditionType": 1,
+    "StartTime": "",
+    "EndTime": "",
     "Weight": 550
   }
 }

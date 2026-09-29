@@ -119,6 +119,18 @@
     "Param6": "",
     "Param7": "1"
   },
+  "65": {
+    "Id": 65,
+    "BannerType": 9,
+    "BannerName": "banner_webgame_05_lang",
+    "Param1": "2026-10-06T18:00:00+08:00",
+    "Param2": "2026-10-17T10:59:59+08:00",
+    "Param3": "https://survey.yostar.net/vm/QjV0z0A.aspx",
+    "Param4": "windows,android,ios",
+    "Param5": "1,1,1",
+    "Param6": "",
+    "Param7": ""
+  },
   "2": {
     "Id": 2,
     "BannerType": 4,
@@ -630,6 +642,42 @@
     "Param1": "2026-09-08T12:00:00+08:00",
     "Param2": "2026-09-29T10:59:59+08:00",
     "Param3": "skin.98.15",
+    "Param4": "",
+    "Param5": "",
+    "Param6": "",
+    "Param7": ""
+  },
+  "57": {
+    "Id": 57,
+    "BannerType": 5,
+    "BannerName": "banner_pack_10112_lang",
+    "Param1": "2026-09-29T12:00:00+08:00",
+    "Param2": "2026-10-20T10:59:59+08:00",
+    "Param3": "73",
+    "Param4": "",
+    "Param5": "",
+    "Param6": "",
+    "Param7": ""
+  },
+  "58": {
+    "Id": 58,
+    "BannerType": 6,
+    "BannerName": "banner_skin_12603_lang",
+    "Param1": "2026-09-29T12:00:00+08:00",
+    "Param2": "2026-10-20T10:59:59+08:00",
+    "Param3": "skin.98.16",
+    "Param4": "",
+    "Param5": "",
+    "Param6": "",
+    "Param7": ""
+  },
+  "61": {
+    "Id": 61,
+    "BannerType": 6,
+    "BannerName": "banner_skin_12503",
+    "Param1": "2026-09-29T12:00:00+08:00",
+    "Param2": "2026-10-20T10:59:59+08:00",
+    "Param3": "skin.98.03.1",
     "Param4": "",
     "Param5": "",
     "Param6": "",
