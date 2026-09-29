@@ -10,5 +10,17 @@
     ],
     "PrefabName": "101",
     "LuaCtrl": "GoldenSpyLaserTrap"
+  },
+  "102": {
+    "Id": 102,
+    "GoldenSpyObstacle_": 1,
+    "Params": [
+      0,
+      180,
+      3,
+      5
+    ],
+    "PrefabName": "102",
+    "LuaCtrl": "GoldenSpyLaserTrap"
   }
 }
