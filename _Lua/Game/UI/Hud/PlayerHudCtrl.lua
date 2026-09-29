@@ -213,6 +213,7 @@ function PlayerHudCtrl:Awake()
 end
 function PlayerHudCtrl:OnEnable()
 	self.playerId = 0
+	self.bBloodVisible = true
 	self._mapNode.AmmoBar:SetActive(false)
 	self:ResetHit()
 end
@@ -239,6 +240,7 @@ function PlayerHudCtrl:SetPlayerId(playerId)
 		NovaAPI.SetCanvasGroupAlpha(self._mapNode.canvasGroup, 1)
 	end
 	self.playerId = playerId
+	self._mapNode.rtBuff:BindEntity(self.playerId)
 	self:ResetHit()
 	self:KillTween()
 	local ammoMax = AdventureModuleHelper.GetEntityAmmoMax(self.playerId)
@@ -253,7 +255,6 @@ function PlayerHudCtrl:SetPlayerId(playerId)
 	self:OnEvent_JsAniObjActive(activeJs)
 	local shieldValue, shieldValueMax = AdventureModuleHelper.GetEntityShieldValue(self.playerId)
 	self:SetShield(shieldValue, shieldValueMax, true)
-	self._mapNode.rtBuff:BindEntity(self.playerId)
 	EventManager.AddEntityEvent("HpChanged", self.playerId, self, self.OnEvent_HpChanged)
 	EventManager.AddEntityEvent("AmmoChanged", self.playerId, self, self.OnEvent_AmmoChanged)
 	EventManager.AddEntityEvent("BuffReduceTime", self.playerId, self, self.OnEvent_JsAniObjActive)
@@ -343,7 +344,15 @@ end
 function PlayerHudCtrl:OnEvent_Deaded()
 	EventManager.Hit("PlayerShow", self.playerId, false)
 end
+function PlayerHudCtrl:SetBloodVisible(bShow)
+	self.bBloodVisible = bShow
+	NovaAPI.SetCanvasGroupAlpha(self._mapNode.canvasGroup, bShow and 1 or 0)
+end
 function PlayerHudCtrl:OnEvent_ShowPlayerHudRootCanvas()
+	if self.bBloodVisible == false then
+		NovaAPI.SetEntryLevelFade(false)
+		return
+	end
 	local sequence = DOTween.Sequence()
 	sequence:Append(self._mapNode.canvasGroup:DOFade(1, 0.7):SetUpdate(true))
 	sequence:AppendCallback(function()

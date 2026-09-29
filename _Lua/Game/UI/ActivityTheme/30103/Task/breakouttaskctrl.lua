@@ -120,7 +120,7 @@ function BreakOutTaskCtrl:BuildData(nActivityId)
 					nStatus = taskData.nStatus,
 					sDesc = mapData.Desc,
 					nRarity = mapData.Rarity,
-					tbJumpTo = mapData.JumpTo,
+					nJumpTo = mapData.JumpTo,
 					nCur = taskData.nCur,
 					nMax = taskData.nMax,
 					tbTaskRewardId = {},
@@ -311,11 +311,11 @@ function BreakOutTaskCtrl:onGridRefresh_Task(go)
 			_tr.gameObject:SetActive(false)
 		end
 	end
-	tr:Find("tmpUndone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 >= #mapTask.tbJumpTo and Vector3.one or Vector3.zero
+	tr:Find("tmpUndone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 >= mapTask.nJumpTo and Vector3.one or Vector3.zero
 	tr:Find("btnDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Complete and Vector3.one or Vector3.zero
 	tr:Find("btnDone"):GetChild(0).name = tostring(mapTask.nTaskId)
-	tr:Find("btnJump").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 < #mapTask.tbJumpTo and Vector3.one or Vector3.zero
-	tr:Find("btnJump"):GetChild(0).name = tostring(nIndex)
+	tr:Find("btnJump").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.UnComplete and 0 < mapTask.nJumpTo and Vector3.one or Vector3.zero
+	tr:Find("btnJump"):GetChild(0).name = tostring(mapTask.nJumpTo)
 	tr:Find("goDone").localScale = mapTask.nStatus == AllEnum.ActQuestStatus.Received and Vector3.one or Vector3.zero
 end
 function BreakOutTaskCtrl:onEvent_ClickRewardItem(goBtn)
@@ -337,12 +337,9 @@ function BreakOutTaskCtrl:onEvent_ClickTaskDone(goBtn)
 	end
 end
 function BreakOutTaskCtrl:onEvent_ClickTaskJump(goBtn)
-	local nIndex = tonumber(goBtn.transform:GetChild(0).name)
-	local mapData = self.tbData[self.nCurGroupIndex]
-	local mapTask = mapData.tbTaskData[nIndex]
-	local JumpToData = mapTask.tbJumpTo
-	if JumpToData ~= nil and 0 < #JumpToData then
-		JumpUtil.JumpToActivity(JumpToData)
+	local nJumpId = tonumber(goBtn.transform:GetChild(0).name)
+	if 0 < nJumpId then
+		JumpUtil.JumpTo(nJumpId)
 	end
 end
 return BreakOutTaskCtrl

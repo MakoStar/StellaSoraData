@@ -182,19 +182,19 @@ function GoldenSpyLevelCtrl:Init()
 	self.nLevelType = self.levelCfg.LevelType
 	if self.nLevelType == GameEnum.GoldenSpyLevelType.Normal then
 		self._mapNode.go_Task:SetActive(false)
-		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.Normal, 0)
+		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.Normal, 0, true)
 		self:SetPngSprite(self._mapNode.img_hook, string.format(SpritePath, self.nActId) .. "btn_goldenspy_game_01")
 	elseif self.nLevelType == GameEnum.GoldenSpyLevelType.Quest then
 		self._mapNode.go_Task:SetActive(true)
-		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.Normal, 0)
+		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.Normal, 0, true)
 		self:SetPngSprite(self._mapNode.img_hook, string.format(SpritePath, self.nActId) .. "btn_goldenspy_game_01")
 	elseif self.nLevelType == GameEnum.GoldenSpyLevelType.Random then
 		self._mapNode.go_Task:SetActive(true)
-		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.Normal, 0)
+		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.Normal, 0, true)
 		self:SetPngSprite(self._mapNode.img_hook, string.format(SpritePath, self.nActId) .. "btn_goldenspy_game_01")
 	elseif self.nLevelType == GameEnum.GoldenSpyLevelType.FishingHook then
 		self._mapNode.go_Task:SetActive(false)
-		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.FishingHook, self.levelCfg.Param1)
+		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.FishingHook, self.levelCfg.Param1, true)
 		self:SetPngSprite(self._mapNode.img_hook, string.format(SpritePath, self.nActId) .. "btn_goldenspy_level_task_02")
 	end
 	for _, v in ipairs(self.tbTimer) do
@@ -319,6 +319,7 @@ function GoldenSpyLevelCtrl:FinishFloor()
 	local nCurFloorId = self.GoldenSpyLevelData:GetCurFloorId()
 	local nFloor = self.GoldenSpyLevelData:GetCurFloor()
 	local nTotalFloor = self.GoldenSpyLevelData:GetTotalFloor()
+	self.nCurScore = self.GoldenSpyLevelData:GetCurScore()
 	local bFinish = nFloor == nTotalFloor or self.nCurScore < self.floorCfg.GoalScore
 	self:UpdateScoreText()
 	local finishCallback = function(callback)
@@ -382,13 +383,13 @@ function GoldenSpyLevelCtrl:FinishFloor()
 		if self.animator ~= nil then
 			self.animator:Play("GoldenSpyPanel_out")
 			self:AddTimer(1, 1.4, function()
-				EventManager.Hit(EventId.OpenPanel, self._panel.nResultPanelId, data)
+				EventManager.Hit(EventId.OpenPanel, self._panel.nResultPanelId, data, self.nActId)
 			end, true, true, true)
 		else
-			EventManager.Hit(EventId.OpenPanel, self._panel.nResultPanelId, data)
+			EventManager.Hit(EventId.OpenPanel, self._panel.nResultPanelId, data, self.nActId)
 		end
 	else
-		EventManager.Hit(EventId.OpenPanel, self._panel.nResultPanelId, data)
+		EventManager.Hit(EventId.OpenPanel, self._panel.nResultPanelId, data, self.nActId)
 	end
 end
 function GoldenSpyLevelCtrl:GoNextFloor()
@@ -495,21 +496,22 @@ function GoldenSpyLevelCtrl:CatchedItemProcessCallback(tbTempItemCtrl, itemCtrl,
 			self:UpdateTaskUI()
 		end
 		self.bCanBoom = false
-	end
-	local itemCfg = itemCtrl:GetItemCfg()
-	if itemCfg.ItemType == GameEnum.GoldenSpyItem.BuffItem then
-		local nCount = 0
-		local items = self.GoldenSpyFloorData:GetItems()
-		for k, v in pairs(items) do
-			local itemCfg = ConfigTable.GetData("GoldenSpyItem", k)
-			if itemCfg ~= nil and itemCfg.ItemType ~= GameEnum.GoldenSpyItem.Boom then
-				nCount = nCount + v.itemCount
+		local itemCfg = itemCtrl:GetItemCfg()
+		if itemCfg.ItemType == GameEnum.GoldenSpyItem.BuffItem then
+			local nCount = 0
+			local items = self.GoldenSpyFloorData:GetItems()
+			for k, v in pairs(items) do
+				local itemCfg = ConfigTable.GetData("GoldenSpyItem", k)
+				if itemCfg ~= nil and itemCfg.ItemType ~= GameEnum.GoldenSpyItem.Boom then
+					nCount = nCount + v.itemCount
+				end
+			end
+			if items == nil or nCount <= 0 then
+				self:FinishFloor()
 			end
 		end
-		if items == nil or nCount <= 0 then
-			self:FinishFloor()
-		end
 	end
+	self:CatchedItemProcess(tbTempItemCtrl, bFinishTask)
 end
 function GoldenSpyLevelCtrl:UpdateTaskIcon()
 	for i = 1, 3 do
@@ -892,13 +894,11 @@ function GoldenSpyLevelCtrl:OnBtnClick_Hook()
 			local itemNormalWeight = itemCtrl:GetWeight()
 			for _, v in ipairs(self.GoldenSpyLevelData:GetBuffData()) do
 				local buffCfg = ConfigTable.GetData("GoldenSpyBuffCard", v.buffId)
-				if buffCfg ~= nil and buffCfg.EffectType == GameEnum.GoldenSpyBuffEffect.ReduceItemWeight then
-					if self.GoldenSpyLevelData:CheckBuffActive(v) and itemCtrl.nItemId == buffCfg.Params[1] then
-						itemNormalWeight = itemNormalWeight - buffCfg.Params[2]
-					end
-					nTotalWeight = nTotalWeight + itemNormalWeight
+				if buffCfg ~= nil and buffCfg.EffectType == GameEnum.GoldenSpyBuffEffect.ReduceItemWeight and self.GoldenSpyLevelData:CheckBuffActive(v) and itemCtrl:GetItemCfg().ItemType == buffCfg.Params[1] then
+					itemNormalWeight = itemNormalWeight - buffCfg.Params[2]
 				end
 			end
+			nTotalWeight = nTotalWeight + itemNormalWeight
 		end
 		local cfg = ConfigTable.GetData("GoldenSpyConfig", self.levelCfg.ConfigId)
 		if cfg ~= nil then
@@ -1123,6 +1123,9 @@ function GoldenSpyLevelCtrl:OnBtnClick_FishingHook()
 		EventManager.Hit(EventId.OpenMessageBox, ConfigTable.GetUIText("GoldenSpy_CanNotChangeHook"))
 		return
 	end
+	if self.bInFishingHook then
+		return
+	end
 	self.bInFishingHook = true
 	local FishingHookSkillId = 0
 	local btn_Skill
@@ -1139,6 +1142,12 @@ function GoldenSpyLevelCtrl:OnBtnClick_FishingHook()
 		self.bInFishingHook = false
 		return
 	end
+	local skillData = self.GoldenSpyLevelData:GetSkillData()
+	if skillData[FishingHookSkillId] == nil or skillData[FishingHookSkillId] <= 0 then
+		self.bInFishingHook = false
+		return
+	end
+	self:SetPngSprite(self._mapNode.img_hook, string.format(SpritePath, self.nActId) .. "btn_goldenspy_level_task_02")
 	self.GoldenSpyLevelData:UseSkill(FishingHookSkillId)
 	local newSkillData = self.GoldenSpyLevelData:GetSkillData()
 	local mask = btn_Skill.transform:Find("AnimRoot/mask"):GetComponent("Image")
@@ -1160,6 +1169,7 @@ function GoldenSpyLevelCtrl:OnBtnClick_FishingHook()
 	end
 	local timer = self:AddTimer(1, nTime, function()
 		self._mapNode.floorCtrl:SetHookType(AllEnum.GoldenSpyHookType.Normal, 0)
+		self:SetPngSprite(self._mapNode.img_hook, string.format(SpritePath, self.nActId) .. "btn_goldenspy_game_01")
 		self.bInFishingHook = false
 	end, true, true, true)
 	table.insert(self.tbTimer, timer)

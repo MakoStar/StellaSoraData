@@ -34,7 +34,8 @@ AutoBattleCtrl._mapEventConfig = {
 	LoadLevelRefresh = "Reset",
 	InputEnable = "OnEvent_InputEnable",
 	UpdateAutoCastUltimateSkill = "UpdateAutoCastUltimateSkill",
-	ShowOrHideBattleDash = "OnEvent_ShowOrHideAutoBattle"
+	ShowOrHideBattleDash = "OnEvent_ShowOrHideAutoBattle",
+	CloseOrOpenAutoBattle = "OnEvent_CloseOrOpenAutoBattle"
 }
 function AutoBattleCtrl:Awake()
 	self.nType = GameEnum.worldLevelType.Mainline
@@ -51,6 +52,10 @@ function AutoBattleCtrl:Reset()
 	local nState = tonumber(sData == nil and "0" or sData)
 	self.bAuto = nState == 1
 	if self.nType == GameEnum.worldLevelType.Dynamic and self.nSubType == GameEnum.dynamicLevelType.Tutorial then
+		self.bAuto = false
+	end
+	local nDisableFloor = ConfigTable.GetConfigNumber("DisableAutoBattleFloor")
+	if nDisableFloor ~= nil and self.nFloorId ~= nil and tonumber(self.nFloorId) == nDisableFloor then
 		self.bAuto = false
 	end
 	self._mapNode.btnAutoBattleOpen.gameObject:SetActive(not self.bAuto)
@@ -70,9 +75,10 @@ end
 function AutoBattleCtrl:OnEnable()
 	GamepadUIManager.AddGamepadUINode("BattleMenu", self:GetGamepadUINode())
 end
-function AutoBattleCtrl:SetBattleType(nType, nSubType)
+function AutoBattleCtrl:SetBattleType(nType, nSubType, nFloorId)
 	self.nType = nType
 	self.nSubType = nSubType
+	self.nFloorId = nFloorId
 	if self.nType == GameEnum.worldLevelType.PrologueBattleLevel then
 		self.gameObject.transform.localScale = Vector3.zero
 	elseif self.nType == GameEnum.worldLevelType.Dynamic and self.nSubType == GameEnum.dynamicLevelType.Tutorial then
@@ -118,6 +124,9 @@ function AutoBattleCtrl:OnClick_AutoBattleClose()
 	self.animator:Play("AutoBattle_Close")
 end
 function AutoBattleCtrl:OnEvent_InputEnable(bEnable, bEnableByTrans)
+	if self.isDisableAutoBattle then
+		return
+	end
 	if bEnableByTrans == true then
 		if bEnable == true and self.ENABLE == false then
 			return
@@ -141,6 +150,15 @@ function AutoBattleCtrl:OnEvent_InputEnable(bEnable, bEnableByTrans)
 	self._mapNode.btnAutoBattleClose.interactable = bEnable and true or false
 end
 function AutoBattleCtrl:OnEvent_ShowOrHideAutoBattle(isShow)
+	self.gameObject.transform.localScale = isShow and Vector3.one or Vector3.zero
+	self._mapNode.btnAutoBattleOpen.interactable = isShow and true or false
+	self._mapNode.btnAutoBattleClose.interactable = isShow and true or false
+end
+function AutoBattleCtrl:OnEvent_CloseOrOpenAutoBattle(isShow)
+	if isShow then
+		CS.AdventureModuleHelper.SetSemiAutoBattleMode(false)
+	end
+	self.isDisableAutoBattle = not isShow
 	self.gameObject.transform.localScale = isShow and Vector3.one or Vector3.zero
 	self._mapNode.btnAutoBattleOpen.interactable = isShow and true or false
 	self._mapNode.btnAutoBattleClose.interactable = isShow and true or false

@@ -97,6 +97,7 @@ function PlayerTraceHuntData:ProcessTableData_Level()
 	self.tbTraceHuntLevel = {}
 	self.nMaxTraceHuntLevel = 0
 	self.nHardOpenLevel = 100
+	self.nNoneRewardHelpOpenLevel = 100
 	local func_ForEach_Level = function(mapData)
 		self.tbTraceHuntLevel[mapData.Level] = {
 			Exp = mapData.Exp,
@@ -115,6 +116,9 @@ function PlayerTraceHuntData:ProcessTableData_Level()
 		end
 		if #mapData.DifficultyList > 1 and mapData.Level < self.nHardOpenLevel then
 			self.nHardOpenLevel = mapData.Level
+		end
+		if mapData.Voluntary == true and mapData.Level < self.nNoneRewardHelpOpenLevel then
+			self.nNoneRewardHelpOpenLevel = mapData.Level
 		end
 	end
 	ForEachTableLine(DataTable.TraceHuntLevel, func_ForEach_Level)
@@ -193,7 +197,11 @@ function PlayerTraceHuntData:ChangeTraceHuntItem(mapTraceHuntItem)
 	end
 end
 function PlayerTraceHuntData:CacheTraceHuntInfo(mapTraceHuntInfo)
+	local nLastControlId = self.nControlId
 	self.nControlId = mapTraceHuntInfo.ControlID
+	if nLastControlId ~= self.nControlId then
+		self:ResetStateInNewControl()
+	end
 	self.nBossId = mapTraceHuntInfo.BossID
 	self.nTraceProgress = mapTraceHuntInfo.TraceProgress
 	self.nHuntProgress = mapTraceHuntInfo.HuntProgress
@@ -261,6 +269,14 @@ function PlayerTraceHuntData:UpdateLevel(nLevel, nExp)
 end
 function PlayerTraceHuntData:SetNewControl(bNew)
 	self.bNewControl = bNew
+	if bNew then
+		self:ResetStateInNewControl()
+	end
+end
+function PlayerTraceHuntData:ResetStateInNewControl()
+	self.nSelfBossHard = 1
+	self.nHelpBossHard = 1
+	self.bRefreshHelpCD = false
 end
 function PlayerTraceHuntData:GetNewControl()
 	return self.bNewControl
@@ -307,6 +323,12 @@ function PlayerTraceHuntData:GetHelpBossHard()
 end
 function PlayerTraceHuntData:SetHelpBossHard(nHard)
 	self.nHelpBossHard = nHard
+end
+function PlayerTraceHuntData:CheckNoneRewardHelpOpen()
+	if self:GetControlBlockState() then
+		return false
+	end
+	return self.nLevel >= self.nNoneRewardHelpOpenLevel
 end
 function PlayerTraceHuntData:GetDifficultyBySource(bSelf)
 	if bSelf then
@@ -415,6 +437,12 @@ function PlayerTraceHuntData:GetLevelDisplayEffects(nLevel)
 	if self.nHardOpenLevel == nLevel and not self:GetControlBlockState() then
 		table.insert(tbEffect, {
 			sText = ConfigTable.GetUIText("TraceHunt_LevelEffect_Hard"),
+			bIcon1 = true
+		})
+	end
+	if self.nNoneRewardHelpOpenLevel == nLevel and not self:GetControlBlockState() then
+		table.insert(tbEffect, {
+			sText = ConfigTable.GetUIText("TraceHunt_LevelEffect_NoneRewardHelp"),
 			bIcon1 = true
 		})
 	end
@@ -1016,6 +1044,7 @@ function PlayerTraceHuntData:SendEnterLvAgain()
 end
 function PlayerTraceHuntData:EntryLvAgain()
 	if self.isGoAgain then
+		CS.AdventureModuleHelper.ClearCharacterDamageRecord(false)
 		self.CurHPLvScore = 0
 		self.HPLvScore = 0
 		self.CurHPDamage = 0

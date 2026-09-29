@@ -532,9 +532,7 @@ function SummerAdvCtrl:RefreshLevelButtonState(actData)
 		self._mapNode.txtLevel_End.gameObject:SetActive(state == ActivityState.Closed)
 		self.tbActState[activityId] = state
 		local anim = self._mapNode.btnEntrance_[AllEnum.ActivityThemeFuncIndex.Level].transform:GetChild(0):GetComponent("Animator")
-		if state == ActivityState.Open then
-			anim:Play("btnEntrance_5_idle")
-		end
+		anim.enabled = state == ActivityState.Open
 	end
 end
 function SummerAdvCtrl:RefreshShopButtonState(actData)
@@ -615,7 +613,7 @@ function SummerAdvCtrl:OnBtn_ClickActivityEntrance(btn, nIndex)
 			local func = function()
 				EventManager.Hit(EventId.OpenPanel, actData.PanelId, actData.ActivityId, self.nActId)
 			end
-			EventManager.Hit(EventId.SetTransition, 52, func)
+			EventManager.Hit(EventId.SetTransition, 37, func)
 		elseif self.ActivityGroupCfg.TransitionId ~= nil and self.ActivityGroupCfg.TransitionId > 0 then
 			EventManager.Hit(EventId.SetTransition, self.ActivityGroupCfg.TransitionId, function()
 				EventManager.Hit(EventId.OpenPanel, actData.PanelId, actData.ActivityId)
