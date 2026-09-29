@@ -12,7 +12,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "2": {
     "Level": 2,
@@ -27,7 +28,8 @@
     "DisplayTokenRate": 10,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "3": {
     "Level": 3,
@@ -42,7 +44,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 5,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "4": {
     "Level": 4,
@@ -57,7 +60,8 @@
     "DisplayTokenRate": 10,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "5": {
     "Level": 5,
@@ -72,7 +76,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 3
+    "DisplayFreeRate": 3,
+    "Voluntary": false
   },
   "6": {
     "Level": 6,
@@ -87,7 +92,8 @@
     "DisplayTokenRate": 10,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "7": {
     "Level": 7,
@@ -102,7 +108,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 10,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "8": {
     "Level": 8,
@@ -117,7 +124,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "9": {
     "Level": 9,
@@ -132,7 +140,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 5,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "10": {
     "Level": 10,
@@ -147,7 +156,8 @@
     "DisplayTokenRate": 20,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "11": {
     "Level": 11,
@@ -162,7 +172,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 3
+    "DisplayFreeRate": 3,
+    "Voluntary": false
   },
   "12": {
     "Level": 12,
@@ -177,7 +188,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "13": {
     "Level": 13,
@@ -192,7 +204,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 10,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "14": {
     "Level": 14,
@@ -207,7 +220,8 @@
     "DisplayTokenRate": 30,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "15": {
     "Level": 15,
@@ -222,7 +236,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 5,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "16": {
     "Level": 16,
@@ -237,7 +252,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "17": {
     "Level": 17,
@@ -252,7 +268,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 3
+    "DisplayFreeRate": 3,
+    "Voluntary": false
   },
   "18": {
     "Level": 18,
@@ -267,7 +284,8 @@
     "DisplayTokenRate": 40,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "19": {
     "Level": 19,
@@ -283,7 +301,8 @@
     "DisplayTokenRate": 0,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": false
   },
   "20": {
     "Level": 20,
@@ -299,6 +318,7 @@
     "DisplayTokenRate": 40,
     "DisplayLuckyRate": 0,
     "DisplayAddRate": 0,
-    "DisplayFreeRate": 0
+    "DisplayFreeRate": 0,
+    "Voluntary": true
   }
 }

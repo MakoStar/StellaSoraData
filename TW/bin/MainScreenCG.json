@@ -1149,6 +1149,46 @@
     "Name": "MainScreenCG.1115.1",
     "Sort": 0
   },
+  "1116": {
+    "Id": 1116,
+    "IsShown": true,
+    "FullScreenImg": "CG/1116/1116",
+    "FullScreenL2D": "",
+    "ListImg": "Icon/CGHead/story_main_09_001_L",
+    "Icon": "Icon/CGHead/story_main_09_001_S",
+    "Name": "MainScreenCG.1116.1",
+    "Sort": 8957
+  },
+  "1117": {
+    "Id": 1117,
+    "IsShown": false,
+    "FullScreenImg": "",
+    "FullScreenL2D": "",
+    "ListImg": "",
+    "Icon": "",
+    "Name": "MainScreenCG.1117.1",
+    "Sort": 0
+  },
+  "1118": {
+    "Id": 1118,
+    "IsShown": false,
+    "FullScreenImg": "",
+    "FullScreenL2D": "",
+    "ListImg": "",
+    "Icon": "",
+    "Name": "MainScreenCG.1118.1",
+    "Sort": 0
+  },
+  "1119": {
+    "Id": 1119,
+    "IsShown": false,
+    "FullScreenImg": "",
+    "FullScreenL2D": "",
+    "ListImg": "",
+    "Icon": "",
+    "Name": "MainScreenCG.1119.1",
+    "Sort": 0
+  },
   "2001": {
     "Id": 2001,
     "IsShown": true,
@@ -1318,5 +1358,15 @@
     "Icon": "Icon/CGHead/story_tales_17_001_S",
     "Name": "MainScreenCG.2017.1",
     "Sort": 1984
+  },
+  "2018": {
+    "Id": 2018,
+    "IsShown": true,
+    "FullScreenImg": "CG/2018/2018",
+    "FullScreenL2D": "",
+    "ListImg": "Icon/CGHead/story_tales_18_001_L",
+    "Icon": "Icon/CGHead/story_tales_18_001_S",
+    "Name": "MainScreenCG.2018.1",
+    "Sort": 1983
   }
 }
