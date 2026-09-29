@@ -2137,6 +2137,418 @@
     "PlayerWorldLevel": 0,
     "AchieveIds": []
   },
+  "928": {
+    "Id": 928,
+    "ConditionId": "C08_BE",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm08_19_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1001": {
+    "Id": 1001,
+    "ConditionId": "C09_00_a",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1002": {
+    "Id": 1002,
+    "ConditionId": "C09_00_b",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_00_a"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1003": {
+    "Id": 1003,
+    "ConditionId": "C09_01_a",
+    "Comment": "",
+    "EvIdsA": [
+      "E1001"
+    ],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_00_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1004": {
+    "Id": 1004,
+    "ConditionId": "C09_BT01",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_01_a"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1005": {
+    "Id": 1005,
+    "ConditionId": "C09_02_a",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "BAm09_BT01"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1006": {
+    "Id": 1006,
+    "ConditionId": "C09_03_a",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_02_a"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1007": {
+    "Id": 1007,
+    "ConditionId": "C09_04_a",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_03_a"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1008": {
+    "Id": 1008,
+    "ConditionId": "C09_05_a",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_04_a"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1009": {
+    "Id": 1009,
+    "ConditionId": "C09_06_a",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_05_a"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1010": {
+    "Id": 1010,
+    "ConditionId": "C09_BT03",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_06_a"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1011": {
+    "Id": 1011,
+    "ConditionId": "C09_07_a",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "BAm09_BT03"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1012": {
+    "Id": 1012,
+    "ConditionId": "C09_01_b",
+    "Comment": "",
+    "EvIdsA": [
+      "E1002"
+    ],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_00_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1013": {
+    "Id": 1013,
+    "ConditionId": "C09_BT02",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_01_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1014": {
+    "Id": 1014,
+    "ConditionId": "C09_02_b",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "BAm09_BT02"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1015": {
+    "Id": 1015,
+    "ConditionId": "C09_03_b",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_02_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1016": {
+    "Id": 1016,
+    "ConditionId": "C09_04_b",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_03_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1017": {
+    "Id": 1017,
+    "ConditionId": "C09_05_b",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_04_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1018": {
+    "Id": 1018,
+    "ConditionId": "C09_06_b",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_05_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1019": {
+    "Id": 1019,
+    "ConditionId": "C09_01_c",
+    "Comment": "",
+    "EvIdsA": [
+      "E1003"
+    ],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_00_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1020": {
+    "Id": 1020,
+    "ConditionId": "C09_BT04",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_01_c"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1021": {
+    "Id": 1021,
+    "ConditionId": "C09_02_c",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "BAm09_BT04"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1022": {
+    "Id": 1022,
+    "ConditionId": "C09_03_c",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_02_c"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1023": {
+    "Id": 1023,
+    "ConditionId": "C09_BT05",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_03_c"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1024": {
+    "Id": 1024,
+    "ConditionId": "C09_04_c",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "BAm09_BT05"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1025": {
+    "Id": 1025,
+    "ConditionId": "C09_05_c",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_04_c"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1026": {
+    "Id": 1026,
+    "ConditionId": "C09_01_d",
+    "Comment": "",
+    "EvIdsA": [
+      "E1004"
+    ],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_00_b"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1027": {
+    "Id": 1027,
+    "ConditionId": "C09_ED",
+    "Comment": "",
+    "EvIdsA": [],
+    "EvIdsB": [],
+    "StoryIdA": [
+      "STm09_01_d"
+    ],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1028": {
+    "Id": 1028,
+    "ConditionId": "C09_routeB",
+    "Comment": "",
+    "EvIdsA": [
+      "E1005"
+    ],
+    "EvIdsB": [],
+    "StoryIdA": [],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1029": {
+    "Id": 1029,
+    "ConditionId": "C09_routeC",
+    "Comment": "",
+    "EvIdsA": [
+      "E1005",
+      "E1006"
+    ],
+    "EvIdsB": [],
+    "StoryIdA": [],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
+  "1030": {
+    "Id": 1030,
+    "ConditionId": "C09_routeD",
+    "Comment": "",
+    "EvIdsA": [
+      "E1005",
+      "E1006",
+      "E1007"
+    ],
+    "EvIdsB": [],
+    "StoryIdA": [],
+    "StoryIdB": [],
+    "PlayerWorldLevel": 0,
+    "AchieveIds": []
+  },
   "6501": {
     "Id": 6501,
     "ConditionId": "CBA06x5_01",
